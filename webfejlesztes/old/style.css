@@ -1,0 +1,1188 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    color: #291237;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+h2, h3, h4, h5, h6{
+    font-family: 'Inter Tight', sans-serif;
+    margin: 0 0 10px;
+}
+h6{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 0 0 45px;
+    margin: 0 0 60px;
+    position: relative;
+}
+h6:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 35px;
+    height: 1px;
+    background: #FEC303;
+    opacity: 0.5;
+}
+h6:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 1px;
+    background: #FEC303;
+    opacity: 0.5;
+}
+h2 span, h3 span, .count{
+    background: linear-gradient(90deg, #FF7B00, #FFC100);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a{
+    text-decoration: none;
+}
+h2, h3, .load{
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 500ms ease-in-out;
+}
+h2.visible, h3.visible, .load.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.cta{
+    display: block;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 70px auto 0;
+    width: fit-content;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+.cta .outie{
+    display: block;
+    border-radius: 50%;
+    width: 144px;
+    animation: cta 2000ms linear infinite;
+}
+.cta .innie{
+    width: 144px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #FF7B00, #FFC100);
+    color: white;
+    padding: 0 5px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 50%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    box-shadow: 0 0 40px #FF7B00;
+}
+.cta2{
+    display: block;
+    width: fit-content;
+    background: linear-gradient(90deg, #FF7B00, #FFC100);
+    color: white;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    border-radius: 15px;
+    box-shadow: 0 29px 27px -16px #FF7B0066;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: 500ms ease-in-out;
+}
+.cta2.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+@keyframes cta{
+    0%{box-shadow: 0 0 0 0 #FF7B00cc;}
+    100%{box-shadow: 0 0 2px 30px #FF7B0000;}
+}
+
+.felmeres{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 200px);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    box-shadow: 0 0 12px #29123722;
+    z-index: 100;
+    transition: 500ms ease-in-out;
+}
+.felmeres.visible{
+    transform: translate(-50%, 0);
+}
+.felmeres button{
+    display: block;
+    width: fit-content;
+    background: linear-gradient(90deg, #FF7B00, #FFC100);
+    color: white;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 10px 10px -5px #FF7B0066;
+    cursor: pointer;
+}
+.felmeres button:active{
+    transform-origin: center;
+    transform: scale(0.98);
+    box-shadow: 0 5px 5px -2px #FF7B0066;
+}
+.felmeres button.click{
+    background: linear-gradient(90deg, #301641, #492163);
+    box-shadow: 0 10px 10px -5px #49216366;
+}
+
+dots div{
+    width: 6px;
+    height: 6px;
+    background: #29123713;
+    border-radius: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.header{
+    background: url("img/header-bg.jpg") no-repeat center top;
+    background-size: cover;
+    padding: 150px 0 170px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+.header:before {
+    content: "";
+    background: url(img/header-v2.svg) no-repeat;
+    width: 50%;
+    height: 157px;
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+.header:after {
+    content: "";
+    background: url(img/header-v1.svg) no-repeat center center;
+    width: 100%;
+    height: 331px;
+    position: absolute;
+    bottom: -1px;
+    background-position-y: bottom;
+}
+.header > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header > div > div{
+    width: 50%;
+    position: relative;
+}
+.header h6:after{
+    width: calc(100% - 90px - 45px);
+}
+.header h3 {
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 90px;
+}
+.header p {
+    margin: 0;
+}
+.header h6{
+    color: #FEC303;
+}
+.header .header-dots{
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+}
+.header .epik-lines{
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+
+.hero2{
+    padding: 50px 10px 0;
+    margin: 0 0 -200px;
+    box-sizing: border-box;
+    position: relative;
+}
+.hero2:after {
+    content: "";
+    background: url(img/hero2-v1.svg) no-repeat;
+    width: 100%;
+    height: 518px;
+    position: absolute;
+    left:0;
+    bottom: -1px;
+    background-position-y: bottom;
+}
+.hero2 .epik-lines{
+    position: absolute;
+    top: -50px;
+    left: 70%;
+}
+.hero2 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+.hero2 > div > div{
+    width: 50%;
+    margin: 0 0 50px;
+}
+.hero2 h6:before{
+    background: #291237;
+}
+.hero2 h6:after{
+    width: calc(100% - 150px - 45px);
+    background: #291237;
+}
+.hero2 h3{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+}
+.hero2 p {
+    margin: 0 0 30px;
+}
+.hero2 .grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.hero2 .grid > div{
+    width: 42%;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 0 20px;
+    background: white;
+    box-shadow: 0 0 24px #29123722;
+    position: relative;
+}
+.hero2 .grid > div:nth-child(even){
+    transform: translateY(-90px);
+}
+.hero2 .grid div img{
+    width: 100%;
+}
+.hero2 .grid > div > div{
+    padding: 15px 20px 40px;
+    box-sizing: border-box;
+}
+.hero2 .grid h4{
+    font-size: 20px;
+    font-weight: 900;
+}
+.hero2 .grid p{
+    font-size: 14px;
+    margin: 0;
+    min-height: 80px;
+    font-weight: 400;
+}
+
+.hero3{
+    background: url("img/hero3-bg.jpg") no-repeat center top fixed;
+    background-size: cover;
+    padding: 150px 0 170px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+.hero3:before {
+    content: "";
+    background: url(img/hero3-v1.svg) no-repeat center center;
+    width: 100%;
+    height: 185px;
+    position: absolute;
+    top: -2px;
+    background-position-y: top;
+}
+.hero3:after {
+    content: "";
+    background: url(img/hero3-v2.svg) no-repeat center center;
+    width: 100%;
+    height: 198px;
+    position: absolute;
+    bottom: -1px;
+    background-position-y: bottom;
+}
+.hero3 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero3 > div > div{
+    width: 50%;
+    margin: 0 0 0 auto;
+}
+.hero3 h6:after{
+    width: calc(100% - 90px - 45px);
+}
+.hero3 h3{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+}
+.hero3 p{
+    font-size: 24px;
+    margin: 0;
+}
+.hero3 h6{
+    color: #FEC303;
+}
+.hero3 .header-dots{
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%) scaleX(-1);
+
+}
+.hero3 .epik-lines{
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+
+.hero4{
+    padding: 50px 10px 100px;
+    box-sizing: border-box;
+    position: relative;
+}
+.hero4 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+}
+.hero4 > div > div{
+    width: 50%;
+    margin: 0 0 50px;
+    position: relative;
+}
+.hero4 h6:before{
+    background: #291237;
+}
+.hero4 h6:after{
+    width: calc(100% - 70px - 45px);
+    background: #291237;
+}
+.hero4 h2{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+}
+.hero4 h3{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+}
+.hero4 p{
+    margin: 0 0 30px;
+}
+.hero4 > div img{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+.hero4 .epik-lines1{
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 300px;
+    z-index: -1;
+}
+.hero4 .epik-lines2{
+    position: absolute;
+    top: -60px;
+    right: 0;
+    z-index: -1;
+}
+.hero4 .hidden{
+    height: 150px;
+    overflow-y: hidden;
+    position: relative;
+    transition: 500ms ease-in-out;
+}
+.hero4 .hidden.visible{
+    height: auto;
+}
+.hero4 .hidden:after{
+    content: "";
+    display: block;
+    background: linear-gradient(0deg, white, transparent);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+}
+.hero4 .hidden.visible:after{
+    display: none;
+}
+.hero4 button{
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px;
+    font-size: 20px;
+    font-weight: 700;
+    background: transparent;
+    color: #291237;
+    outline: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero5{
+    background: url("img/hudi-istvan.jpg") no-repeat center top fixed;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+.hero5:before {
+    content: "";
+    background: url(img/hero5-v1.svg) no-repeat center center;
+    width: 100%;
+    height: 152px;
+    position: absolute;
+    top: -1px;
+    background-position-y: top;
+}
+.hero5:after {
+    content: "";
+    background: url(img/hero5-v2.svg) no-repeat center center;
+    width: 100%;
+    height: 247px;
+    position: absolute;
+    left:0;
+    bottom: -1px;
+    background-position-y: bottom;
+}
+.hero5 .shadow{
+    padding: 150px 0 360px;
+    background: linear-gradient(#160421 0%, #16042100 30%, #16042100 75%, #160421 100%);
+}
+.hero5 > div > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero5 > div > div > div{
+    width: 50%;
+    margin: 0 0 0 auto;
+}
+.hero5 .text{
+    font-family: 'Crimson Text', serif;
+    font-size: 42px;
+    font-style: italic;
+    margin: 0 0 15px;
+}
+.hero5 .name{
+    font-weight: 500;
+}
+.hero5 .company{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.hero5 .epik-lines{
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+
+.hero6{
+    padding: 50px 10px 100px;
+    box-sizing: border-box;
+    position: relative;
+}
+.hero6:after {
+    content: "";
+    background: url(img/hero2-v1.svg) no-repeat;
+    width: 100%;
+    height: 518px;
+    position: absolute;
+    left:0;
+    bottom: -1px;
+    background-position-y: bottom;
+}
+.hero6 .epik-lines1{
+    position: absolute;
+    top: 30px;
+    right: 5%;
+    width: 300px;
+    z-index: -1;
+}
+.hero6 .epik-lines2{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 300px;
+    z-index: -1;
+}
+.hero6 h2{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+}
+.hero6 .grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 60px;
+    position: relative;
+    z-index: 10;
+}
+.hero6 .work {
+    border-radius: 20px;
+    overflow: hidden;
+    max-height: 550px;
+    color: white;
+    box-shadow: 0 0 24px #29123722;
+    position: relative;
+}
+.hero6 .work:hover{
+    cursor: url("img/mouse-scroll.svg"), auto;
+}
+.hero6 .scroll-wrapper {
+    overflow-y: auto;
+    max-height: 100%;
+    scrollbar-width: none;
+}
+.hero6 .scroll-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero6 .work > div:last-child {
+    padding: 30px;
+    box-sizing: border-box;
+    background: linear-gradient(0deg, #16042199 0%, #16042100 100%);
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: 500ms ease-in-out;
+}
+.hero6 .work:hover > div:last-child{
+    opacity: 0;
+    visibility: hidden;
+}
+.hero6 .work > div:last-child.remove{
+    opacity: 0;
+}
+.hero6 .work .cat{
+    font-size: 14px;
+}
+.hero6 .work .company{
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 36px;
+    margin: 0 0 5px;
+}
+.hero6 .work .site{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero7{
+    background: url("img/bocsi-viki.jpg") no-repeat center top fixed;
+    background-size: cover;
+    color: #291237;
+    overflow: hidden;
+    position: relative;
+}
+.hero7:before {
+    content: "";
+    background: url(img/hero7-v1.svg) no-repeat center center;
+    width: 100%;
+    height: 169px;
+    position: absolute;
+    top: -1px;
+    background-position-y: top;
+}
+.hero7:after {
+    content: "";
+    background: url(img/hero7-v2.svg) no-repeat center center;
+    width: 100%;
+    height: 297px;
+    position: absolute;
+    left:0;
+    bottom: -1px;
+    background-position-y: bottom;
+}
+.hero7 .shadow{
+    padding: 300px 0;
+    background: linear-gradient(#160421 0%, #16042100 30%, #16042100 75%, #160421 100%);
+}
+.hero7 > div > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero7 > div > div > div{
+    width: 50%;
+    margin: 0 auto 0 0;
+}
+.hero7 .text{
+    font-family: 'Crimson Text', serif;
+    font-size: 42px;
+    font-style: italic;
+    margin: 0 0 15px;
+}
+.hero7 .name{
+    font-weight: 500;
+}
+.hero7 .company{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.hero7 .epik-lines{
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
+
+.hero8{
+    padding: 50px 10px 100px;
+    box-sizing: border-box;
+    position: relative;
+}
+.hero8:after {
+    content: "";
+    background: url(img/hero2-v1.svg) no-repeat;
+    width: 100%;
+    height: 518px;
+    position: absolute;
+    left:0;
+    bottom: -1px;
+    background-position-y: bottom;
+}
+.hero8 h2{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+}
+.hero8 .grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 60px;
+    position: relative;
+    z-index: 10;
+}
+.hero8 .testimonial {
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1.53;
+    color: white;
+    box-shadow: 0 0 24px #29123722;
+    position: relative;
+}
+.hero8 img {
+    display: block;
+    width: 100%;
+}
+.hero8 .testimonial > div:last-child {
+    padding: 30px;
+    box-sizing: border-box;
+    background: linear-gradient(0deg, #16042199 0%, #16042100 100%);
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.hero8 .testimonial .company{
+    font-size: 14px;
+}
+.hero8 .testimonial .name{
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 36px;
+    margin: 0 0 5px;
+}
+.hero8 .testimonial p{
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0;
+}
+
+.hero9{
+    background: url("img/hero9-bg.jpg") no-repeat center top fixed;
+    background-size: cover;
+    padding: 150px 0 120px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+.hero9:before {
+    content: "";
+    background: url(img/hero9-v1.svg) no-repeat center center;
+    width: 100%;
+    height: 189px;
+    position: absolute;
+    top: -1px;
+    background-position-y: top;
+}
+.hero9:after {
+    content: "";
+    background: url(img/hero9-v2.svg) no-repeat center center;
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    left:0;
+    bottom: -2px;
+    background-position-y: bottom;
+}
+.hero9 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero9 > div > div{
+    width: 50%;
+    margin: 0 auto 0 0;
+    position: relative;
+}
+.hero9 h6:after{
+    width: calc(100% - 90px - 45px);
+}
+.hero9 h3{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+}
+.hero9 p{
+    margin: 0;
+    font-size: 24px;
+}
+.hero9 h6{
+    color: #FEC303;
+}
+.hero9 .header-dots{
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+
+}
+.hero9 .epik-lines{
+    position: absolute;
+    top: 0;
+    left: -100px;
+}
+
+.hero10{
+    padding: 50px 10px 100px;
+    box-sizing: border-box;
+    position: relative;
+}
+.hero10 h2{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+}
+.hero10 .grid{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hero10 .page {
+    width: 21%;
+    text-align: center;
+}
+.hero10 h4{
+    font-size: 32px;
+    font-weight: 900;
+}
+.hero10 p{
+    font-size: 16px;
+}
+
+.hero11{
+    background: url("img/hero11-bg.jpg") no-repeat center top fixed;
+    background-size: cover;
+    padding: 170px 0 155px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+.hero11:before {
+    content: "";
+    background: url(img/hero11-v1.svg) no-repeat center center;
+    width: 100%;
+    height: 294px;
+    position: absolute;
+    top: -1px;
+    background-position-y: top;
+}
+.hero11 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hero11 > div > div:first-child{
+    width: 50%;
+    margin: 0 0 50px;
+}
+.hero11 > div > div:last-child{
+    width: 35%;
+    margin: 0 auto;
+}
+.hero11 h6:after{
+    width: calc(100% - 95px - 45px);
+}
+.hero11 h3{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+}
+.hero11 h6{
+    color: #FEC303;
+}
+.hero11 .menetrend{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px;
+}
+.hero11 .count{
+    width: 20%;
+    font-size: 128px;
+    font-weight: 900;
+}
+.hero11 p{
+    width: 80%;
+    margin: 0;
+    font-size: 30px;
+}
+.hero11 img{
+    display: block;
+    margin: 0 auto 40px;
+}
+.hero11 input[type="text"],
+.hero11 input[type="email"],
+.hero11 select,
+.hero11 textarea{
+    width: 100%;
+    padding: 15px 10px 0 10px;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    border: 0;
+    border-bottom: 1px solid;
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    scrollbar-width: none;
+}
+.hero11 input[type="text"]:focus-visible,
+.hero11 input[type="email"]:focus-visible,
+.hero11 select:focus-visible,
+.hero11 textarea:focus-visible{
+    outline: none;
+    border-bottom: 1px solid white;
+}
+.hero11 input:-webkit-autofill {
+    background-color: transparent !important;
+    color: white !important;
+}
+.hero11 button{
+    display: block;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0 auto ;
+    width: fit-content;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.hero11 button .outie{
+    display: block;
+    border-radius: 50%;
+    width: 144px;
+    animation: cta 2000ms linear infinite;
+}
+.hero11 button .innie{
+    width: 144px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #FF7B00, #FFC100);
+    color: white;
+    padding: 0 5px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 50%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    box-shadow: 0 0 40px #FF7B00;
+}
+@media (max-width: 1024px){
+    .hero3 {
+        background: url("img/hero3-bg.jpg") no-repeat center top scroll;
+        background-size: cover;
+    }
+    .hero5 {
+        background: url("img/hudi-istvan.jpg") no-repeat center top scroll;
+        background-size: cover;
+    }
+    .hero7 {
+        background: url("img/bocsi-viki.jpg") no-repeat center top scroll;
+        background-size: cover;
+    }
+    .hero9 {
+        background: url("img/hero9-bg.jpg") no-repeat center top scroll;
+        background-size: cover;
+    }
+    .hero11 {
+        background: url("img/hero11-bg.jpg") no-repeat center top scroll;
+        background-size: cover;
+    }
+
+
+
+    .header-dots{
+        display: none;
+    }
+    .epik-lines{
+        width: 80%;
+    }
+    .header {
+        padding: 70px 0;
+    }
+    .header > div > div {
+        width: 100%;
+        max-width: 500px;
+    }
+    .header h3 {
+        font-size: 56px;
+        line-height: 56px;
+    }
+    .hero2 {
+        margin: 0;
+    }
+    .hero2 > div > div {
+        width: 100%;
+    }
+    .hero2 > div > div:first-child{
+        margin: 0 0 140px;
+    }
+    .hero2 .grid h4 {
+        font-size: 16px;
+    }
+    .hero2 h3 {
+        font-size: 52px;
+        line-height: 52px;
+    }
+    .hero3 {
+        padding: 70px 0;
+    }
+    .hero3 > div > div {
+        width: 100%;
+        max-width: 500px;
+    }
+    .hero3 h3 {
+        font-size: 52px;
+        line-height: 52px;
+    }
+    .hero3 p {
+        font-size: 18px;
+    }
+    .hero4 > div > div {
+        width: 100%;
+    }
+    .hero4 h2, .hero4 h3 {
+        font-size: 52px;
+        line-height: 52px;
+    }
+    .hero4 .hidden{
+        height: 100px;
+    }
+    .hero5 > div > div > div {
+        width: 100%;
+    }
+    .hero6 h2 {
+        font-size: 52px;
+        line-height: 52px;
+    }
+    .hero6 .grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .hero6 .work {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .hero5 .shadow {
+        padding: 168px 0 60px;
+    }
+    .hero5 .aposztrof{
+        display: block;
+        margin: 0 0 10px auto;
+    }
+    .hero7 .shadow {
+        padding: 90px 0 140px;
+    }
+    .hero5 > div > div > div, .hero7 > div > div > div {
+        width: 100%;
+        max-width: 400px;
+    }
+    .hero5 .text, .hero7 .text {
+        font-size: 20px;
+    }
+    .hero8 .grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .hero8 .testimonial {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .hero8 .testimonial .name {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .hero8 .testimonial p {
+        font-size: 14px;
+    }
+    .hero9 {
+        padding: 70px 0;
+    }
+    .hero9 > div > div {
+        width: 100%;
+        max-width: 500px;
+    }
+    .hero9 h3 {
+        font-size: 52px;
+        line-height: 52px;
+    }
+    .hero9 p {
+        font-size: 18px;
+    }
+    .hero10 h2 {
+        font-size: 52px;
+        line-height: 52px;
+    }
+    .hero10 .page {
+        width: 45%;
+    }
+    .hero10 h4 {
+        font-size: 26px;
+    }
+    .hero11 {
+        padding: 70px 0;
+    }
+    .hero11 > div > div:first-child {
+        width: 100%;
+        max-width: 500px;
+    }
+    .hero11 > div > div:last-child {
+        width: 70%;
+    }
+    .hero11 h3 {
+        font-size: 52px;
+        line-height: 52px;
+    }
+    .hero11 img {
+        width: 100%;
+    }
+    .hero11 p {
+        width: 75%;
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 400px){
+    h2, h3{
+        font-size: 40px !important;
+        line-height: 40px !important;
+    }
+    .hero2 .grid > div {
+        width: 70%;
+    }
+    .hero2 .grid > div:nth-child(even) {
+        transform: none;
+    }
+    .hero10 .page {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .hero11 .count {
+        width: 25%;
+    }
+    .hero11 p {
+        width: 70%;
+    }
+}

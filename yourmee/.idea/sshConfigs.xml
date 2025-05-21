@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="c1.epikforge.com" id="2391eac4-c74d-4228-b87f-89525acae49a" keyPath="C:\Users\Alex\Desktop\private.ppk" port="22" nameFormat="DESCRIPTIVE" username="forge" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

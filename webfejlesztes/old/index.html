@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Epikforge Webfejlesztés</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" crossorigin href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N5PF890MYV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-N5PF890MYV');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '981360782200952');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=981360782200952&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Hotjar Tracking Code for https://landing.epikforge.com/webfejlesztes/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:5363076,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+</head>
+<body>
+
+<script>
+    if (!localStorage.getItem('teszt')) localStorage.setItem('teszt', (Math.random() <= 0.5 ? "A" : "B"))
+    let x = localStorage.getItem('teszt')
+</script>
+
+<div class="felmeres">
+    <div>Jelenleg van weboldalad?</div>
+    <button type="button" onclick="felmeresHidden(this)">Igen</button>
+    <button type="button" onclick="felmeresHidden(this)">Nincs</button>
+</div>
+
+<section class="header">
+    <img src="img/header-dots.svg" class="header-dots">
+    <img src="img/epik-lines.svg" class="epik-lines">
+    <div>
+        <div>
+            <h6>ÚJ WEBOLDAL</h6>
+            <h3><script>document.write(x === "A" ? `Elavult a <span>weboldalad?</span>` : `Pénztermelő <span>weboldalt</span> szeretnél?`)</script></h3>
+            <p class="load">Ha a weboldalad lassú vagy nehezen használható, az érdeklődők gyorsan továbbállnak. Egy elavult vagy rosszul megtervezett oldal nemcsak a bizalmat rombolja, hanem a bevételeid csökkenéséhez is vezethet.</p>
+        </div>
+    </div>
+    <a href="#megoldas" class="cta"><span class="outie"><span class="innie">Mi a megoldás?</span></span></a>
+</section>
+
+<section class="hero2" id="megoldas">
+    <img src="img/epik-lines2.svg" class="epik-lines">
+    <dots></dots>
+    <div>
+        <div>
+            <h6>A BIZALOM KIALAKÍTÁSA</h6>
+            <h3>Egy modern weboldal <span>bizalmat</span> kelt a látogatóidban</h3>
+            <p class="load">Az első benyomás a legfontosabb, még weboldal kapcsán is. Az üzletben elengedhetetlen a bizalom kiépítése a látogató felé. Egy letisztult, gyors és esztétikus weboldal azt üzeni a látogatóknak, hogy egy megbízható, profi vállalkozás áll mögötte. Hiába jó a terméked vagy szolgáltatásod, ha azt egy “gagyi” weboldalon találja a látogató. Bizonytalan lesz és azt fogja gondolni, hogyha “tényleg olyan jók vagytok, akkor miért nincs egy ehhez méltó weboldalatok?”. Talán, mert nem is vagytok olyan jók?</p>
+            <a href="#munkak" class="cta2">Korábbi munkáink</a>
+        </div>
+        <div class="grid">
+            <div>
+                <img src="img/hero2-grid1.jpg">
+                <div>
+                    <h4>Bizalomnövelő megjelenés</h4>
+                    <p>Egy letisztult weboldal professzionális képet közvetít rólad.</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/hero2-grid2.jpg">
+                <div>
+                    <h4>Felhasználóbarát élmény</h4>
+                    <p>Egy könnyen kezelhető, gyors oldal hosszabb ideig megtartja a látogatók figyelmét.</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/hero2-grid3.jpg">
+                <div>
+                    <h4>Hatékony ügyfélszerzés</h4>
+                    <p>Az átgondolt kialakítás növeli az érdeklődőkből valódi ügyfelekké alakulás esélyét, illetve a vásárlások számát.</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/hero2-grid4.jpg">
+                <div>
+                    <h4>Reszponzív megjelenés</h4>
+                    <p>Az oldalad minden eszközön, így mobilon is tökéletesen működik, biztosítva a legjobb felhasználói élményt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero3">
+    <img src="img/header-dots.svg" class="header-dots">
+    <img src="img/epik-lines.svg" class="epik-lines">
+    <div>
+        <div>
+            <h6>EPIKFORGE</h6>
+            <h3>Profizmus hatékonyság <span>eredmények</span></h3>
+            <p class="load">Bemutatom neked az Epikforge-ot a webfejlesztő partnered.</p>
+        </div>
+    </div>
+    <a href="#munkak" class="cta"><span class="outie"><span class="innie">Korábbi munkáink</span></span></a>
+</section>
+
+<section class="hero4">
+    <img src="img/epik-lines2.svg" class="epik-lines1">
+    <dots></dots>
+    <h2>Így fejlesztünk <span>weboldalakat</span></h2>
+    <p class="load" style="max-width: 650px; margin: 0 auto 80px; text-align: center;">Az Epikforge-nál olyan szakemberek dolgoznak, akik a hatékonyságot, a precizitást és az eredményorientált megközelítést helyezik előtérbe.</p>
+    <div>
+        <div>
+            <h6>EPIKFORGE</h6>
+            <h3><span>Biztos</span> helyen vagy!</h3>
+            <div class="hidden">
+                <p class="load">Nálunk nem elég, ha egy weboldal jól néz ki – működnie is kell. A célunk, hogy ügyfeleink olyan gyors, modern és felhasználóbarát weboldalakat kapjanak, amelyek nemcsak esztétikusak, hanem üzletileg is sikeresek.</p>
+                <p class="load">A fejlesztés során mindig a legtisztább, legjobb megoldásokat alkalmazzuk. Nem szeretjük a felesleges kódokat vagy a bonyolult, nehezen kezelhető rendszereket. Helyette olyan weboldalakat építünk, amelyek átláthatóak, könnyen navigálhatóak és villámgyorsan működnek.</p>
+                <p class="load">Rendszerben gondolkodunk, és minden projektet a vállalkozásod céljaihoz igazítunk. Tudjuk, hogy egy weboldal nemcsak egy online névjegykártya, hanem egy ügyfélszerzési és értékesítési eszköz. Ezért nálunk a design, a teljesítmény és a felhasználói élmény egyaránt kiemelt szerepet kap.</p>
+            </div>
+            <button type="button" onclick="moreBTN()">Tovább</button>
+            <a href="#munkak" class="cta2">Korábbi munkáink</a>
+        </div>
+        <div>
+            <img src="img/epik-lines2.svg" class="epik-lines2">
+            <img src="img/epikforge-nagy.svg" alt="Epikforge">
+        </div>
+
+    </div>
+</section>
+
+<section class="hero5">
+    <div class="shadow">
+        <img src="img/epik-lines.svg" class="epik-lines">
+        <div>
+            <div>
+                <img src="img/aposztrof.svg" class="aposztrof">
+                <div class="text">Gyorsak, precízek és mindig elérhetők. A végeredmény messze túlszárnyalta az elvárásainkat. Jó érzés ilyen partnerekkel dolgozni.</div>
+                <div class="name">Hudi István</div>
+                <div class="company">HillVital</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero6" id="munkak">
+    <img src="img/epik-lines2.svg" class="epik-lines1">
+    <img src="img/epik-lines2.svg" class="epik-lines2">
+    <dots></dots>
+    <h2>Korábbi <span>munkáink</span></h2>
+    <p class="load" style="margin: 0 0 80px; text-align: center;">A teljesség igénye nélkül ezekre a munkáinkra vagyunk a legbüszkébbek.</p>
+    <div class="grid">
+        <div class="work load">
+            <div class="scroll-wrapper">
+                <img src="img/gombadr.jpg">
+            </div>
+            <div>
+                <div class="cat">Landing Page</div>
+                <div class="company">gombaDR</div>
+                <div class="site">Életerő Plusz gombakivonat</div>
+            </div>
+        </div>
+        <div class="work load">
+            <div class="scroll-wrapper">
+                <img src="img/bocsiviki-hu.jpg">
+            </div>
+            <div>
+                <div class="cat">Weboldal</div>
+                <div class="company">Bocsi Viki</div>
+                <div class="site">Ételházhozszállítás</div>
+            </div>
+        </div>
+        <div class="work load">
+            <div class="scroll-wrapper">
+                <img src="img/bktrade.jpg">
+            </div>
+            <div>
+                <div class="cat">Landing Page</div>
+                <div class="company">B+K Trade</div>
+                <div class="site">Higiéniai költségcsökkentés</div>
+            </div>
+        </div>
+        <div class="work load">
+            <div class="scroll-wrapper">
+                <img src="img/honeyhill1.jpg">
+            </div>
+            <div>
+                <div class="cat">Landing Page</div>
+                <div class="company">Honey Hill</div>
+                <div class="site">Nappali és éjszakai arckrém</div>
+            </div>
+        </div>
+        <div class="work load">
+            <div class="scroll-wrapper">
+                <img src="img/rachelcare1.jpg">
+            </div>
+            <div>
+                <div class="cat">Weboldal</div>
+                <div class="company">Rachel Care</div>
+                <div class="site">Nőnapi arckrém csomagok</div>
+            </div>
+        </div>
+        <div class="work load">
+            <div class="scroll-wrapper">
+                <img src="img/bwell.jpg">
+            </div>
+            <div>
+                <div class="cat">Landing Page</div>
+                <div class="company">B Well Consulting</div>
+                <div class="site">Hatékonyság Tréning</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero7">
+    <div class="shadow">
+        <img src="img/epik-lines.svg" class="epik-lines">
+        <div>
+            <div>
+                <img src="img/aposztrof2.svg" class="aposztrof">
+                <div class="text">Nagyon szeretek az Epikforge csapattal dolgozni! Proaktív, gyors, kreatív és kompetens megoldásokat kapok mindig. Pont azt, amire szükségem van.</div>
+                <div class="name">Bocsi Viki</div>
+                <div class="company">bocsiviki.hu</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero8">
+    <dots></dots>
+    <div class="grid">
+        <div class="testimonial load">
+            <img src="img/szondi-kristof.jpg">
+            <div>
+                <div class="company">gombaDR</div>
+                <div class="name">Szondi Kristóf</div>
+                <p>A landing page-ünk pontosan azt az arculatot adta vissza, amit elképzeltünk. Nagyon jól esett, hogy minden apró részletre figyeltetek.</p>
+            </div>
+        </div>
+        <div class="testimonial load">
+            <img src="img/rachel-anna.jpg">
+            <div>
+                <div class="company">Rachel Care</div>
+                <div class="name">Balázs Rachel Anna</div>
+                <p>Nemcsak weboldalt kaptunk, hanem átgondolt, profi támogatást is. Végre egy csapat, akik valóban értenek a digitális megjelenéshez.</p>
+            </div>
+        </div>
+        <div class="testimonial load">
+            <img src="img/bodnar-akos.jpg">
+            <div>
+                <div class="company">B+K Trade</div>
+                <div class="name">Bodnár Ákos</div>
+                <p>Nagyon tetszett az egész közös együttműködés felépítése. Gyorsan és rugalmasan reagáltatok az egyedi kérésekre és apróbb változtatásokra!</p>
+            </div>
+        </div>
+        <div class="testimonial load">
+            <img src="img/pancsira-laszlo.jpg">
+            <div>
+                <div class="company">Yourméé</div>
+                <div class="name">Pancsira László és Livi</div>
+                <p>Mindig számíthatunk rátok, ha kérdésünk van, és többféle nézőpontból is megnézitek, hogyan lehet megcsinálni, amit szeretnénk, közösen egyeztetve. Továbbra is számítunk rátok!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero9">
+    <img src="img/header-dots.svg" class="header-dots">
+    <img src="img/epik-lines.svg" class="epik-lines">
+    <div>
+        <div>
+            <h6>ÚJ WEBOLDAL</h6>
+            <h3>Szeretnél egy profi weboldalt?<br><span>Mi elkészítjük!</span></h3>
+            <p class="load">Minden vállalkozás más, ezért weboldalad is egyedi megoldást érdemel. Mi az igényeid alapján tervezzük és fejlesztjük le a weboldalad, hogy az ne csak szép, hanem hatékony és eredményes is legyen.</p>
+        </div>
+    </div>
+    <a href="#ajanlat" class="cta"><span class="outie"><span class="innie">Ajánlatot kérek</span></span></a>
+</section>
+
+<section class="hero10">
+    <dots></dots>
+    <h2>Milyen <span>weboldalakat</span> készítünk?</h2>
+    <p class="load" style="margin: 0 0 80px; text-align: center;">Nem tudsz olyat mondani, amit ne tudnánk elkészíteni.</p>
+    <div class="grid">
+        <div class="page load">
+            <img src="img/landing-page.svg">
+            <div>
+                <h4>Landing page</h4>
+                <p>Egy ajánlat vagy termék bemutatására optimalizált, konverzióközpontú oldal.</p>
+            </div>
+        </div>
+        <div class="page load">
+            <img src="img/bemutatkozo.svg">
+            <div>
+                <h4>Bemutatkozó oldal</h4>
+                <p>Professzionális online jelenlét a vállalkozásod számára.</p>
+            </div>
+        </div>
+        <div class="page load">
+            <img src="img/portfolio.svg">
+            <div>
+                <h4>Portfólió oldal</h4>
+                <p>Művészeknek, kreatív szakembereknek, fotósoknak, designereknek.</p>
+            </div>
+        </div>
+        <div class="page load">
+            <img src="img/blog.svg">
+            <div>
+                <h4>Blog</h4>
+                <p>Cikkek, hírek és információk könnyű kezelhetőséggel.</p>
+            </div>
+        </div>
+        <div class="page load">
+            <img src="img/webshop.svg">
+            <div>
+                <h4>Webáruház</h4>
+                <p>Termékek értékesítésére optimalizált webshopok.</p>
+            </div>
+        </div>
+        <div class="page load">
+            <img src="img/time.svg">
+            <div>
+                <h4>Időpontfoglaló rendszerek</h4>
+                <p>Szolgáltatóknak, edzőknek, tanácsadóknak, akiknek fontos az online foglalás.</p>
+            </div>
+        </div>
+        <div class="page load">
+            <img src="img/sub.svg">
+            <div>
+                <h4>Online előfizetés</h4>
+                <p>Online kurzusok, oktatási anyagok értékesítésére alkalmas platformok.</p>
+            </div>
+        </div>
+        <div class="page load">
+            <img src="img/code.svg">
+            <div>
+                <h4>Egyedi fejlesztés</h4>
+                <p>Speciális funkciókkal és egyedi igények alapján készített megoldások.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero11" id="ajanlat">
+    <div>
+        <div>
+            <h6>AJÁNLATKÉRÉS</h6>
+            <h3><script>document.write(x === "A" ? `Kérj ajánlatot az új <span>weboldaladra!</span>` : `Kérj ajánlatot az új pénztermelő <span>weboldaladra!</span>`)</script></h3>
+            <div class="menetrend load">
+                <div class="count">1</div>
+                <p>Töltsd ki az űrlapot!</p>
+            </div>
+            <div class="menetrend load">
+                <div class="count">2</div>
+                <p>24 órán belül keresni fog telefonon értékesítőnk, aki segíteni fog kideríteni, hogy pontosan mire lenne szükséged és megbeszélitek a részleteket.</p>
+            </div>
+            <div class="menetrend load">
+                <div class="count">3</div>
+                <p>Ezután újabb 24 órán belül elküldjük az árajánlatunkat az új weboldaladdal kapcsolatban.</p>
+            </div>
+        </div>
+        <div>
+            <img src="img/epikforge-white.svg">
+            <form action="https://epikforge.space/api/site/5cef952e-5f16-4bef-9939-20bdb5b3e88e/contact/create" method="POST" accept-charset="utf-8">
+                <input type="hidden" name="url" value="https://landing.epikforge.com/webfejlesztes"/>
+                <input type="hidden" name="m" value="">
+                <input type="hidden" name="success_return_url" value="https://landing.epikforge.com/webfejlesztes/koszonjuk.html">
+                <input type="hidden" name="form_name" value="webfejlesztes">
+
+                <div>
+                    <label>NÉV</label>
+                    <input id="name" type="text" name="name" required="">
+                </div>
+                <div>
+                    <label>EMAIL</label>
+                    <input id="email" type="email" name="email" required="">
+                </div>
+                <div>
+                    <label>TELEFON</label>
+                    <input id="phone" type="text" name="phone" required="">
+                </div>
+                <div>
+                    <label>ÜZENET</label>
+                    <textarea type="text" name="body" row="2"></textarea>
+                </div>
+                <button type="submit" id="submitBTN"><span class="outie"><span class="innie">Küldés</span></span></button>
+            </form>
+        </div>
+    </div>
+</section>
+
+</body>
+
+<script>
+
+    //HEADER
+    const anim = new IntersectionObserver(entries => {
+        entries.forEach((entry, index) =>{
+            if(entry.isIntersecting) setTimeout(()=>entry.target.classList.add('visible'), 25*index)
+        })
+    }, {threshold: 0.1})
+    document.querySelectorAll('h2, h3, .load, .cta2').forEach(item=>anim.observe(item))
+
+    //DOTS
+    document.querySelectorAll('dots').forEach(dots => {
+        for(let i=0; i<80;i++) {
+            let newDiv = document.createElement('div')
+            newDiv.style.top = `${Math.random()*90}%`
+            newDiv.style.left = `${Math.random()*100}%`
+            dots.appendChild(newDiv)
+        }
+    })
+
+    if (window.innerWidth > 1024) {
+        window.addEventListener('scroll', () => {
+            document.querySelector('.header').style.backgroundPositionY = `${Math.abs((document.querySelector('.header').offsetTop - scrollY) / 2)}px`
+            document.querySelector('.hero2 .grid').style.transform = `translateY(-${scrollY * 0.3}px)`
+            document.querySelectorAll('.hero2 .grid > div:nth-child(even)').forEach(div=>div.style.transform = `translateY(-${scrollY * 0.15}px)`)
+            document.querySelector('.hero3').style.backgroundPositionY = `${(document.querySelector('.hero3').offsetTop - scrollY) / 2}px`
+            document.querySelector('.hero5').style.backgroundPositionY = `${(document.querySelector('.hero5').offsetTop - scrollY) / 2}px`
+            document.querySelector('.hero7').style.backgroundPositionY = `${(document.querySelector('.hero7').offsetTop - scrollY) / 2}px`
+            document.querySelector('.hero9').style.backgroundPositionY = `${(document.querySelector('.hero9').offsetTop - scrollY) / 2}px`
+            document.querySelector('.hero11').style.backgroundPositionY = `${(document.querySelector('.hero11').offsetTop - scrollY) / 2}px`
+        })
+    }
+
+
+
+    document.querySelectorAll('.cta, .hero11 button').forEach(cta => {
+        let targetX = 0, targetY = 0
+        let currentX = 0, currentY = 0
+        let isAnimating = false
+
+        function animateMagnet() {
+            if (!isAnimating) return
+
+            currentX += (targetX - currentX) * 0.04
+            currentY += (targetY - currentY) * 0.04
+
+            cta.style.transform = `translate(${currentX}px, ${currentY}px)`
+
+            if (Math.abs(targetX - currentX) > 0.1 || Math.abs(targetY - currentY) > 0.1) requestAnimationFrame(animateMagnet)
+            else isAnimating = false
+        }
+
+        cta.addEventListener('mouseenter', (e)=> cta.children[0].style.animationDuration = "900ms")
+        cta.addEventListener("mousemove", (e) => {
+            const rect = cta.getBoundingClientRect()
+            targetX = (e.clientX - rect.left - rect.width / 2) * 0.5
+            targetY = (e.clientY - rect.top - rect.height / 2) * 0.5
+            if (!isAnimating) {
+                isAnimating = true
+                animateMagnet()
+            }
+        });
+
+        cta.addEventListener("mouseleave", () => {
+            cta.children[0].style.animationDuration = "2000ms"
+            targetX = 0
+            targetY = 0
+            if (!isAnimating) {
+                isAnimating = true
+                animateMagnet()
+            }
+        })
+    })
+
+    // WORK SCROLL ANIMATION
+    let globalScroll = window.scrollY
+    let stillScroll = globalScroll
+    window.addEventListener('scroll', (e) => {
+        globalScroll = window.scrollY
+        if(stillScroll !== globalScroll) {
+            document.querySelectorAll('.scroll-wrapper').forEach(wrapper => {
+                setTimeout(()=>wrapper.parentElement.children[1].classList.remove('remove'), 500)
+                wrapper.scrollTo({top: 0, behavior: 'smooth'})
+            })
+        }
+    })
+    document.querySelectorAll('.scroll-wrapper').forEach(wrapper => {
+        if(window.innerWidth < 1024) {
+            wrapper.addEventListener('scroll', (e) => {
+                if (wrapper.scrollTop > 0) wrapper.parentElement.children[1].classList.add('remove')
+                stillScroll = globalScroll
+            })
+        }
+        wrapper.addEventListener('mouseleave', () => {
+            wrapper.scrollTo({ top: 0, behavior: 'smooth' })
+        })
+    })
+
+    // TOVÁBB GOMB
+    function moreBTN(){
+        document.querySelector('.hero4 .hidden').classList.add('visible')
+        document.querySelector('.hero4 button').remove()
+    }
+
+    // FELMÉRES
+    if(!localStorage.getItem('felmeresClick')) setTimeout(()=>document.querySelector('.felmeres').classList.add("visible"), 4000)
+    function felmeresHidden(element) {
+
+        const answer = element.innerText.trim(); // "Igen" vagy "Nincs"
+
+        // Mentés SQLite-ba PHP-n keresztül
+        fetch("felmeres.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ valasz: answer })
+        });
+
+        element.classList.add('click')
+        setTimeout(()=>document.querySelector('.felmeres').classList.remove("visible"), 300)
+        localStorage.setItem('felmeresClick', true)
+    }
+</script>
+<script>
+    window.onload = function() {
+        const params = new URLSearchParams(window.location.search);
+        let input = document.querySelector('input[name="m"]');
+        let params_m = params.get('m');
+        if(input && params_m) input.value = params_m + " " + x;
+    }
+</script>
+
+
+</html>

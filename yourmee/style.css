@@ -1,0 +1,772 @@
+body{
+	margin: 0;
+	font-size: 20px;
+	font-family: 'Raleway';
+	font-feature-settings: "lnum" 1;
+}
+#succes-cart{
+	position: fixed;
+	top:-120px;
+	right: calc(50% - 142px);
+	background: black;
+	color:white;
+	border-radius: 20px;
+	padding: 20px 18px;
+	z-index: 111;
+	transition: 300ms ease-in-out;
+}
+#succes-cart.active{
+	top:10px;
+}
+#alert-cart{
+	position: fixed;
+	top: -120px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	background: linear-gradient(62deg, #921b1b, #dc4242);
+	color: white;
+	border-radius: 20px;
+	padding: 20px 18px;
+	box-sizing: border-box;
+	z-index: 1;
+	box-shadow: 0 0 43px 0 rgb(99, 16, 16);
+	transition: 300ms ease-in-out;
+}
+#alert-cart.active{
+	top:10px;
+}
+.hero1{
+	background: url('img/hero1-bg.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 70px 10px;
+}
+.hero1 > div{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.hero1 h3{
+	font-size: 60px;
+	margin: 0;
+}
+.header{
+	max-width: 1024px;
+	margin: 0 auto 100px;
+}
+.header p{
+	color: #7B7B7B;
+	margin: 0;
+}
+.header > div{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.header > div div{
+	width: 50%;
+	margin: 50px 0 0;
+	padding: 0 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+.header > div > img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.cta{
+	display: inline-block;
+    background: black;
+    padding: 18px 56px;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+.hero1 h4 {
+    font-size: 36px;
+    max-width: 742px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.problema{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.problema > div{
+	width: 22%;
+	margin: 0 0 30px;
+}
+.problema img{
+	border-radius: 50%;
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+.problema h5{
+	background: black;
+	color:white;
+	font-weight: 600;
+	text-align: center;
+	padding: 5px 0;
+	font-size: 20px;
+	margin: 20px 0 10px;
+	border-radius: 3px;
+}
+.problema p{
+	margin: 0;
+	color: #7B7B7B;
+}
+.megoldas{
+	max-width: 815px;
+	margin: 0 auto;
+	padding: 30px;
+	box-sizing: border-box;
+	background: white;
+	border-radius: 15px;
+	text-align: center;
+	font-weight: 300;
+	font-size: 24px;
+}
+.megoldas img{
+	width: 155px;
+}
+.hero2{
+	padding: 40px 10px;
+}
+.hero2 > div{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.hero2 h3{
+	font-size: 60px;
+	text-align: center;
+}
+.leves-tesztak,
+.koret-tesztak{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-end;
+	background:  #FDF3D1;
+	border-radius: 20px;
+	padding: 0 15px 20px;
+	margin: 0 0 60px;
+	box-sizing: border-box;
+}
+.teszta{
+	margin-top: -50px;
+}
+.teszta div{
+	text-align: center;
+	font-size: 16px;
+}
+.leves-tesztak .teszta{
+	width: 19%;
+}
+.koret-tesztak .teszta{
+	width: 16%;
+}
+.teszta img{
+	width: 100%;
+}
+.hero3{
+	background: url('img/kaja-hatter.png');
+	background-size: cover;
+	padding: 30px 0;
+}
+.hero3 > div{
+	max-width: 1024px;
+	margin: 0 auto;	
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.hero3:nth-of-type(4) > div{
+	flex-direction: row-reverse;
+}
+.hero3 > div > div{
+	width: 50%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.hero3 img{
+	display: block;
+	width:50%;
+}
+.hero3 h4{
+	font-size: 24px;
+	margin: 0;
+}
+.hero3 p, .hero3 ul{
+	font-size: 16px;
+	font-weight: 300;
+}
+.termekek{
+	background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 100%),
+		url('img/kosar-bg.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 70px 10px;
+}
+.termekek > div{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.termekek h3{
+	max-width: 1024px;
+	margin: 0 auto;
+	font-size: 60px;
+	text-align: center;
+}
+.termekek h4{
+	max-width: 1024px;
+	margin: 0 auto;
+	font-size: 40px;
+	text-align: center;
+}
+.termekek > div > div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin:50px 0;
+}
+.termek{
+	width:30%;
+	background: white;
+	border-radius: 15px;
+	box-shadow: 5px 15px 30px -5px rgba(0,0,0,0.25);
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 0;
+}
+.termek:hover img{
+	transform: scale(110%) translateY(-20px);
+	box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.30);
+}
+.termek img {
+	width: 90%;
+    display: block;
+    margin: -90px auto 25px;
+    box-shadow: 0 30px 18px -12px rgba(0, 0, 0, 0.30);
+	transition: 400ms cubic-bezier(0.55, 0.26, 0, 0.98)
+}
+.termek-nev{
+	font-size: 20px;
+	font-weight: 700;
+}
+.termek-lista p{
+    font-size: 14px;
+    color: #7B7B7B;
+}
+.termek-lista select{
+	font-family: 'Raleway';
+	padding:7px;
+	margin: 0 1px 5px;
+	width: 49%;
+}
+.termek-suly{
+	font-size: 16px;
+	color: #7B7B7B;
+	margin: 0 0 10px;
+}
+.ar-cta{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin-top: 30px;
+}
+.termek-ar{
+	font-size: 20px;
+    font-weight: 700;
+    line-height: 0.8;
+}
+.termek-ar span{
+	font-size: 10px;
+	font-weight: 400;
+	color: #7B7B7B;
+}
+.termek .cta {
+    display: inline-block;
+    background: black;
+    padding: 14px 32px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+.kosar-gomb{
+	display: inline-block;
+    background: black;
+    padding: 14px 32px;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+.kosar-gomb:active {
+    transform: scale(0.97);
+}
+.kosar-gomb input{
+	display: none;
+}
+.rendeles{
+	max-width: 1024px;
+	margin: 50px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+.rendeles h3, .rendeles p{
+	text-align: center;
+	margin: 0;
+}
+.rendeles .form{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top:30px;
+}
+.rendeles .form > div{
+	width: 45%;
+}
+.kosar-termek {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px;
+    background: black;
+    border-radius: 30px;
+    box-shadow: 8px 8px 25px -5px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    margin: 0 0 50px;
+    box-sizing: border-box;
+    color: white;
+	position: relative;
+	transition: 300ms ease-in-out;
+}
+.kosar-termek.remove{
+	transform: translateX(-100px);
+	opacity: 0;
+}
+.kosar-termek div:first-child {
+    display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+	gap: 5px;
+}
+.kosar-termek .kosar-termekkep img{
+    max-height: 120px;
+    margin: -55px 0 0 0;
+}
+.kosar-termeknev {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+.kosar-termek input[type="text"] {
+	width: 38px;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	background: transparent;
+	color: black;
+	text-align: center;
+	font-weight: 600;
+}
+.kosar-termekar {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 5px;
+}
+.kosar-mennyiseg {
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	font-weight: 300;
+	width: 90px;
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 50px;
+	background: white;
+}
+.kosar-mennyiseg button {
+	background: transparent;
+	border: 0;
+	padding: 0;
+	width: 15px;
+	cursor: pointer;
+}
+.kosar-mennyiseg button img{
+	display: block;
+}
+.x-button img{
+	display: block;
+	filter:invert(1);
+}
+.x-button {
+	background: transparent;
+	border: 0;
+	padding: 0;
+	width: 20px;
+	position: absolute;
+	top: 38px;
+	right: 6px;
+	cursor: pointer;
+}
+.kosar-termek-tartalom {
+	width: 100%;
+}
+.kosar-termek-tartalom p {
+    margin: 10px 0 5px;
+    font-size: 16px;
+	text-align: left;
+}
+.kosar-termek-tartalom span {
+    font-size: 14px;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    padding: 2px 10px;
+}
+.kosar h4{
+	margin: 5px 0 50px;
+}
+.kosar .osszeg {
+    border-top: 1px solid;
+    text-align: right;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+.kosar .osszeg span{
+	font-weight: 600;
+	font-size: 30px;
+}
+.kosar #sum {
+    font-size: 26px;
+    font-weight: 600;
+}
+.kosar-promo{
+	font-size: 64px;
+	font-weight: 900;
+	font-style: italic;
+}
+input#myCheck {
+    height: 20px;
+    width: 20px;
+    transform: translateY(3px);
+	margin: 0 0 15px
+}
+.form {
+    padding: 0 20px;
+}
+.form h3{
+	font-size: 64px;
+	margin: 40px auto 0;
+	text-align: center;
+}
+.form h5{
+	font-size: 20px;
+	font-weight: 400;
+	margin: 10px auto;
+	text-align: center;
+}
+.form > div > div,
+.form form{
+	width: 46%;
+}
+.rendeles-form{
+	padding: 20px;
+	box-sizing: border-box;
+}
+#theForm input[type="text"],
+#theForm input[type="email"],
+#theForm select{
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    border: 0;
+	border-bottom: 1px solid;
+    font-size: 18px;
+	background: transparent;
+}
+#theForm input[type="text"]:focus-visible,
+#theForm input[type="email"]:focus-visible,
+#theForm select:focus-visible{
+	outline: none;
+    border-bottom: 1px solid;
+}
+.rendeles-form label {
+	font-size: 16px;
+	text-transform: uppercase;
+    display: inline-block;
+}
+.iranyitoszam{
+	width:38%;
+	display: inline-block;
+}
+.varos{
+	width:60%;
+	display: inline-block;
+}
+.radio-label{
+	margin: 20px 0;
+}
+.radio-label label:has(> input:checked) {
+    background: #00d2ff;
+    color: white;
+    border: 2px solid rgba(15, 40, 70, 0.3);
+}
+.radio-label label {
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+	text-align: center;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+.radio-label input{
+	display: none;
+}
+.radio-label .szallitasi-koltseg{
+	font-size: 12px;
+}
+#paymentMethod label.active,
+#shippingMethod label.active{
+	animation: alert 1200ms ease-in-out infinite;
+}
+@keyframes alert {
+	0%{ box-shadow: 0 0 1px 1px red;}
+	50%{ box-shadow: 0 0 9px 1px red;}
+	100%{ box-shadow: 0 0 1px 1px red;}
+}
+.rendeles-gomb {
+    background: black;
+    text-decoration: none;
+    padding: 20px 50px;
+    margin: 20px auto;
+    display: block;
+    max-width: 320px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.velemenyek{
+	padding: 50px 0;
+	box-sizing: border-box;
+}
+.velemenyek h3{
+	margin: 0 auto;
+	font-size: 60px;
+	text-align: center;
+}
+.velemenyek > div{
+	max-width: 1024px;
+	margin: 70px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.velemenyek > div > div{
+	width:50%;
+	position: relative;
+	margin: 0 0 40px;
+	padding: 0 20px;
+    box-sizing: border-box;
+}
+.velemenyek > div > div:last-child{
+	width:100%;
+}
+.velemenyek p {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: justify;
+}
+.csillag{
+	display: block;
+	margin: 0 auto;
+}
+cite{
+	display: block;
+	font-weight: 700;
+	text-align: center;
+	font-style: normal;
+}
+.aposztrof1 {
+    font-family: 'Agbalumo';
+    font-size: 250px;
+    position: absolute;
+    left: 0;
+    top: -135px;
+    color: #FDF3D1;
+    z-index: -1;
+}
+.aposztrof2 {
+    font-family: 'Agbalumo';
+    font-size: 250px;
+    position: absolute;
+    right: 0;
+    bottom: -155px;
+    color: #FDF3D1;
+    z-index: -1;
+}
+.garancia{
+	max-width: 760px !important;
+	margin: 70px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 15px;
+	background: #FDF3D1;
+	padding: 30px;
+	box-sizing: border-box;
+}
+.garancia img{
+	width: 29%;
+}
+.garancia div {
+    width: 71% !important;
+    margin: 0 !important;
+}
+.garancia h4{
+	font-size: 32px;
+	margin: 0;
+}
+.garancia p{
+	font-size: 16px;
+	font-weight: 300;
+	text-align: justify;
+	margin: 0;
+}
+footer{
+	background: black;
+	color:white;
+	padding:50px 0;
+	box-sizing: border-box;
+}
+footer > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	font-size: 16px;
+	font-weight: 300;
+}
+footer img{
+	display: block;
+	width:50%;
+}
+footer h4{
+	font-size: 32px;
+	margin: 0;
+}
+footer > div > div{
+	width:50%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+@media (max-width:500px){
+.hero1 {
+    padding: 40px 10px;
+}
+.header > div div {
+    width: 100%;
+	margin: 20px 0 0;
+}
+.header > div > img {
+    width: 100%;
+}
+.header > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.problema > div {
+    width: 100%;
+}
+.leves-tesztak .teszta, 
+.koret-tesztak .teszta {
+    width: 48%;
+    margin: 0 0 20px;
+}
+.hero3 > div > div {
+    width: 100%;
+}
+.hero3 img {
+    width: 90%;
+    margin: 0 auto 20px;
+}
+.termek {
+    width: 100%;
+    margin: 0 0 55px;
+}
+.termekek h4 {
+    font-size: 30px;
+}
+.termekek > div > div {
+    margin: 50px 0 0;
+}
+.hero1 h3,
+.termekek h3,
+.velemenyek h3,
+.form h3,
+.kosar-promo{
+    font-size: 32px;
+}
+.kosar-termek div div {
+    width: 100%;
+}
+.rendeles-form {
+    padding: 0;
+}
+.hero2 h3{
+	font-size: 29px;
+}
+.hero1 h4 {
+    font-size: 24px;
+}
+.form > div > div, .form form {
+    width: 100%;
+}
+.velemenyek > div > div {
+    width: 100%;
+}
+.garancia div {
+    width: 100% !important;
+}
+.garancia h4 {
+    font-size: 28px;
+}
+.garancia img {
+    width: 60%;
+    margin: 0 auto;
+}
+footer img {
+    width: 100%;
+}
+footer > div > div {
+    width: 100%;
+}
+}

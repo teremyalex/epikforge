@@ -1,0 +1,563 @@
+body{
+	margin: 0;
+	font-size: 20px;
+	font-family: 'Montserrat';
+	color: #444444;
+}
+.hero1{
+	background: url(img/hero1-bg.jpg) top center no-repeat;
+	background-size: cover;
+	padding: 100px 10px 30px;
+	box-sizing: border-box;
+}
+.hero1 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.hero1 h1{
+	font-family: 'Playfair Display';
+	font-size: 80px;
+	font-weight: 400;
+	margin: 0 0 100px;
+	line-height: 94px;
+}
+
+.hero1 h3{
+	font-size: 32px;
+	font-weight: 600;
+	margin: 0 0 20px;
+}
+
+.hero1 > div > div{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.hero1 > div > div:nth-child(2) {
+	margin: 0 0 200px;
+}
+.hero1 > div > div > div{
+	width: 50%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.hero1 > div img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.hero1-1{
+	background: url(img/alap-bg.jpg);
+	padding: 50px 10px;
+	box-sizing: border-box;
+}
+.hero1-1 h2{
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	margin: 0 0 10px;
+	line-height: 94px;
+	text-align: center;
+}
+.hero1-1 p{
+	max-width: 736px;
+	font-size: 20px;
+	margin: 0 auto 20px;
+}
+.cta{
+	background: #444444;
+    padding: 34px 0;
+    font-size: 20px;
+    margin: 30px auto;
+    display: block;
+    max-width: 280px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+}
+.hero2{
+	background: url('img/hero2-bg.jpg') top center no-repeat;
+	background-size: cover;
+	padding: 80px 10px;
+	box-sizing: border-box;
+}
+.hero2 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.hero2 > div > div{
+	width: 50%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.hero2 img{
+	display: block;
+	width:50%;
+}
+.hero2 h4{
+	font-size: 32px;
+	font-weight: 600;
+	margin: 0;
+}
+.hero3{
+	background: url('img/alap-bg.jpg');
+	padding: 80px 10px;
+	box-sizing: border-box;
+}
+.hero3 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+}
+.hero3 > div > div{
+	width: 50%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.hero3 > div img{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.hero3 > div h3{
+	font-size: 40px;
+	font-family: 'Playfair Display';
+	font-weight: 400;
+	margin: 20px 0;
+}
+.hero4{
+	background: url('img/alap-bg.jpg');
+	padding: 80px 10px;
+	box-sizing: border-box;
+}
+.hero4 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.hero4 > div > div:first-child{
+	width: 65%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.hero4 > div > div:last-child{
+	width: 35%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.hero4 h3{
+	font-size: 40px;
+	font-family: 'Playfair Display';
+	font-weight: 400;
+	margin: 20px 0;
+	line-height: 44px;
+}
+.garancia{
+	background: url("img/garancia-bg.jpg") top center no-repeat;
+	background-size: cover;
+	padding: 60px 10px;
+	box-sizing: border-box;
+	color: white;
+}
+.garancia > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.garancia h3{
+	width: 35%;
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	font-style: italic;
+	margin: 0 0 20px;
+	position: relative;	
+}
+.garancia > div div{
+	width: 60%;
+	font-size: 16px;
+	padding: 0 20px;
+}
+.garancia h3::after {
+    content: url(img/arrow.svg);
+    position: absolute;
+    margin: 0 0 0 20px;
+    top: -12px;
+}
+.velemenyek{
+	background: url("img/alap-bg.jpg");
+	padding: 100px 10px 0;
+}
+.velemenyek > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.velemenyek h3{
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	margin: 0 0 75px;
+	color: #242220;
+	text-align: center;
+	line-height: 94px;
+}
+.velemenyek > div > div{
+	width: 50%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	position: relative;
+	margin: 0 0 100px;
+}
+.velemenyek > div > div div{
+	margin: 0 0 20px;
+}
+.velemenyek > div > div div:last-child{
+	margin: 0 0 20px;
+	display: flex;
+	align-items: center;
+}
+.velemenyek img{
+	max-width: 85px;
+	margin: 0 10px;
+}
+.velemenyek cite span{
+	font-family: 'Playfair Display';
+	font-size: 36px;
+	font-weight: 400;
+}
+aposztrof {
+    font-family: 'Playfair Display';
+    font-size: 690px;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    line-height: 0;
+    z-index: 0;
+	color: #98CABF;
+    opacity: 30%;
+}
+.megrendeles{
+	background: url("img/megrendeles-bg.jpg") top center no-repeat;
+	background-size: cover;
+	padding: 80px 10px;
+}
+.megrendeles h3{
+	font-family: 'Playfair Display';
+	font-size: 64px;
+	font-weight: 400;
+	margin: 0;
+	text-align: center;
+	line-height: 94px;
+}
+.megrendeles .alcim{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 16px;
+}
+.megrendeles h4{
+	font-family: 'Playfair Display';
+	font-size: 36px;
+	font-weight: 400;
+	margin: 0 0 20px;
+	text-align: center;
+}
+.megrendeles > div{
+	max-width: 1024px;
+	margin: 50px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+.megrendeles .rendeles-form,
+.megrendeles .szolgaltatasok{
+	width: 50%;
+}
+.rendeles-form{
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+.szolgaltatasok > div{
+	margin: 0 0 20px;
+}
+.szolgaltatasok p {
+	font-size: 16px;
+	margin: 0 0 30px;
+}
+
+.szolgaltatasok h5{
+	font-family: 'Playfair Display';
+	font-size: 24px;
+	font-weight: 400;
+	margin: 0;
+}
+.kezeles{
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+.kezeles img{
+	width: 90px;
+	border-radius: 50%;
+}
+
+.kezeles p{
+	margin: 0;
+}
+.menetrend{
+	padding: 0 0 0 70px;
+	box-sizing: border-box;
+	position: relative;
+	font-size: 16px;
+}
+.menetrend p{
+	margin: 0 0 30px;
+}
+.menetrend p::before {
+    position: absolute;
+    width: 55px;
+    background: #444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    left: 0;
+    padding: 0px 0px 16px;
+    line-height: 39px;
+}
+.menetrend p:nth-of-type(1)::before{
+	content:"1.";
+}
+.menetrend p:nth-of-type(2)::before{
+	content:"2.";
+}
+.menetrend p:nth-of-type(3)::before{
+	content:"3.";
+}
+.csomag ul{
+	margin: 0;
+	font-size: 16px;
+}
+form input[type="text"],
+form input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    border: 0;
+	border-bottom: 1px solid rgba(15, 40, 70, 0.3);
+    font-size: 18px;
+	background: transparent;
+}
+form input[type="text"]:focus-visible,
+form input[type="email"]:focus-visible{
+	outline: none;
+    border-bottom: 1px solid #777;
+}
+.rendeles-form label {
+	font-size: 16px;
+	text-transform: uppercase;
+    display: inline-block;
+}
+form button {
+    background: #444;
+    text-decoration: none;
+    padding: 34px 0;
+    margin: 20px auto 5px;
+    display: block;
+    width: 280px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+	border:0;
+    border-radius: 3px;
+	cursor:pointer;
+}
+form img{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+.about{
+	background: url("img/alap-bg.jpg");
+	padding: 100px 10px;
+}
+.about > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.about img{
+	width: 25%;
+}
+.about p{
+	font-size: 20px;
+	text-align: justify;
+}
+.about > div > div{
+	width: 70%;
+	margin: 0 0 50px;
+}
+.about div div div {
+	display: inline-block;
+	color: #7AADA2;
+	background: #EAF9F5;
+	border-radius: 50px;
+	padding: 3px 13px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.about cite{
+	display: block;
+	font-size: 40px;
+	font-family: 'Playfair Display';
+	font-style: normal;
+	line-height: .6;
+	margin: 20px 0;
+}
+.about cite span{
+	font-size: 20px;
+	font-weight: 300;
+	font-style: italic;
+	font-family: 'Montserrat';
+}
+
+@media (max-width:500px){
+body{
+	font-size: 16px;
+}
+.hero1{
+	background: url(img/alap-bg.jpg);
+	padding: 50px 10px;
+	box-sizing: border-box;
+}
+.hero1 h1 {
+    font-size: 28px;
+    line-height: normal;
+	margin: 0 0 30px;
+}
+.hero1 > div > div:nth-of-type(1) {
+    flex-direction: column-reverse;
+}
+.hero1 > div > div > div{
+	width: 100%;
+}
+.hero1 > div img{
+	width: 70%;
+	margin-bottom: 20px;
+}
+.hero1 h3 {
+	font-size: 20px;
+	line-height: normal;
+}
+.hero1 p, .hero1-1 p {
+    font-size: 16px;
+}
+.hero2 > div > div {
+    width: 100%;
+}
+.hero2 > div {
+	flex-direction: column-reverse;
+}
+.hero1 > div > div:nth-child(2) {
+	margin: 0 0 50px;
+}
+.hero2 img {
+	width: 100%;
+}
+.hero2 h3 {
+    font-size: 46px;
+}
+.hero3 > div > div,
+.hero3 > div > div:last-child{
+    width: 100%;
+}
+.hero1-1 h2,
+.hero2 h3,
+.hero4 h3,
+.rolunk h3,
+.velemenyek h3,
+.megrendeles h3 {
+    font-size: 32px;
+	line-height: normal;
+}
+.garancia h3 {
+    width: 100%;
+    font-size: 32px;
+	text-align: center;
+}
+.garancia h3::after {
+	top: 0;
+}
+.garancia > div div {
+    width: 100%;
+}
+.hero4 > div > div{
+	width: 100% !important;
+}
+.velemenyek > div > div {
+    width: 100%;
+	margin: 0 0 50px;
+}
+.velemenyek cite span {
+    font-size: 24px;
+}
+aposztrof {
+	font-size: 500px;
+	top: 86px;
+}
+.rolunk {
+    background: url(img/rolunk-bg.jpg) 73% no-repeat;
+	padding: 185px 10px 70px;
+}
+.rolunk > div > div {
+    width: 100%;
+	padding: 0;
+}
+.hero1-1, .hero2, .hero4, .garancia, .velemenyek, .megrendeles {
+	padding: 20px 10px;
+}
+.megrendeles .rendeles-form, .megrendeles .szolgaltatasok {
+	width: 100%;
+}
+.rendeles-form {
+    padding: 10px;
+}
+form button {
+    width: 100%;
+    font-size: 16px;
+}
+.about img {
+	width: 60%;
+	margin: 0 auto 20px;
+}
+.about > div > div {
+	width: 100%;
+}
+}

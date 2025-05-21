@@ -1,0 +1,710 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    color: #322882;
+    font-feature-settings: "lnum" 1;
+}
+.hero1{
+    background: url(img/hero1-bg.jpg) center top no-repeat;
+    background-size: cover;
+    padding: 95px 10px 0;
+    color: white;
+    overflow: hidden;
+}
+.hero1 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.hero1 > div > div{
+    width: 50%;
+}
+.hero1 h3{
+    font-size: 64px;
+    margin: 0 0 10px;
+    line-height: 67px;
+}
+.hero1 .hero-text{
+    margin: 170px 0 0;
+}
+.hero1 .hero-image{
+    position: relative;
+}
+.hero1 .hero-image img{
+    display: block;
+    width: 100%;
+    transform: translateY(80px);
+    transition: 700ms ease-in-out;
+    position: relative;
+    z-index: 3;
+}
+.hero1 circle1{
+    display:block;
+    position: absolute;
+    width:90%;
+    max-width: 522px;
+    aspect-ratio: 1/1;
+    margin: 5%;
+    top: 200px;
+    background: white;
+    border-radius: 50%;
+    filter: blur(3px);
+    transform: scale(0);
+    transform-origin: center;
+    transition: 700ms ease-in-out;
+    z-index: 2;
+}
+.hero1 circle2{
+    display:block;
+    position: absolute;
+    width:100%;
+    aspect-ratio: 1/1;
+    top: 160px;
+    background: white;
+    border-radius: 50%;
+    filter: blur(60px);
+    transform: scale(0);
+    transform-origin: center;
+    transition: 700ms ease-in-out;
+    z-index: 1;
+}
+.hero1-vector{
+    background: url(img/hero1-vector.png) center top no-repeat;
+    background-size: cover;
+    min-height: 295px;
+    width: 100%;
+    position: relative;
+    margin-top: -130px;
+    z-index: 4;
+}
+.cta{
+    background: linear-gradient(70deg, #F05348, #C22D1C);
+    padding: 22px 0;
+    font-size: 22px;
+    margin: 30px 0;
+    display: block;
+    max-width: 275px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.hero2{
+    padding: 40px 10px;
+    overflow: hidden;
+}
+.hero2 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hero2 > div > div{
+    width: 50%;
+}
+.hero2 .hero-text{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.hero2 .hero-text .felkialtojel{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #FF5E00, #CC1C1C);
+    border-radius: 50%;
+    color:white;
+    font-family: 'Agbalumo';
+    font-size: 77px;
+}
+.hero2 .hero-text .text {
+    width: 100%;
+    max-width: 477px;
+}
+.hero2 h3{
+    font-size: 56px;
+    margin: 0 0 10px;
+}
+.hero2 .hero-list{
+    position: relative;
+}
+.hero2 .hero-list > div{
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+.hero2 .hero-list .count{
+    font-family: 'Montserrat', sans-serif;
+    min-width: 124px;
+    font-size: 90px;
+    line-height: 66px;
+    font-weight: 700;
+    background: linear-gradient(90deg,#0A689F, #00FFF2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero2 .hero-list > div{
+    transform:translateX(50px);
+    opacity: 0;
+    transition: 700ms ease-in-out;
+}
+.hero2 .hero-list > div.visible{
+    transform:translateX(0);
+    opacity: 1;
+}
+.hero2 .hero-list h4{
+    margin: 0 0 8px;
+}
+.hero2 .hero-list p{
+    margin: 0;
+    font-size: 16px;
+}
+.hero2 circle1{
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: -36px;
+    right: 155px;
+    background: linear-gradient(221deg, rgba(10, 104, 159, 0.75), rgba(0, 255, 242, 0.75));
+    border-radius: 50%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+.hero2 circle2{
+    display: block;
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    bottom: -36px;
+    right: 20px;
+    background: linear-gradient(130deg, rgba(10, 104, 159, 0.75), rgba(0, 255, 242, 0.75));
+    border-radius: 50%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.hero3{
+    background: url(img/hero3-bg.jpg) center top no-repeat;
+    background-size: cover;
+    padding: 150px 10px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.hero3 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.hero3 > div > div{
+    width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.hero3 h3{
+    font-size: 64px;
+    line-height: 67px;
+    margin: 0 0 10px;
+}
+.hero3 img{
+    display: block;
+    width: 80%;
+    margin: 0 auto 20px;
+}
+.hero3 .hero-list{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+}
+.hero3 .hero-list > div {
+    background: white;
+    border-radius: 10px;
+    color: #322882;
+    padding: 20px;
+    box-sizing: border-box;
+    transform:translateX(-50px);
+    opacity: 0;
+    transition: 700ms ease-in-out;
+}
+.hero3 .hero-list > div.visible{
+    transform:translateX(0);
+    opacity: 1;
+}
+.hero3 .hero-list .count{
+    display:inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90px;
+    line-height: 65px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    background: linear-gradient(90deg,#0A689F, #00FFF2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero3 .hero-list h4{
+    font-size: 21px;
+    margin: 0 0 10px;
+}
+.hero3 .hero-list p{
+    font-size: 16px;
+    margin: 0;
+}
+.hero3 circle1{
+    display: block;
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(44deg, rgba(10, 104, 159, 0.75), rgba(0, 255, 242, 0.75));
+    border-radius: 50%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+.hero3 circle2{
+    display: block;
+    position: absolute;
+    width: 115px;
+    height: 115px;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(44deg, rgba(10, 104, 159, 0.75), rgba(0, 255, 242, 0.75));
+    border-radius: 50%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+.hero3 circle3{
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 15%;
+    left: -7%;
+    background: linear-gradient(221deg, rgba(10, 104, 159, 0.75), rgba(0, 255, 242, 0.75));
+    border-radius: 50%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+.hero3 circle4{
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 10%;
+    right: -4%;
+    background: linear-gradient(33deg, rgba(10, 104, 159, 0.75), rgba(0, 255, 242, 0.75));
+    border-radius: 50%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+.hero4{
+    padding: 40px 10px;
+    overflow: hidden;
+}
+.hero4 > div{
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+.hero4 > div > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 50px;
+}
+.hero4 h3{
+    font-size: 48px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+.hero4 h4{
+    width: 30%;
+    font-size: 34px;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0 0 10px;
+}
+.hero4 > div > div >div{
+    width: 60%;
+    box-sizing: border-box;
+    border-left: 1px solid #bbb;
+    padding: 80px 0 80px 40px;
+    position: relative;
+}
+.hero4 .aposztrof{
+    font-size: 100px;
+    font-weight: 700;
+    color: #322882;
+    font-family: 'Agbalumo', serif;
+    position: absolute;
+    top: -30px;
+    font-style: normal;
+}
+.hero4 p{
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+}
+.hero4 circle1{
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -14px;
+    right: -98px;
+    background: linear-gradient(221deg, rgba(10, 104, 159, 0.75), rgba(0, 255, 242, 0.75));
+    border-radius: 50%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+.hero4 circle2{
+    display: block;
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    bottom: 115px;
+    left: -67px;
+    background: linear-gradient(139deg, rgba(10, 104, 159, 0.75), rgba(0, 255, 242, 0.75));
+    border-radius: 50%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.hero5{
+    background: url(img/hero5-bg.jpg) center top no-repeat;
+    background-size: cover;
+    padding: 140px 0 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.hero5:after {
+    content: "";
+    background: url(img/hero5-vector.svg) no-repeat center center;
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    bottom: -1px;
+    background-position-y: bottom;
+    z-index: 4;
+}
+.hero5 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.hero5 > div > div{
+    width: 50%;
+}
+.hero5 h3{
+    font-size: 64px;
+    margin: 0 0 10px;
+    line-height: 67px;
+}
+.hero5 .hero-image{
+    position: relative;
+}
+.hero5 .hero-image img{
+    display: block;
+    width: 100%;
+    transform: translateY(80px);
+    transition: 700ms ease-in-out;
+    position: relative;
+    z-index: 3;
+}
+.hero5 .subtitle {
+    display: inline-block;
+    color: white;
+    background: linear-gradient(90deg, #0A689F, #00FFF2);
+    border-radius: 50px;
+    padding: 3px 13px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.hero5 .name{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+}
+.hero5 small{
+    display: block;
+    margin: 0 0 30px;
+    font-size: 14px;
+}
+.hero5 circle1{
+    display:block;
+    position: absolute;
+    width:90%;
+    max-width: 522px;
+    aspect-ratio: 1/1;
+    margin: 5%;
+    top: 200px;
+    background: white;
+    border-radius: 50%;
+    filter: blur(3px);
+    transform: scale(0);
+    transform-origin: center;
+    transition: 700ms ease-in-out;
+    z-index: 2;
+}
+.hero5 circle2{
+    display:block;
+    position: absolute;
+    width:100%;
+    aspect-ratio: 1/1;
+    top: 160px;
+    background: white;
+    border-radius: 50%;
+    filter: blur(60px);
+    transform: scale(0);
+    transform-origin: center;
+    transition: 700ms ease-in-out;
+    z-index: 1;
+}
+
+
+.hero7{
+    padding: 150px 0 250px;
+    position: relative;
+    overflow: hidden;
+}
+.hero7:after {
+    content: "";
+    background: url(img/footer-vector.svg) no-repeat bottom center;
+    width: 100%;
+    height: 182px;
+    position: absolute;
+    bottom: -1px;
+    background-position-y: bottom;
+}
+.hero7 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.hero7 > div > div{
+    width: 50%;
+}
+.hero7 h3{
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+.hero7 h4{
+    font-size: 32px;
+    margin: 0 0 20px;
+}
+.hero7 .form {
+    width: 100%;
+    max-width: 335px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background: linear-gradient(221deg, #0099CC 0%, #41CADC 30%, #87FFED 100%);
+    border-radius: 30px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 700ms ease-in-out;
+}
+.hero7 .form.visible{
+    transform:translateX(0);
+    opacity: 1;
+}
+.hero7 .form div {
+    background: rgba(255, 255, 255, 0.5);
+    height: 85px;
+    margin: 0 0 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.hero7 .form label {
+    display: block;
+    font-size: 16px;
+    color: #322882;
+    margin: 0 0 10px;
+}
+.hero7 .form input {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    outline: none;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #322882;
+    font-weight: 700;
+    font-feature-settings: "lnum" 1;
+}
+.hero7 .form button {
+    width: 100%;
+    height: 85px;
+    border: 0;
+    background: linear-gradient(70deg, #5D91FF, #0552D7);
+    color: white;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor:pointer ;
+}
+
+circle1, circle2, circle3, circle4{
+    opacity: 0;
+    transition: 700ms ease-in-out;
+}
+circle1.visible, circle2.visible, circle3.visible, circle4.visible{
+    opacity: 1;
+}
+
+@media (max-width:500px) {
+body {
+     font-size: 16px;
+}
+.hero1 {
+    padding: 70px 10px 0;
+}
+.hero1 > div > div, .hero5 > div > div {
+    width: 100%;
+}
+.hero1 .hero-text, .hero5 .hero-text {
+    margin: 0;
+}
+.hero1 circle1, .hero5 circle1 {
+     top: 100px;
+}
+.hero1 circle2, .hero5 circle2 {
+    top: 60px;
+}
+.hero1 h3,
+.hero2 h3,
+.hero3 h3,
+.hero4 h3,
+.hero3 h3,
+.hero7 h3{
+    font-size: 32px;
+    line-height: normal;
+}
+.hero2 {
+    padding: 0px 10px;
+}
+.hero2 > div > div {
+    width: 100%;
+}
+.hero2 .hero-text .felkialtojel {
+    margin: 0 auto;
+}
+.hero2 .hero-list > div{
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.hero2 circle1 {
+    top: 0;
+    right: -54px;
+}
+.hero2 circle2 {
+    width: 100px;
+    height: 100px;
+    bottom: 0px;
+}
+.hero3 > div > div {
+    width: 100%;
+}
+.hero4 > div > div >div,
+.hero4 h4{
+    width: 100%;
+}
+.hero4 circle1 {
+    width: 150px;
+    height: 150px;
+    top: -30px;
+    right: -48px;
+}
+.hero4 circle2 {
+    width: 100px;
+    height: 100px;
+    bottom: 27px;
+    left: -27px;
+}
+.hero3 > div{
+    flex-direction: column-reverse;
+}
+.hero3 > div > div {
+    width: 100%;
+    padding: 0;
+}
+.hero3 .hero-list {
+    gap: 10px;
+}
+.hero3 .hero-list > div {
+    padding: 10px;
+}
+.hero3 .hero-list h4,
+.hero3 .hero-list p {
+    font-size: 14px;
+    margin: 0;
+}
+.hero3 .hero-list .count {
+    font-size: 68px;
+    margin: 0;
+}
+.hero3 circle3 {
+    width: 140px;
+    height: 140px;
+    top: 9%;
+    left: 42%;
+}
+.hero3 circle4 {
+    width: 80px;
+    height: 80px;
+    bottom: 7%;
+    right: 6%;
+}
+.hero5 > div{
+    padding: 70px 10px 0;
+    flex-direction: column-reverse;
+}
+.hero7{
+    padding: 100px 0 150px;
+    position: relative;
+    overflow: hidden;
+}
+.hero7 > div > div {
+    width: 100%;
+}
+.hero7 .form {
+    padding: 15px;
+}
+.hero7 .form div,
+.hero7 .form button{
+    border-radius: 15px;
+}
+}

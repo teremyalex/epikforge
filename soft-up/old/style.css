@@ -1,0 +1,675 @@
+body{
+	font-family: 'Montserrat';
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0;
+}
+.hero1{
+	background: #EDFAFF;
+	padding: 40px 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.hero1 h3{
+	font-size: 36px;
+	max-width: 1024px;
+	margin: 20px auto;
+}
+.hero1 div{
+	max-width: 1024px;
+	margin:0 auto;
+}
+.hero1 img{
+	width: 100%;
+	display: block;
+}
+.hero1 p{
+	max-width: 850px;
+	font-size: 18px;
+	margin: 0 auto 20px;
+	line-height: 34px;
+}
+.hero1 h4{
+	max-width: 850px; 
+	margin: 0 auto 20px;
+	font-size: 24px; 
+	line-height: 34px;
+}
+.negativum{
+	background: #5ECAF5;
+	padding: 40px 10px;
+	text-align: center;
+}
+.negativum h5{
+	font-size: 32px;
+	font-weight: 400;
+	color:white;
+	margin: 0 0 40px;
+	line-height: 34px;
+}
+.negativum > div{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.negativum > div > div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.negativum div div div{
+	width: 18%;
+	border-radius: 45px;
+	background: white;
+	padding: 30px 8px 20px;
+	margin: 0 0 10px 0;
+    box-sizing: border-box;
+	text-transform: uppercase;
+}
+.negativum img{
+	display: block;
+	margin: 0 auto;
+	width: 95px;
+}
+.negativum div div div p{
+	font-weight: 700;
+	font-size: 16px;
+}
+.negativum p{
+	font-size: 24px;
+	font-weight: 700;
+}
+.negativum .cta{
+    background: white;
+    color: #18A8E1;
+    box-shadow: 0 33px 35px -22px rgb(255 255 255 / 40%);
+}
+.hero2{
+	padding: 40px 10px;
+	text-align: center;
+}
+.hero2 .logo{
+	max-width: 312px;
+	display: block;
+	margin: 0 auto 20px;
+}
+.hero2 div{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.hero2 p{
+	font-size: 26px;
+	font-style: italic;
+	line-height: 36px;
+	max-width: 782px;
+	margin: 0 auto;
+	text-align: justify;
+}
+.hero2 h3{
+	font-size: 32px;
+	max-width: 780px;
+	margin: 20px auto;
+	line-height: 36px;
+}
+.hero2 .hero2-kep{
+	max-width: 800px;
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+}
+.about{
+	background: #FAFAFA;
+	padding: 50px 20px;
+}
+.about > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.about img{
+	width: 25%;
+}
+.about p{
+	font-size: 16px;
+	color: #0F2846;
+	text-align: justify;
+}
+.about > div > div{
+	width: 50%;
+} 
+.about div div div {
+	display: inline-block;
+    color: #FF3D6E;
+    background: #FFF1F6;
+    border-radius: 50px;
+    padding: 3px 13px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.about cite{
+	display: block;
+    font-size: 40px;
+    color: #0F2846;
+    font-family: 'Noto Serif Display';
+    font-style: normal;
+    line-height: .6;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.about cite span{
+	font-size: 20px;
+}
+.cta{
+	background: linear-gradient(27deg, #18A8E1, #A1E0F8);
+    text-decoration: none;
+    padding: 18px 0;
+    margin: 20px auto;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border-radius: 15px;
+	box-shadow: 0 33px 35px -22px rgb(0 183 255 / 40%);
+	cursor:pointer;
+}
+.ajanlo{
+	background: #EDFAFF;
+	padding:50px 0;
+}
+.ajanlo > div{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.ajanlo .termek{
+	width: 30%;
+	background: #D9F4FF;
+	border-radius: 25px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.ajanlo .termek h3{
+	font-size: 26px;
+	font-weight: 500;
+	margin: 0;
+}
+.ajanlo .termek p{
+	font-size: 15px;
+	color:#616161;
+	min-height: 150px;
+}
+.ajanlo img{
+	width: 30%;
+	margin: 0 auto;
+	display: block;
+}
+.ajanlo .termek-list{
+	background: #E5F8FF;
+	border-radius: 15px;
+	padding: 10px;
+	box-sizing: border-box;
+	box-shadow: 0 0 19px -8px rgba(0,0,0,0.3);
+}
+.ajanlo .termek-list ul{
+	padding: 5px;
+	margin: 0;
+}
+.ajanlo .termek-list ul li {
+    list-style-type: none;
+    background-image: url(img/list-button.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    padding: 7px 0 17px 35px;
+}
+.ajanlo p{
+	font-size: 28px;
+	font-weight: 500;
+	text-align: justify;
+	max-width: 833px;
+	margin: 20px auto;
+}
+
+.velemenyek{
+	background: linear-gradient(27deg, #0079AA, #C8EFFF);
+	padding: 40px 10px;
+}
+.velemenyek > div{
+	max-width: 1024px;
+    margin: 0 auto;
+    padding: 90px 0 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+.velemenyek > div > div{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+	margin: 0 0 100px;
+}
+.velemenyek cite {
+    width: 40%;
+    font-family: 'Noto Serif Display';
+    font-size: 34px;
+    border-right: 1px solid #ffffff4f;
+}
+.velemenyek div div div{
+	width: 50%;
+	position: relative;
+}
+.velemenyek .aposztrof{
+	font-size: 130px;
+    font-weight: 700;
+    color: #0F2846;
+    font-family: 'Noto Serif Display';
+    position: absolute;
+    top: -85px;
+    font-style: normal;
+}
+.velemenyek p {
+    z-index: 100;
+    position: relative;
+	font-size: 16px;
+	font-style: italic;
+}
+.velemenyek h3{
+	font-size: 32px;
+	font-weight: 700;
+	color:white;
+	text-align: center;
+}
+.garancia{
+	padding: 40px 10px;
+}
+.garancia div{
+	max-width: 920px;
+	margin: 0 auto;
+}
+.garancia h3{
+	font-size: 36px;
+	font-weight: 700;
+	margin: 0;
+	text-align: center;
+}
+.garancia p{
+	font-size: 26px;
+	font-style: italic;
+	line-height: 36px;
+	text-align: center;
+}
+.form-headline {
+    padding: 40px 10px;
+    background: linear-gradient(27deg, #0079AA, #C8EFFF);
+    text-align: center;
+    color: white;
+}
+.form-headline h3{
+	font-size: 64px;
+	font-weight: 700;
+	margin: 0;
+	text-align: center;
+}
+.form-headline img{
+	max-width: 250px;	
+}
+
+#kosar{
+	background: #EDFAFF;
+	padding:50px 0;
+}
+#kosar > div{
+	max-width: 1700px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+#kosar .termek{
+	width: 23%;
+	background: #D9F4FF;
+	border-radius: 25px;
+	padding: 10px;
+	box-sizing: border-box;
+	position: relative;
+}
+.akcio {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 210px;
+    text-align: center;
+    color: #FF3D6E;
+    background: #FFF1F6;
+    border-radius: 50px;
+    padding: 3px 13px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#kosar .termek h3{
+	font-size: 40px;
+	font-weight: 500;
+	margin: 0 0 10px;
+}
+#kosar .termek p{
+	font-size: 15px;
+	color:#616161;
+	min-height: 150px;
+}
+#kosar img{
+	max-height: 277px;
+	margin: 20px auto;
+	display: block;
+}
+#kosar .liter{
+	width: 75px;
+    text-align: center;
+    color: #FF3D6E;
+    background: #FFF1F6;
+    border-radius: 50px;
+    padding: 3px 13px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#kosar .termek-ar {
+    font-size: 32px;
+    font-family: 'Noto Serif Display';
+	line-height: 1;
+    margin: 0 0 10px;
+}
+.kosar-gombok{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.kosar-gombok > div{
+	width:45%;
+}
+
+
+
+#kosar{
+	padding: 40px 0 80px;
+}
+#kosar .termekek{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 100px auto 20px;
+	text-align: center;
+}
+#kosar .termek-nev{
+	font-size: 20px;
+	font-weight: 600;
+}
+#kosar .termek-leiras {
+    font-size: 16px;
+}
+#kosar .termek label{
+    display: inline-block;
+    max-width: 114px;
+	transition: 150ms ease-in-out;
+	background: linear-gradient(27deg, #18A8E1, #A1E0F8);
+    text-decoration: none;
+    padding: 18px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border-radius: 15px;
+	box-shadow: 0 33px 35px -22px rgb(0 183 255 / 40%);
+	cursor:pointer;
+	
+}
+#kosar .termek span {
+    margin: 0 auto;
+}
+
+.rendeles{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.rendeles h3, .rendeles p{
+	text-align: center;
+	margin: 0;
+}
+.rendeles .form{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top:30px;
+}
+.rendeles .form > div{
+	width: 45%;
+}
+.kosar-termek{
+	display: flex;
+    align-items: center;
+	margin: 20px 0;
+}
+.kosar-termek img {
+    max-height: 120px;
+    margin-right: 20px;
+}
+.kosar h4{
+	margin: 5px 0;
+}
+.kosar .osszeg {
+    border-top: 1px solid;
+    text-align: right;
+	margin-top: 20px;
+}
+.kosar #totalAmount {
+    font-size: 26px;
+    font-weight: 600;
+}
+input#myCheck {
+    height: 20px;
+    width: 20px;
+    transform: translateY(3px);
+}
+.form{
+	background: radial-gradient(at 50% 50%, #C0EDFF 0%, #EDFAFF 60%);
+	padding: 40px 10px;
+}
+.form h3{
+	font-size: 64px;
+	margin: 40px auto;
+	text-align: center;
+	color: #0F2846;
+}
+.form h5{
+	font-size: 20px;
+	margin: 10px auto;
+	text-align: center;
+	color: #0F2846;
+}
+.form > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+.form > div > div,
+.form form{
+	width: 44%;
+}
+
+
+.rendeles-form{
+	padding: 40px;
+	box-sizing: border-box;
+}
+form input[type="text"],
+form input[type="email"],
+form select{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    border: 0;
+	border-bottom: 1px solid rgba(15, 40, 70, 0.3);
+    font-size: 18px;
+	background: transparent;
+	color: #0F2846;
+}
+form input[type="text"]:focus-visible,
+form input[type="email"]:focus-visible,
+form select:focus-visible{
+	outline: none;
+    border-bottom: 1px solid rgba(15, 40, 70, 1);
+}
+input:-webkit-autofill {
+    background-color: transparent !important;
+    color: #0F2846 !important;
+}
+.rendeles-form label {
+	font-size: 16px;
+	text-transform: uppercase;
+    display: inline-block;
+    color: #0F2846;
+}
+form button {
+    background: linear-gradient(27deg, #18A8E1, #A1E0F8);
+    text-decoration: none;
+    padding: 18px 30px;
+    margin: 20px auto;
+    display: block;
+    max-width: 290px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+	border:0;
+    border-radius: 15px;
+	box-shadow: 0 33px 35px -22px rgb(0 183 255 / 40%);
+	cursor:pointer;
+}
+form button:hover {
+	cursor: pointer;
+}
+
+@media (max-width:500px){
+body {
+    font-size: 16px;
+}
+.hero1 h3 {
+    font-size: 25px;
+}
+.hero1 p {
+	font-size: 18px;
+    line-height: 25px;
+}
+.hero1 h4{
+	font-size: 22px; 
+}
+.negativum h5 {
+    font-size: 22px;
+}
+.negativum div div div {
+    width: 45%;
+}
+.negativum div div div p {
+    font-size: 14px;
+}
+.hero2 p {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+}
+.about img {
+    width: 60%;
+    margin: 0 auto 20px;
+}
+.about > div > div {
+    width: 100%;
+}
+.velemenyek {
+    background: linear-gradient(84deg, #0079AA, #C8EFFF);
+}
+.velemenyek h3{
+    font-size: 25px;
+}
+.velemenyek > div {
+    padding: 10px;
+}
+.velemenyek > div > div {
+    width: 100%;
+	margin: 0px 0 50px;
+}
+.velemenyek cite {
+    width: 100%;
+    font-size: 28px;
+    border-right: 0;
+	border-bottom: 1px solid #ffffff4f;
+    padding-bottom: 10px;
+	margin-bottom: 60px;
+}
+.velemenyek div div div {
+    width: 100%;
+}
+.garancia h3 {
+    font-size: 28px;
+}
+.garancia p {
+    font-size: 18px;
+    line-height: 28px;
+}
+.ajanlo .termek {
+	width: 100%;
+	margin: 0 0 20px;
+}
+.ajanlo img {
+    width: 22%;
+}
+.ajanlo p {
+    font-size: 22px;
+    padding: 0 20px;
+}
+.form-headline h3 {
+    font-size: 32px;
+}
+#kosar .termek {
+    width: 95%;
+    margin: 0 0 20px;
+}
+#kosar img {
+    max-height: 230px;
+}
+.form {
+    padding: 0 10px 40px;
+    margin-top: -50px;
+}
+.form h3 {
+    font-size: 40px;
+}
+.form div div,
+.form form{
+	width: 95%;
+}
+.form h4 {
+    font-size: 32px;
+}
+.form img {
+    width: 50%;
+}
+.form > div > div > div div {
+    width: 100%;
+}
+.rendeles-form {
+    padding: 0;
+}
+}

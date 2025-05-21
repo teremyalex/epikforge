@@ -1,0 +1,836 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+	color: #030303;
+}
+#succes-cart{
+	position: fixed;
+	top:-120px;
+	right: calc(50% - 142px);
+	background: black;
+	color:white;
+	border-radius: 20px;
+	padding: 20px 18px;
+	z-index: 111;
+	transition: 300ms ease-in-out;
+}
+#succes-cart.active{
+	top:10px;
+}
+#alert-cart{
+	position: fixed;
+	top: -120px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	background: linear-gradient(62deg, #921b1b, #dc4242);
+	color: white;
+	border-radius: 20px;
+	padding: 20px 18px;
+	box-sizing: border-box;
+	z-index: 1;
+	box-shadow: 0 0 43px 0 rgb(99, 16, 16);
+	transition: 300ms ease-in-out;
+}
+#alert-cart.active{
+	top:10px;
+}
+.hero1{
+	padding: 70px 10px;
+}
+.hero1 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.hero1 h1{
+	font-size: 64px;
+	margin: 0 0 20px;
+	line-height: 62px;
+}
+.hero1 h3{
+	font-size: 32px;
+	margin: 0 0 20px;
+}
+.hero1 .header{
+	margin: 0 auto 100px;
+}
+.hero1 .header p,
+.hero1 .header ul{
+	color: #7B7B7B;
+	margin: 0 0 20px;
+}
+.hero1 .header > div{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+.hero1 .header > div div{
+	width: 50%;
+	margin: 50px 0 0;
+	padding: 0 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+.hero1 .header > div > img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.cta{
+	display: inline-block;
+    background: linear-gradient(27deg, #FB8B02, #FBDA04);
+	color: #030303;
+    padding: 18px 30px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.hero1 h4 {
+    font-size: 36px;
+    margin: 0 auto 30px;
+}
+.hero2{
+	background: url("img/hero2-bg.jpg") center no-repeat;
+	background-size: cover;
+	padding: 230px 10px;
+	box-sizing: border-box;
+	min-height: 1281px;
+}
+.hero2 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.hero2 h3{
+	font-size: 64px;
+	margin: 0 0 20px;
+	line-height: 62px;
+}
+.hero2 p{
+	margin: 0 0 20px;
+}
+.hero2 > div > div{
+	width: 50%;
+}
+.hero2 img{
+	width: 50%;
+	max-width: 390px;
+	margin: 0 auto;
+}
+.hero3{
+	background: url("img/hero3-bg.jpg") center no-repeat;
+	background-size: cover;
+	padding: 230px 10px;
+	box-sizing: border-box;
+	min-height: 1281px;
+}
+.hero3 > div{
+	max-width: 1024px;
+	margin: 0 auto 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.hero3 .header{
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+.hero3 h3{
+	font-size: 64px;
+	margin: 0 0 20px;
+	line-height: 62px;
+}
+.hero3 .ervek{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.hero3 .ervek > div{
+	width: 32%;
+	text-align: center;
+}
+.hero3 .ervek img{
+	width: 100%;
+	max-width: 95px;
+}
+.hero3 .ervek h4{
+	font-size: 26px;
+	margin: 0 0 10px;
+}
+.hero3 .ervek p{
+	margin:0;
+}
+.hero4{
+	background: url("img/hero4-bg.jpg") center no-repeat;
+	background-size: cover;
+	padding: 130px 10px;
+	box-sizing: border-box;
+	min-height: 829px;
+}
+.hero4 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.hero4 h3{
+	font-size: 64px;
+	margin: 0 0 20px;
+	line-height: 62px;
+}
+.hero4 p{
+	margin: 0 0 20px;
+}
+.hero4 > div > div{
+	width: 50%;
+}
+.hero4 img{
+	width: 190px;
+	margin: 0 0 20px;
+}
+.velemenyek{
+	padding: 50px 0;
+	box-sizing: border-box;
+}
+.velemenyek h3{
+	margin: 0 auto;
+	font-size: 64px;
+	text-align: center;
+}
+.velemenyek > div{
+	max-width: 1024px;
+	margin: 70px auto 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.velemenyek > div > div{
+	width:50%;
+	position: relative;
+	margin: 0 0 40px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.velemenyek p {
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 300;
+	text-align: justify;
+}
+.csillag{
+	display: block;
+	margin: 0 auto;
+}
+cite{
+	display: block;
+	font-weight: 700;
+	text-align: center;
+	font-style: normal;
+}
+.aposztrof1 {
+	font-family: 'Agbalumo';
+	font-size: 250px;
+	position: absolute;
+	left: 0;
+	top: -70px;
+	color: #FDF3D1;
+	z-index: -1;
+}
+.aposztrof2 {
+	font-family: 'Agbalumo';
+	font-size: 250px;
+	position: absolute;
+	right: 0;
+	bottom: -100px;
+	color: #FDF3D1;
+	z-index: -1;
+}
+.hero5{
+	padding: 50px 10px;
+}
+.hero5 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.hero5 h3{
+	font-size: 32px;
+	margin: 0 0 20px;
+}
+.hero5 p,
+.hero5 ul{
+	font-size: 16px;
+	margin: 0 0 20px;
+}
+.hero5 > div > div{
+	width: 50%;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.hero5 img{
+	width: 50%;
+	margin: 0 auto;
+}
+.termekek{
+	background: linear-gradient(transparent 0%, #FEDEB7 50%, transparent 100%);
+	padding: 70px 10px;
+}
+.termekek > div{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.termekek h3{
+	max-width: 800px;
+	margin: 0 auto;
+	font-size: 64px;
+	line-height: 62px;
+	text-align: center;
+}
+.termekek h4{
+	max-width: 1024px;
+	margin: 0 auto;
+	font-size: 40px;
+	text-align: center;
+}
+.termekek > div > div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	margin:50px 0;
+}
+.termek{
+	width:31%;
+	background: white;
+	border-radius: 30px;
+	box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.1);
+	padding: 30px;
+	box-sizing: border-box;
+	margin: 0 0 30px;
+}
+.termek-kep {
+    display: block;
+	width: 100%;
+	margin: 0 0 25px;
+}
+.termek-kep.klimatisztito{
+	display: block;
+	width: auto;
+	max-height: 138px;
+	margin: 0 auto 10px;
+}
+.termek-cat{
+	background: linear-gradient(90deg, #FB8B02, #FBDA04);
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 50px;
+	padding: 2px 10px;
+	margin: 0 0 10px;
+}
+.termek-nev{
+	font-size: 24px;
+	font-weight: 700;
+}
+.termek-ar{
+	font-size: 48px;
+	font-weight: 700;
+	margin: 0 0 10px;
+}
+.termek ul{
+	padding: 0;
+	margin: 0 0 40px;
+	list-style: none;
+	font-size: 20px;
+}
+.termek-split{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 0 20px;
+}
+.termek-split h5{
+	width: 60%;
+	font-size: 20px;
+	margin: 0;
+}
+.termek-split .termek-qty{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(27deg, #FB8B02, #FBDA04);
+	width: 40%;
+	border-radius: 10px;
+}
+.termek-split .termek-qty button{
+	width: 40%;
+	text-align: center;
+	color: #030303;
+	border: none;
+	background: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 32px;
+	font-weight: 300;
+	padding: 0;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+.termek-split .termek-qty input {
+	width: 15%;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	background: none;
+	border: none;
+	padding: 0;
+	outline: 0;
+}
+.termek-szereles h5{
+	font-size: 20px;
+	margin: 0;
+}
+.termek-szereles h5 span{
+	font-size: 12px;
+}
+.termek-szereles p{
+	font-size: 14px;
+	margin: 0 0 10px;
+}
+.termek-szereles h6{
+	font-size: 14px;
+	margin: 0 0 5px;
+}
+.termek-szereles-mennyiseg{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 0 0 20px;
+}
+.szereles-qty{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.szereles-qty-title{
+	font-size: 14px;
+}
+.szereles-qty-input{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(27deg, #FB8B02, #FBDA04);
+	width: 100px;
+	height: 40px;
+	border-radius: 10px;
+}
+.szereles-qty-input button{
+	width: 40%;
+	text-align: center;
+	color: #030303;
+	border: none;
+	background: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 26px;
+	font-weight: 300;
+	padding: 0;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+.szereles-qty-input input {
+	width: 15%;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	background: none;
+	border: none;
+	padding: 0;
+	outline: 0;
+}
+.termek-szereles-ar{
+	font-size: 26px;
+	font-weight: 700;
+	text-align: right;
+	margin: 0 0 20px;
+}
+.kosar-gomb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(27deg, #FB8B02, #FBDA04);
+	width: 180px;
+	color: #030303;
+	padding: 18px 0;
+	margin: 0 auto;
+	border: none;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Quicksand';
+	border-radius: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+.kosar-gomb img{
+	width: 20px;
+	margin: 0 5px 0 0;
+}
+
+#form{
+	transition: 500ms ease-in-out;
+}
+.form {
+	padding: 0 10px 50px;
+	box-sizing: border-box;
+}
+.form h3{
+	font-size: 64px;
+	font-weight: 700;
+	margin: 0 auto 10px;
+	text-align: center;
+}
+.form > p{
+	text-align: center;
+	max-width: 640px;
+	margin: 0 auto 100px;
+	font-size: 16px;
+}
+.form > div{
+	max-width: 1024px;
+	margin: 30px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+.form > div > div,
+.form form{
+	width: 46%;
+}
+.rendeles{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.rendeles h3, .rendeles > p{
+	text-align: center;
+	margin: 0;
+}
+.rendeles .form{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top:30px;
+}
+.rendeles .form > div{
+	width: 45%;
+}
+.emptyCart {
+	text-align: center;
+	font-size: 32px;
+	margin: 30px 0 0;
+}
+.emptyCart img {
+	width: 50px;
+}
+.kosar-termek {
+	background: linear-gradient(27deg, #FB8B02, #FBDA04);
+	border-radius: 30px;
+	padding: 20px;
+	margin: 0 0 100px;
+	box-sizing: border-box;
+	color: white;
+	position: relative;
+	box-shadow: 0 22px 43px -7px rgb(221 137 0 / 70%);
+	transition: 300ms ease-in-out;
+}
+.kosar-termek:last-child{
+	margin: 0 0 30px;
+}
+.kosar-termek.remove{
+	transform: translateX(-100px);
+	opacity: 0;
+}
+.kosar-termek .kosar-termekkep{
+	margin: -90px 0 20px;
+}
+.kosar-termek .kosar-termekkep img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.kosar-termeknev {
+	font-weight: 600;
+	font-size: 32px;
+	margin: 0;
+}
+.kosar-termek input[type="text"] {
+	width: 42px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	border: 0;
+	outline:0;
+	font-size: 20px;
+	background: transparent;
+	color: #fbb403;
+	text-align: center;
+	font-weight: 600;
+	font-family: 'Quicksand';
+}
+.kosar-termekar {
+	font-size: 20px;
+	margin: 0 0 15px;
+}
+.kosar-szereles-csomag {
+	font-weight: 600;
+}
+.x-button img{
+	display: block;
+	filter:invert(1);
+}
+.x-button {
+	background: transparent;
+	border: 0;
+	padding: 0;
+	width: 20px;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	cursor: pointer;
+}
+.kosar .osszeg {
+	text-align: right;
+	margin: 0 0 30px;
+	padding-top: 10px;
+}
+.kosar .osszeg span{
+	font-weight: 600;
+	font-size: 30px;
+}
+.kosar #sum {
+	font-size: 26px;
+	font-weight: 600;
+}
+input#myCheck {
+	height: 20px;
+	width: 20px;
+	transform: translateY(3px);
+	margin: 0 0 20px;
+}
+.kosar-promo h4{
+	text-align: center;
+	font-size: 32px;
+	margin: 0 0 10px;
+}
+.kosar-promo img{
+	max-width: 135px;
+	display: block;
+	margin: 0 auto;
+}
+
+.rendeles-form{
+	padding: 20px;
+	box-sizing: border-box;
+}
+#theForm input[type="text"],
+#theForm input[type="email"]{
+	width: 100%;
+	padding: 10px 10px 0 10px;
+	box-sizing: border-box;
+	margin: 0 0 20px;
+	border: 0;
+	border-bottom: 1px solid rgb(49 70 15 / 30%);
+	font-size: 18px;
+	background: transparent;
+}
+#theForm input[type="text"]:focus-visible,
+#theForm input[type="email"]:focus-visible,
+#theForm select:focus-visible{
+	outline: none;
+}
+.rendeles-form label {
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.iranyitoszam{
+	width:37%;
+	display: inline-block;
+}
+.varos{
+	width:60%;
+	display: inline-block;
+}
+.radio-label{
+	margin: 20px 0;
+}
+.radio-label label:has(> input:checked) {
+	background: linear-gradient(27deg, #FB8B02, #FBDA04);
+	color: white;
+	border: 2px solid rgba(15, 40, 70, 0.3);
+}
+.radio-label label {
+	padding: 10px;
+	margin: 10px auto;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 2px solid;
+	text-align: center;
+	cursor: pointer;
+	transition: 150ms ease-in-out;
+}
+.radio-label input{
+	display: none;
+}
+.radio-label .szallitasi-koltseg{
+	font-size: 12px;
+}
+.rendeles-gomb {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(27deg, #FB8B02, #FBDA04);
+	width: 180px;
+	color: #030303;
+	padding: 18px 0;
+	margin: 0 auto;
+	border: none;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Quicksand';
+	border-radius: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+@media (max-width:500px){
+.hero1 {
+    padding: 40px 10px;
+}
+.hero1 .header > div div {
+    width: 100%;
+	padding: 0;
+}
+.hero1 .header > div > img {
+	width: 100%;
+}
+.header > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.hero2 {
+	background: linear-gradient(rgb(251 156 2 / 80%), rgb(251 156 2 / 80%)), url(img/hero2-bg.jpg) 36% no-repeat;
+	background-size: cover;
+	padding: 100px 10px;
+	min-height: 800px;
+}
+.hero2 > div {
+	flex-direction: column-reverse;
+}
+.hero2 > div > div {
+	width: 100%;
+}
+.hero2 h3 span,
+.hero3 h3 span{
+	color: #030303 !important;
+}
+.hero2 img {
+	width: 30%;
+	margin: 0 auto 30px;
+}
+.hero3 {
+	background: linear-gradient(rgb(251 156 2 / 80%), rgb(251 156 2 / 80%)), url(img/hero3-bg.jpg) 40% no-repeat;
+	background-size: cover;
+	padding: 100px 10px;
+	min-height: 800px;
+}
+.hero3 > div > div {
+    width: 100%;
+}
+.hero3 .ervek > div {
+	width: 100%;
+	margin: 0 0 20px;
+}
+.hero3 .ervek img {
+	filter: brightness(0);
+}
+.hero4 {
+	background: url(img/hero4-bg.jpg) 62% no-repeat;
+	background-size: cover;
+}
+.hero4 > div > div {
+	width: 100%;
+}
+.hero5 > div {
+	flex-direction: column-reverse;
+}
+.hero5 > div > div {
+	width: 100%;
+}
+.hero5 img {
+	width: 100%;
+	margin: 0 0 20px;
+}
+.termek {
+    width: 100%;
+    margin: 0 0 40px;
+}
+.termekek h4 {
+    font-size: 30px;
+}
+.termekek > div > div {
+    margin: 50px 0 0;
+}
+.hero1 h1,
+.hero2 h3,
+.hero3 h3,
+.hero4 h3,
+.termekek h3,
+.velemenyek h3,
+.form h3{
+    font-size: 35px;
+	line-height: normal;
+}
+.hero1 h3{
+	font-size: 22px;
+}
+.hero1 h4 {
+    font-size: 24px;
+}
+.velemenyek > div > div {
+    width: 100%;
+}
+.kosar-termek img {
+	max-height: 110px;
+	margin: -55px 0 0 0;
+}
+.form > div > div, .form form {
+	width: 100%;
+}
+.rendeles-form {
+	padding: 10px;
+}
+.rendeles-form label {
+	font-size: 13px;
+}
+form button {
+	width: 100%;
+	font-size: 16px;
+}
+}

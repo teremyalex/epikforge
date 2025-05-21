@@ -1,0 +1,605 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MaxWash</title>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+	<!-- Meta Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+				n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+			n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t,s)}(window, document,'script',
+				'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '439811432306684');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+				   src="https://www.facebook.com/tr?id=439811432306684&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+
+<!-- Kosár popup -->
+<div id="succes-cart">A termék kosárba rakva.</div>
+<!-- Alert popup -->
+<div id="alert-cart"></div>
+
+<section class="header">
+	<div class="mososzerek">
+		<img src="img/maxwhite.png">
+		<img src="img/orchidea.png">
+	</div>
+	<div class="content">
+		<div>
+			<h2><div>Tiszta</div><div>Frissesség</div><div>Minden&nbsp;Napra</div></h2>
+			<p>Ismerd meg a kiváló minőségű MaxWash mosószerek világát! Öt speciális mosószer minden ruha és igény számára. A hatékony tisztítás most otthon kezdődik.</p>
+			<a class="cta" href="#kosar">Érdekel</a>
+		</div>
+		<img class="header-girl" src="img/header-girl.png">
+	</div>
+</section>
+
+<section class="hero1">
+	<div>
+		<div class="hero1-img">
+			<img src="img/color.png"/>
+			<img src="img/blue.png"/>
+			<img src="img/orchidea.png"/>
+			<img src="img/sense.png"/>
+			<img src="img/maxwhite.png"/>
+		</div>
+		<div>
+			<h3>Válassz a MaxWash folyékony mosószerek közül!</h3>
+			<p>Ötféle, családi kiszerelésű (3,3 L) mosószer, amelyek tökéletesen tisztítanak és friss illatot hagynak a ruhákon – minden napra, minden ruhatípusra. Termékeink tisztító hatása megegyezik a jól ismert multinacionális márkákéval, árban viszont csak a töredékükbe kerülnek.</p>
+			<a class="cta" style="color: #1A67AF;" href="#kosar">Érdekel</a>
+		</div>
+	</div>
+</section>
+
+<section class="hero2" id="kosar">
+	<div>
+		<h3>MaxWash mosószerek 3,3L</h3>
+		<p>Mindegyik MaxWash változat megbízható tisztítóerővel, gazdaságos kiszerelésben. Egyszerű választás egy tisztább otthonért. Minimum 3 db terméket kell választanod egy rendeléshez, ami lehet három egyforma is!</p>
+		<div class="termekek">
+			<div class="termekek">
+
+				<div class="termek">
+					<div class="termek-kep">
+						<img src="img/color.png">
+					</div>
+					<div class="tag">Színes ruhákhoz</div>
+					<div class="termek-nev">MaxWash</div>
+					<div class="termek-alnev">Color</div>
+					<div class="termek-leiras">Folyékony mosószer színes ruhákhoz meleg, lágy illattal.</div>
+					<div class="termek-gomb">
+						<div class="termek-ar">2 690 Ft</div>
+						<button class="kosar-gomb" onclick="addToCart(314, 'MaxWash Color', 2690, 'color.png')">Kosárba</button>
+					</div>
+				</div>
+
+				<div class="termek">
+					<div class="termek-kep">
+						<img src="img/blue.png">
+					</div>
+					<div class="tag">Színes és fehér ruhákhoz</div>
+					<div class="termek-nev">MaxWash</div>
+					<div class="termek-alnev">Blue</div>
+					<div class="termek-leiras">Folyékony mosószer színes és fehér ruhákhoz friss, tavaszi illattal.</div>
+					<div class="termek-gomb">
+						<div class="termek-ar">2 690 Ft</div>
+						<button class="kosar-gomb" onclick="addToCart(315, 'MaxWash Blue', 2690, 'blue.png')">Kosárba</button>
+					</div>
+				</div>
+
+				<div class="termek">
+					<div class="termek-kep">
+						<img src="img/orchidea.png">
+					</div>
+					<div class="tag">Elegáns illat</div>
+					<div class="termek-nev">MaxWash</div>
+					<div class="termek-alnev">Gold Orchid</div>
+					<div class="termek-leiras">Folyékony mosószer színes és fehér ruhákhoz orchideás, gyümölcsös illattal.</div>
+					<div class="termek-gomb">
+						<div class="termek-ar">2 990 Ft</div>
+						<button class="kosar-gomb" onclick="addToCart(316, 'MaxWash Gold Orchid', 2990, 'orchidea.png')">Kosárba</button>
+					</div>
+				</div>
+
+				<div class="termek">
+					<div class="termek-kep">
+						<img src="img/sense.png">
+					</div>
+					<div class="tag">Érzékeny bőrre</div>
+					<div class="termek-nev">MaxWash</div>
+					<div class="termek-alnev">Sensitive</div>
+					<div class="termek-leiras">Folyékony mosószer érzékeny bőrűeknek. kisgyermekek érzékeny bőréhez is tökéletes. Színezék- és illatmentes.</div>
+					<div class="termek-gomb">
+						<div class="termek-ar">3 890 Ft</div>
+						<button class="kosar-gomb" onclick="addToCart(317, 'MaxWash Sensitive', 3890, 'sense.png')">Kosárba</button>
+					</div>
+				</div>
+
+				<div class="termek">
+					<div class="termek-kep">
+						<img src="img/maxwhite.png">
+					</div>
+					<div class="tag">Fehér ruhákhoz</div>
+					<div class="termek-nev">MaxWash</div>
+					<div class="termek-alnev">Maxwhite</div>
+					<div class="termek-leiras">Folyékony mosószer fehér ruhákhoz. Optikai fehérítőt is tartalmaz.</div>
+					<div class="termek-gomb">
+						<div class="termek-ar">3 890 Ft</div>
+						<button class="kosar-gomb" onclick="addToCart(318, 'MaxWash Maxwhite', 3890, 'maxwhite.png')">Kosárba</button>
+					</div>
+				</div>
+
+			</div>
+		</div>	
+	</div>	
+</section>
+
+<section class="hero3">
+	<div>
+		<img src="img/anyuka.png">
+		<div>
+			<h3>Tiszta, illatos ruha minden napra</h3>
+			<p>Ajándékozd meg magad egy megbízható mosószer csomaggal (minimum 3 mosószer), és kényeztesd a ruháidat is! Legyen szó színes, fehér vagy érzékeny ruhákról, a MaxWash minden mosásban helytáll. Ráadásul gyors és megbízható kiszállítással gondoskodunk arról, hogy kedvenc mosószered mindig kéznél legyen otthon, amikor csak szükséged van rá.</p>
+			<a class="cta" style="color: #1A67AF;" href="#kosar">Érdekel</a>
+		</div>
+	</div>
+</section>
+
+	
+<section id="form" class="form">
+		
+		<h3>Rendelés</h3>
+		<p style="text-align: center;">Válassz a fenti ajánlatok közül legalább 3 mosószert, majd töltsd ki az űrlapot:</p>
+		<div class="rendeles">
+
+			<div class="kosar">
+				<h4>Kosarad tartalma:</h4>
+				<div id="kosarTermekek"></div>
+				<div class="osszeg">Összesen: <span id="totalAmount">0 Ft</span></div>
+				<div class="kosar-promo">Rendeld meg időben, és lepd meg magad természetes frissességgel!</div>
+			</div>
+
+			<div class="rendeles-form">
+				
+				
+				
+				<div id="theForm">
+					<label>NÉV</label>
+					<input type="text" name="name" id="name" required>
+					<label>E-MAIL</label>
+					<input type="text" name="email" id="email" required="">
+					<label>TELEFON</label>
+					<input type="text" name="phone" id="phone" required="">
+                    <label style="display: block; margin: 20px 0 10px; font-weight: 600;">Számlázási cím (Kizárólag Magyarországra)</label>
+					<div class="iranyitoszam">
+						<label>ÍRÁNYÍTÓSZÁM</label>
+						<input type="text" name="billing_zip" id="billing_zip" required="">
+					</div>
+					<div class="varos">
+						<label>VÁROS</label>
+						<input type="text" name="billing_city" id="billing_city" required="">
+					</div>
+					<label>CÍM</label>
+					<input type="text" name="billing_address" id="billing_address" required="">
+                   
+				
+                    <input type="checkbox" id="shippingCheck" onclick="shippingCheck()">
+					<label>Másik címre kérem a szállítást</label> 
+
+					<div id="shippingInputs" style="display: none; margin-top:20px;">
+						<label style="display: block; margin: 20px 0 10px; font-weight: 600;">Szállítási cím (Kizárólag Magyarországra)</label>
+
+						<div class="iranyitoszam">
+							<label>ÍRÁNYÍTÓSZÁM</label>
+                            <input type="text" name="shipping_zip" id="shipping_zip">
+						</div>
+						<div class="varos">
+							<label>VÁROS</label>
+							<input type="text" name="shipping_city" id="shipping_city">
+						</div>
+                        <label>CÍM</label>
+						<input type="text" name="shipping_address" id="shipping_address">
+					</div>
+					<div>
+						<label>MEGJEGYZÉS</label>
+						<input type="text" name="message" id="message">
+					</div>
+                    <div class="radio-label">  
+						<label onclick="updateTotalAmount()">
+							<input type="radio" name="radio-payment" value="1" data-price="0" />
+							<span>Utánvétel</span><!--<br><span class="szallitasi-koltseg">+1000 Ft</span>-->
+						</label>
+						<label onclick="updateTotalAmount()">
+							<input type="radio" name="radio-payment" value="2" />
+							<span>Banki átutalás</span>
+						</label>
+						<label onclick="updateTotalAmount()">
+							<input type="radio" name="radio-payment" value="3" />
+							<span>Bankkártya</span>
+						</label>
+					</div> 
+					<div class="radio-label"> 
+						<label onclick="updateTotalAmount()">
+							<input type="radio" name="radio-shipping" value="Hazhozszallitas" data-price="990" />
+							<span>GLS, DPD</br>Házhozszállítás</span><br><span class="szallitasi-koltseg">+990 Ft</span>
+						</label>
+						<!--<label onclick="updateTotalAmount()">
+							<input type="radio" name="radio-shipping" value="GLS" data-price="1490" />
+							<span>GLS</span><br><span class="szallitasi-koltseg">+1490 Ft</span>
+						</label>
+						<label onclick="updateTotalAmount()">
+							<input type="radio" name="radio-shipping" value="FOXPOST" data-price="0" />
+							<span>Foxpost</span><br><span class="szallitasi-koltseg">+1290 Ft</span>
+						</label>-->
+                    </div> 
+					<iframe frameborder="0" loading="lazy" src="https://cdn.foxpost.hu/apt-finder/v1/app/" width="100%" height="600px" id="foxpost" style="display:none;"></iframe>
+					<input type="hidden" name="data[fp_automata]" id="foxpostData">
+				
+                   
+                    <p style="color:white; font-size: 12px; text-align: left;">A megrendelés elküldésével elfogadom az <a style="color:white;" href="" target="_blank">ÁSZF</a> és az <a style="color:white;" href="https://maxwash.hu/adatavedelmi-tajekoztato/" target="_blank">Adatkezelési tájékoztatóban</a> foglaltakat.</p>
+                    <button class="rendeles-gomb" type="button" onclick="postData()">Megrendelés elküldése</button>
+				</div>
+			</div>
+
+
+	</div>
+
+	<div class="partner">
+		<h4>Viszonteladó partnereket keresünk!</h4>
+		<p>Ha szívesen forgalmaznád a MaxWash termékeket, írj nekünk a <a style="color: #1A67AF; font-weight: 700;" href="mailto:kftequestrian@gmail.com">kftequestrian@gmail.com</a> címre, és termékmintákat is küldünk számodra!</p>
+	</div>
+</section>
+	
+</body>
+
+<script>
+	//ANIMATION
+	if (window.innerWidth > 1200) {
+		window.addEventListener('scroll', () => {
+			document.querySelector('.header').style.backgroundPositionY = `${(Math.abs(document.querySelector('.header').offsetTop - scrollY) / 2)}px`
+			document.querySelector('.header .content').style.transform = `translateY(${(document.querySelector('.header').offsetTop - scrollY) / -6}px)`
+		})
+	}
+	//HEADER
+	document.querySelectorAll('h1, .header h2 div, .form h3').forEach(element => {
+		const letters = element.textContent.split("")
+		element.textContent = ""
+		letters.forEach(letter => {
+			const newSpan = document.createElement("span")
+			newSpan.innerText = letter
+			element.appendChild(newSpan)
+		})
+	})
+	document.querySelectorAll('.header p, .hero1 h3, .hero1 p, .hero2 h3, .hero2 p, .hero3 h3, .hero3 p, .form > p, .kosar-promo').forEach(element => {
+		const words = element.textContent.split(" ")
+		element.textContent = ""
+		words.forEach(word => {
+			const newSpan = document.createElement("span")
+			const newDiv = document.createElement("div")
+			newSpan.innerText = word + " "
+			newDiv.appendChild(newSpan)
+			element.appendChild(newDiv)
+		})
+	})
+
+	const headerAnim = new IntersectionObserver(entries => {
+		entries.forEach((entry, index) =>{
+			if(entry.isIntersecting) setTimeout(()=>entry.target.classList.add('visible'), 25*index)
+		})
+	})
+	const headerMososzerImg = new IntersectionObserver(entries => {
+		entries.forEach((entry, index) =>{
+			if(entry.isIntersecting) setTimeout(()=>entry.target.classList.add('visible'), 250*index)
+		})
+	})
+	headerAnim.observe(document.querySelector('.header .header-girl'))
+	setTimeout(()=>document.querySelectorAll('.header .mososzerek img').forEach(item => headerMososzerImg.observe(item)), 800)
+	document.querySelectorAll('.header h2 span, .header p span, .header .cta').forEach(item => headerAnim.observe(item))
+	document.querySelectorAll('.hero3 > div img, .hero3 h3 span, .hero3 p span, .hero3 .cta').forEach(item => headerAnim.observe(item))
+	document.querySelectorAll('.form h3 span, .form > p span, .kosar-promo span').forEach(item => headerAnim.observe(item))
+
+	//HERO1
+	const hero1Img = new IntersectionObserver(entries => {
+		entries.forEach((entry, index) =>{
+			if (entry.isIntersecting) {
+				const index = [...document.querySelectorAll('.hero1 .hero1-img img')].indexOf(entry.target);
+				const reverseIndex = 5 - index - 1;
+				setTimeout(() => entry.target.classList.add('visible'), 250 * reverseIndex);
+			}
+		} )
+	}, { threshold: 0.1})
+	const hero1Anim = new IntersectionObserver(entries => {
+		entries.forEach((entry, index) =>{
+			if(entry.isIntersecting) setTimeout(()=>entry.target.classList.add('visible'), 25*index)
+		})
+	})
+	document.querySelectorAll('.hero1 .hero1-img img').forEach(item => hero1Img.observe(item))
+	document.querySelectorAll('.hero1 h3 span, .hero1 p span, .hero1 .cta').forEach(item => hero1Anim.observe(item))
+
+	//HERO2
+	const hero2Anim = new IntersectionObserver(entries => {
+		entries.forEach((entry, index) =>{
+			if(entry.isIntersecting) setTimeout(()=>entry.target.classList.add('visible'), 25*index)
+		})
+	})
+	document.querySelectorAll('.hero2 h3 span, .hero2 p span, .hero2 .termek').forEach(item => hero2Anim.observe(item))
+
+</script>
+	
+<script>
+    var cart = [];
+	var total = 0;
+
+    function addToCart(id, name, price, image) {
+		let cartItem = cart.find(item => item.id === id);
+		if (cartItem) {
+			console.log('Létező termék');
+			cartItem.qty += 1;
+		} else {
+			cart.push({ id, name, price, qty: 1, image });
+		}
+		updateCartDisplay();
+		cartPopup();
+    }
+
+	function cartPopup() {
+		document.getElementById('succes-cart').classList.add('active');
+		setTimeout(function () {
+			document.getElementById('succes-cart').classList.remove('active');
+		}, 3000);
+	}
+
+    function updateCartDisplay() {
+        const cartItemsContainer = document.getElementById("kosarTermekek");
+        cartItemsContainer.innerHTML = "";
+        cart.forEach((item, index) => {
+            const newDiv = document.createElement("div");
+            newDiv.classList.add("kosar-termek");
+            newDiv.innerHTML = `
+                <div class="kosar-termekkep"><img src="img/${item.image}"></div>
+                <div>
+                    <div class="kosar-termeknev">${item.name}</div>
+                    <div class="kosar-termekar">${new Intl.NumberFormat('hu-HU', {useGrouping: true}).format(item.price * item.qty)} Ft</div>
+                    <div class="kosar-mennyiseg">
+                        <button class="minus-btn" type="button" onclick="changeQuantity(${index}, -1)"><img src="img/square-minus-solid.svg"></button>
+                        <input type="text" value="${item.qty}" class="quantity-input" readonly>
+                        <button class="plus-btn" type="button" onclick="changeQuantity(${index}, 1)"><img src="img/square-plus-solid.svg"></button>
+                    </div>
+                </div>
+                <button class="x-button" type="button" onclick="removeFromCart(${index})"><img src="img/circle-xmark-solid.svg"></button>
+            `;
+            cartItemsContainer.appendChild(newDiv);
+        });
+        updateTotalAmount();
+    }
+
+    function changeQuantity(index, change) {
+        if (cart[index].qty + change > 0) {
+            cart[index].qty += change;
+        }
+        updateCartDisplay();
+    }
+
+	function removeFromCart(index) {
+		document.getElementById('kosarTermekek').children[index].classList.add('remove');
+		let height = document.getElementById('kosarTermekek').children[index].clientHeight + 50;
+		setTimeout(() => {
+			for (let i = index+1; i < cart.length; i++) {
+				document.getElementById('kosarTermekek').children[i].style.transform = 'translateY(-' + height + 'px)';
+			}
+		}, 200)
+		setTimeout(() => {
+			cart.splice(index, 1);
+			updateCartDisplay();
+		}, 500)
+	}
+
+	totalCount = 0;
+	function updateTotalAmount() {
+		const totalAmountElement = document.getElementById("totalAmount");
+		const shippingPrice = $('input[name="radio-shipping"]:checked').data('price') || 0;
+		const paymentPrice = $('input[name="radio-payment"]:checked').data('price') || 0;
+		total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+		total += shippingPrice + paymentPrice;
+		if(totalCount != total) {
+			totalCount = 0;
+			let intervalId = setInterval(() => {
+				totalCount += total / 30;
+				totalAmountElement.textContent = `${new Intl.NumberFormat('hu-HU', {useGrouping: true}).format(Math.round(totalCount))} Ft`;
+				if (totalCount >= total) {
+					clearInterval(intervalId);
+					totalCount = total;
+					totalAmountElement.textContent = `${new Intl.NumberFormat('hu-HU', {useGrouping: true}).format(total)} Ft`;
+				}
+			}, 10)
+		}
+		console.log(total);
+	}
+
+    function postData() {
+
+		function alertPopup(message) {
+			document.getElementById('alert-cart').innerHTML = message;
+			document.getElementById('alert-cart').classList.add('active');
+			setTimeout(function () {
+				document.getElementById('alert-cart').classList.remove('active');
+			}, 4000);
+		}
+
+		if (cart.length === 0) {
+			alertPopup('A kosár üres!');
+			return;
+		}
+		let totalQty = 0;
+		cart.forEach(item => totalQty += item.qty)
+		if (totalQty < 3) {
+			alertPopup('Minimum 3 db termék rendelése kötelező! Egyforma is lehet.');
+			return;
+		}
+		for (let i = 0; i < document.querySelectorAll('#theForm input').length; i++) {
+			if (!document.querySelectorAll('#theForm input')[i].reportValidity()) return
+		}
+        if (!document.querySelector('input[name="radio-payment"]:checked')) {
+			alertPopup('Kérlek válassz a fizetési módok közül!');
+            return;
+        }
+        if (!document.querySelector('input[name="radio-shipping"]:checked')) {
+			alertPopup('Kérlek válassz a szállítási módok közül!');
+            return;
+        }
+        if (document.querySelector('input[name="radio-shipping"]:checked').value === 'FOXPOST' && document.getElementById('foxpostData').value === '') {
+			alertPopup('Kérlek válassz ki egy automatát a listából!');
+            return;
+        }
+
+        let product_ids = [];
+        let product_qtys = [];
+        cart.forEach((item) => {
+            product_ids.push(item.id);
+            product_qtys.push(item.qty);
+        });
+
+        if (document.querySelector('input[name="radio-shipping"]:checked').value === 'Hazhozszallitas') {
+            product_ids.push(319);
+            product_qtys.push(1);
+        } else if (document.querySelector('input[name="radio-shipping"]:checked').value === 'GLS') {
+            product_ids.push(242);
+            product_qtys.push(1);
+        } else if (document.querySelector('input[name="radio-shipping"]:checked').value === 'FOXPOST') {
+            product_ids.push(130);
+            product_qtys.push(1);
+        }
+
+        /*if (document.querySelector('input[name="radio-payment"]:checked').value === '1') {
+            product_ids.push(244);
+            product_qtys.push(1);
+        }*/
+
+
+		async function sendData() {
+			let adat =
+					{
+						name: document.getElementById("name").value,
+						email: document.getElementById("email").value,
+						phone: document.getElementById("phone").value,
+						billing_zip: document.getElementById("billing_zip").value,
+						billing_city: document.getElementById("billing_city").value,
+						billing_address: document.getElementById("billing_address").value,
+						shipping_zip: document.getElementById("shipping_zip").value,
+						shipping_city: document.getElementById("shipping_city").value,
+						shipping_address: document.getElementById("shipping_address").value,
+						payment_method_id: document.querySelector('input[name="radio-payment"]:checked').value,
+						product_id: product_ids,
+						product_qty: product_qtys,
+						comment: document.getElementById('message').value,
+						data:
+								{
+									foxpost_automata: document.getElementById('foxpostData').value,
+								},
+						//success_return_url: 'https://rachelcare.hu/koszonjuk.html'
+					};
+
+			try {
+				let response = await fetch('https://epikforge.space/api/site/94eb528f-d784-4af8-9f1d-980560626c89/order/create', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(adat)
+				});
+
+				if (!response.ok) {
+					throw new Error('Hálózati hiba történt: ' + response.status);
+				}
+
+				let data = await response.json();
+				console.log('Sikeres válasz:', data);
+
+				fbq('track', 'Purchase', {
+					value: total,
+					currency: 'HUF',
+				});
+
+				if (data.redirect && typeof data.redirect === 'string') {
+					window.location = data.redirect;
+				}
+				//Sikeres rendelés
+				if(data.success){
+					document.getElementById('form').style.opacity = '0';
+					setTimeout(()=>{
+						while (document.getElementById('form').firstChild) {
+							document.getElementById('form').removeChild(document.getElementById('form').firstChild);
+						}
+						document.getElementById('form').innerHTML = `
+                            <h3>Sikeres rendelés!</h3>
+                            <button class="rendeles-gomb" type="button" onclick="location.reload();">Új rendelés leadása</button>
+                        `;
+						document.getElementById('form').style.height = '500px';
+						document.getElementById('form').style.opacity = '1';
+					}, 500)
+				}
+
+			} catch (error) {
+				console.error('Hiba:', error.message);
+			}
+		}
+
+		sendData();
+    }
+</script>
+	
+<script>
+    function shippingCheck() {
+        if (document.getElementById("shippingCheck").checked == true) {
+			document.getElementById("shippingInputs").style.display = "block";
+        } else {
+			document.getElementById("shippingInputs").style.display = "none";
+        }
+    }
+</script>
+<script>
+    //Foxpost
+    function receiveMessage(event) {
+        if (event.origin !== 'https://cdn.foxpost.hu') { return; }
+        try {
+            var apt = JSON.parse(event.data);
+			console.log(apt);
+            document.getElementById('foxpostData').value = apt.operator_id;
+        } catch (error) {
+            console.error('Hibás üzenet formátum:', error);
+        }
+    }
+
+    window.addEventListener('message', receiveMessage, false);
+
+    document.querySelectorAll('input[name="radio-shipping"]').forEach(function (input) {
+        input.addEventListener('change', function () {
+            if (this.value === 'FOXPOST') {
+                document.getElementById('foxpost').style.display = 'block';
+            } else {
+                document.getElementById('foxpost').style.display = 'none';
+                document.getElementById('foxpostData').value = '';
+            }
+        });
+    });
+</script>
+</html>

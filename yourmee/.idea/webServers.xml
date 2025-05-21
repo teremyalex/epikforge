@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="234f0199-fef3-4083-a3c8-a1c97b681f54" name="Epikforge" url="http://c1.epikforge.com/">
+        <fileTransfer accessType="SFTP" host="c1.epikforge.com" port="22" sshConfigId="2391eac4-c74d-4228-b87f-89525acae49a" sshConfig="forge@c1.epikforge.com:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
