@@ -1,0 +1,693 @@
+body{
+	margin: 0;
+	font-size: 20px;
+	font-family: 'Raleway';
+	font-feature-settings: "lnum" 1;
+	background: #F3F3F3;
+}
+.hero1{
+	padding: 70px 10px;
+}
+.hero1 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.hero1 circle {
+    position: absolute;
+    border-radius: 50%;
+    background: #DBEBEC;
+    width: 313px;
+    height: 313px;
+    z-index: -1;
+    top: 45px;
+    left: -92px;
+}
+.hero1 h3{
+	font-family: 'Playfair Display';
+	font-size: 62px;
+	font-weight: 400;
+	margin: 0;
+	line-height: 70px;
+}
+.hero1 p{
+	color: #7B7B7B;
+	margin: 0;
+}
+.hero1 > div > div{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.hero1 > div > div:first-child{
+	margin: 0 0 80px;
+}
+.hero1 > div > div > div{
+	width: 50%;
+	margin: 50px 0 0;
+	padding: 0 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+.hero1 > div img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.cta{
+	display: inline-block;
+    background: black;
+    padding: 18px 56px;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+.hero2{
+	padding: 40px 10px;
+	position: relative;
+}
+.hero2 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.hero2 > div > div{
+	width: 50%;
+	margin: 50px 0 0;
+	padding: 0 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+.hero2 > div img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.hero2 circle {
+    position: absolute;
+    border-radius: 50%;
+    background: #DBEBEC;
+    width: 700px;
+    height: 700px;
+    z-index: -1;
+    top: 45px;
+    right: 200px;
+}
+.hero2 h3{
+	font-family: 'Playfair Display';
+	font-size: 36px;
+	font-weight: 400;
+	margin: 0 0 20px;
+	line-height: 40px;
+}
+.hero2 ul{
+	font-size: 40px;
+	font-weight: 300;
+}
+.hero2 p{
+	font-size: 16px;
+	color:#7B7B7B;
+}
+.hangoskonyv{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 20px;
+}
+.hangoskonyv h5{
+	font-size: 22px;
+	margin: 0;
+}
+.hangoskonyv p{
+	margin: 0;
+}
+.hangoskonyv img{
+	max-width: 150px;
+	border-radius: 50%;
+	margin: 0 !important;
+}
+
+.timeline h3{
+	font-family: 'Playfair Display';
+	font-size: 36px;
+	font-weight: 400;
+	margin: 0 0 60px;
+	line-height: 40px;
+	text-align: center;
+}
+.timeline .timeline-block{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.timeline-block:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.timeline-block:nth-child(odd) .timeline-page {
+    text-align: right;
+}
+.timeline .timeline-text{
+	width: 40%;
+	background: white;
+	border: 1px solid #D9D9D9;
+	border-radius: 30px;
+	font-style: italic;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.timeline .timeline-block:last-child .timeline-text {
+	padding: 0;
+	overflow: hidden;
+}
+.timeline .timeline-vonal-block{
+	display: flex;
+    justify-content: center;
+	width: 10%;
+	position: relative;
+}
+.timeline .timeline-page{
+	width: 40%;
+	font-size: 16px;
+	color: #5A5A5A;
+}
+.timeline h4{
+	font-size: 20px;
+	font-weight: 600;
+	margin: 0 0 10px;
+}
+.timeline p{
+	font-size: 16px;
+	color: #5A5A5A;
+	margin: 0;
+}
+.timeline .vonal {
+    width: 1px;
+    background: #D9D9D9;
+    position: absolute;
+    z-index: -1;
+    top: -98px;
+    bottom: -100px;
+}
+.timeline .pont {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19px;
+    height: 19px;
+    background: white;
+    border: 1px solid #D9D9D9;
+    border-radius: 50px;
+}
+.timeline .pont div {
+    width: 5px;
+    height: 5px;
+    background: black;
+    border-radius: 50px;
+}
+.timeline img{
+	width: 100%;
+	display: block;
+}
+.hero3{
+	padding: 70px 10px;
+}
+.hero3 > div{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.hero3 circle {
+    position: absolute;
+    border-radius: 50%;
+    background: #DBEBEC;
+    width: 380px;
+    height: 380px;
+    z-index: -1;
+    top: -86px;
+    right: -108px;
+}
+.hero3 h3{
+	font-family: 'Playfair Display';
+	font-size: 62px;
+	font-weight: 400;
+	margin: 0;
+	line-height: 70px;
+	
+}
+.hero3 p{
+	color: #7B7B7B;
+	margin: 0;
+}
+.hero3 > div > div{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.hero3 > div > div > div{
+	width: 50%;
+	margin: 50px 0 0;
+	padding: 0 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+.hero3 > div img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.rendeles{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+
+
+.form > div{
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+.rendeles-form,
+.rendeles-konyv{
+	width: 44%;
+	position: relative;
+}
+.rendeles-konyv img{
+	width: 100%;
+}
+.rendeles-konyv .termek-ar{
+	position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	align-content: center;
+	width: 150px;
+	height: 150px;
+	background: black;
+	font-family: 'Playfair Display';
+	font-size: 18px;
+	text-align: center;
+    color: white;
+    border-radius: 50%;
+	bottom: 0;
+	right: 160px;
+}
+.rendeles-konyv .termek-ar2{
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	width: 150px;
+	height: 150px;
+	background: #DBEBEC;
+	font-family: 'Playfair Display';
+	font-size: 18px;
+	text-align: center;
+	color: black;
+	border-radius: 50%;
+	bottom: 0;
+	right: 0;
+}
+.rendeles-konyv .termek-ar del {
+    font-size: 22px;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form select{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    border: 0;
+	border-bottom: 1px solid rgba(15, 40, 70, 0.3);
+    font-size: 18px;
+	background: transparent;
+	color: #0F2846;
+}
+form input[type="text"]:focus-visible,
+form input[type="email"]:focus-visible,
+form select:focus-visible{
+	outline: none;
+    border-bottom: 1px solid rgba(15, 40, 70, 1);
+}
+input:-webkit-autofill {
+    background-color: transparent !important;
+    color: #0F2846 !important;
+}
+.rendeles-form label {
+	font-size: 16px;
+	text-transform: uppercase;
+    display: inline-block;
+    color: #0F2846;
+}
+.total-sum {
+    font-size: 20px;
+    text-align: right;
+}
+.total-sum span {
+    font-weight: 600;
+    font-size: 24px;
+}
+form button {
+    background: black;
+    text-decoration: none;
+    padding: 18px 30px;
+    margin: 20px auto;
+    display: block;
+    max-width: 290px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+	border:0;
+    border-radius: 15px;
+	cursor:pointer;
+}
+.rendeles{
+	max-width: 1024px;
+	margin: 0 auto;
+	color: #1B2C17;
+}
+.rendeles h3, .rendeles p{
+	text-align: center;
+	margin: 0;
+}
+.rendeles .form{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top:30px;
+}
+.rendeles .form > div{
+	width: 45%;
+}
+.kosar-gomb {
+	width: 100%;
+	background-color: transparent;
+    padding: 15px;
+    margin: 10px auto;
+    font-size: 22px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+    text-align: center;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+.kosar-gomb.active {
+	background: #00d2ff;
+    color: white;
+    border: 2px solid rgba(15, 40, 70, 0.3);
+}
+input#myCheck {
+    height: 20px;
+    width: 20px;
+    transform: translateY(3px);
+}
+.form {
+    padding: 0 20px 100px;
+}
+.form h3{
+	font-family: 'Playfair Display';
+	font-size: 62px;
+	font-weight: 400;
+	margin: 0 auto;
+	line-height: 70px;
+	text-align: center;
+	max-width: 680px;
+}
+.form h5{
+	color: #7B7B7B;
+	text-align: center;
+	font-weight: 400;
+}
+.form > div{
+	max-width: 1024px;
+	margin: 30px auto 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+.form > div > div,
+.form form{
+	width: 46%;
+}
+.rendeles-form{
+	padding: 20px;
+	box-sizing: border-box;
+}
+#theForm input[type="text"],
+#theForm input[type="email"],
+#theForm select{
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    border: 0;
+	border-bottom: 1px solid rgba(15, 40, 70, 0.3);
+    font-size: 18px;
+	background: transparent;
+	color: #0F2846;
+}
+#theForm input[type="text"]:focus-visible,
+#theForm input[type="email"]:focus-visible,
+#theForm select:focus-visible{
+	outline: none;
+    border-bottom: 1px solid rgba(15, 40, 70, 1);
+}
+#theForm input:-webkit-autofill {
+    background-color: transparent !important;
+    color: #0F2846 !important;
+}
+.rendeles-form label {
+	font-size: 16px;
+	text-transform: uppercase;
+    display: inline-block;
+}
+.iranyitoszam{
+	width:37%;
+	display: inline-block;
+}
+.varos{
+	width:60%;
+	display: inline-block;
+}
+.radio-label{
+	margin: 20px 0;
+}
+.radio-label label:has(> input:checked) {
+    background: #00d2ff;
+    color: white;
+    border: 2px solid rgba(15, 40, 70, 0.3);
+}
+.radio-label label {
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid;
+	text-align: center;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+.radio-label input{
+	display: none;
+}
+.radio-label .szallitasi-koltseg{
+	font-size: 12px;
+}
+.rendeles-gomb {
+    background: black;
+    text-decoration: none;
+    padding: 20px 50px;
+    margin: 20px auto;
+    display: block;
+    max-width: 320px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+	border:0;
+    border-radius: 15px;
+	cursor:pointer;
+}
+footer{
+	background: url("img/bubble.png") repeat-x bottom center;
+	padding: 50px 10px 150px;
+	text-align: center;
+}
+footer > div{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+footer .aposztrof{
+	font-family: 'Playfair Display';
+	font-size: 128px;
+	font-weight: 400;
+	margin: 0;
+	line-height: 38px;
+}
+footer h3{
+	font-family: 'Playfair Display';
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 38px;
+	max-width: 389px;
+	margin: 0 auto 10px;
+}
+footer p{
+	color: #7B7B7B;
+	font-size: 20px;
+	max-width: 389px;
+	margin: 0 auto;
+}
+footer > div > div{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+footer > div > div > div{
+	width: 50%;
+	margin: 0 0 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+footer > div img{
+	width: 30%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+@media (max-width:500px){
+.hero1 {
+    padding: 40px 10px;
+}
+.hero1 > div > div > div {
+    width: 100%;
+}
+.hero1 > div img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.hero1 h3{
+    font-size: 35px;
+	line-height: 40px;
+}
+.hero1 > div > div:last-child {
+    flex-direction: column-reverse;
+}
+.hero2 > div > div {
+    width: 100%;
+}
+.hero2 circle {
+    position: absolute;
+    border-radius: 50%;
+    background: #DBEBEC;
+	width: 350px;
+	height: 350px;
+	z-index: -1;
+	top: 1178px;
+    right: 10px;
+}
+.hero2 > div img {
+    width: 75%;
+}
+.hero2 ul {
+    font-size: 28px;
+}
+.hangoskonyv{
+	justify-content: center;
+}
+.timeline .timeline-block {
+    flex-direction: row-reverse;
+	margin: 0 0 20px;
+}
+.timeline-block:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.timeline .timeline-page {
+    width: 22%;
+}
+.timeline .timeline-text {
+    width: 62%;
+}
+.timeline .vonal {
+	top: -85px;
+	bottom: -354px;
+}
+.hero3 > div > div > div {
+    width: 100%;
+}
+.hero3 circle {
+    position: absolute;
+    border-radius: 50%;
+    background: #DBEBEC;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    top: -86px;
+    right: 40px;
+}
+.hero3 h3,
+.form h3{
+    font-size: 35px;
+    line-height: 40px;
+}
+.hero3 > div img {
+    width: 100%; 	
+}
+.form > div > div, .form form {
+    width: 100%;
+}
+.rendeles-form {
+    width: 100%;
+	padding: 10px;
+}
+.rendeles-konyv {
+    width: 75%;
+}
+.rendeles-konyv .termek-ar {
+    width: 110px;
+    height: 110px;
+    font-size: 14px;
+    right: 0px;
+}
+.rendeles-konyv .termek-ar2 {
+	width: 110px;
+	height: 110px;
+	font-size: 14px;
+	right: 120px;
+}
+.rendeles-konyv .termek-ar del {
+    font-size: 16px;
+}
+.rendeles-form label {
+    font-size: 13px;
+}
+footer h3{
+	font-size: 25px;
+	line-height: 26px;
+}
+footer > div > div > div {
+	width: 100%;
+}
+footer > div img {
+	width: 75%;
+}
+}
