@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kosár tartalma - Bocsi Viki</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<section class="page-header page">
+
+    <nav class="desktop">
+        <div>
+            <a href="/bocsiviki"><img src="img/logo.svg" alt="bocsi viki logo" class="logo"></a>
+            <ul class="main-menu">
+                <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                <li><a href="#">Könyvem</a>
+                    <ul class="konyv sub-menu">
+                        <li><a href="https://jaffa.hu/bocsi-viki-szenvedelyesen-egeszseges">Könyv</a></li>
+                        <li><a href="https://www.ekonyv.hu/ekonyvek/eletmod-egeszseg/egeszseges-eletmod/bocsi_viki-szenvedelyesen_egeszseges">E-book</a></li>
+                    </ul>
+                </li>
+                <li><a href="/blog">blog</a></li>
+                <li><a href="#">kedvezmények</a>
+                    <ul class="kedvezmenyek sub-menu">
+                        <li><a href="/bocsiviki/taplalekkiegesztitok.html">Ajánlott táplálékkiegészítők</a></li>
+                        <li><a href="/bocsiviki/partnerek.html">Kuponkódok</a></li>
+                    </ul>
+                </li>
+                <li><a href="/bocsiviki/kapcsolat.html">kapcsolat</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="fiok">
+                <li><a href="/bocsiviki/kosar.html"><img src="img/cart.svg"><div class="cart-count">0</div></a></li>
+                <li><a href="javascript:void(0)"><img src="img/user.svg">Fiókom</a>
+                    <ul class="fiokom sub-menu">
+                        <li><a href="/bocsiviki/profil.html">Számlázási adatok</a></li>
+                        <li><a href="/bocsiviki/konyha-rendeleseim.html">Konyha rendeléseim</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <button class="mobil-bar"><img src="img/navbar.svg"></button>
+    <nav class="mobil">
+        <div>
+            <a href="/bocsiviki"><img src="img/logo.svg" alt="bocsi viki logo" class="logo"></a>
+            <ul>
+                <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                <li><a href="javascript:void(0)" onclick="mobilSubOpen('konyv')">Könyvem</a>
+                    <ul class="konyv sub-menu">
+                        <li><a href="https://jaffa.hu/bocsi-viki-szenvedelyesen-egeszseges">Könyv</a></li>
+                        <li><a href="https://www.ekonyv.hu/ekonyvek/eletmod-egeszseg/egeszseges-eletmod/bocsi_viki-szenvedelyesen_egeszseges">E-book</a></li>
+                    </ul>
+                </li>
+                <li><a href="/blog">blog</a></li>
+                <li><a href="javascript:void(0)" onclick="mobilSubOpen('kedvezmenyek')">kedvezmények</a>
+                    <ul class="kedvezmenyek sub-menu">
+                        <li><a href="/bocsiviki/taplalekkiegesztitok.html">Ajánlott táplálékkiegészítők</a></li>
+                        <li><a href="/bocsiviki/partnerek.html">Kuponkódok</a></li>
+                    </ul>
+                </li>
+                <li><a href="/bocsiviki/kapcsolat.html">kapcsolat</a></li>
+                <li><a href=""><img src="img/signin.svg">Regisztráció</a></li>
+                <li><a href=""><img src="img/login.svg">Bejelentkezés</a></li>
+                <li><a href="/bocsiviki/kosar.html"><img src="img/cart.svg">Kosár</a></li>
+                <li><a href="javascript:void(0)" onclick="mobilSubOpen('fiokom')"><img src="img/user.svg">Fiókom</a>
+                    <ul class="fiokom sub-menu">
+                        <li><a href="/bocsiviki/profil.html">Számlázási adatok</a></li>
+                        <li><a href="/bocsiviki/konyha-rendeleseim.html">Konyha rendeléseim</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Kosár tartalma</h1>
+    </div>
+</section>
+
+<section class="cart">
+    <div>
+        <div>
+            <button onclick="cart('cart', this)" class="active">Kosár tartalma</button>
+            <button onclick="cart('ship-bill', this)">Szállítás és Számlázás</button>
+            <button onclick="cart('pay', this)">Fizetés</button>
+        </div>
+        <div class="info-block">
+
+            <div id="cart" class="active">
+
+                <div class="tetelek">
+                    <div class="title">
+                        <div>Termék neve</div>
+                        <div>Mennyisége</div>
+                        <div>Egységár</div>
+                        <div>Hét / Nap</div>
+                        <div>Műveletek</div>
+                    </div>
+
+                    <div class="tetel">
+                        <div data-title="Termék neve">Adomány étel</div>
+                        <div data-title="Mennyisége">1 db</div>
+                        <div data-title="Egységár">1640 Ft</div>
+                        <div data-title="Hét / Nap">8 / Péntek</div>
+                        <button type="button" class="delete"><img src="img/trash.svg"> Törlés</button>
+                    </div>
+
+                    <div class="tetel">
+                        <div data-title="Termék neve">Vaslapon sült csirkemell almás káposztasalátával</div>
+                        <div data-title="Mennyisége">1 db</div>
+                        <div data-title="Egységár">1640 Ft</div>
+                        <div data-title="Hét / Nap">8 / Péntek</div>
+                        <button type="button" class="delete"><img src="img/trash.svg"> Törlés</button>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <div>Összesen: <span>5 000 Ft</span></div>
+                </div>
+            </div>
+
+            <div id="ship-bill">
+                <div>
+                    <div class="shipping">
+                        <h3>Szállítási adatok</h3>
+                        <p>Kérlek abban az esetben módosítsd meglévő címedet, ha már nincs rá szükséged. Lehetőséged van több cím megadására is, a "Szállítási cím kiválasztása" mezőt lenyitva új szállítási címet felvenni.</p>
+                        <div>
+                            <label>Szállítási cím kiválasztása vagy módosítása</label>
+                            <select name="ship_add" id="form-ship_add">
+                                <option selected="">1. Szállítási cím</option>
+                                <option>Új szállítási cím</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Név</label>
+                            <input type="text" name="name" value="" id="form-name" maxlength="255">
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="text" name="email" value="" id="form-email" maxlength="255">
+                        </div>
+                        <div>
+                            <label>Telefonszám</label>
+                            <input type="text" name="phone" value="" id="form-phone" maxlength="255">
+                        </div>
+                        <div>
+                            <label>Ország</label>
+                            <input type="text" name="country" value="" id="form-country" maxlength="255">
+                        </div>
+                        <div>
+                            <label>Irányítószám</label>
+                            <input type="text" name="zip" value="" id="form-zip" maxlength="255">
+                        </div>
+                        <div>
+                            <label>Város</label>
+                            <select name="city" id="form-city">
+                                <option value="">Nincs kiválasztva</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Cím</label>
+                            <input type="text" name="address" value="" id="form-address" maxlength="255">
+                        </div>
+
+                        <p><small>Amennyiben külterületre szeretnél rendelni, előtte az ügyfélszolgálattal egyeztess / bizonyosodj meg róla, hogy tudjuk-e vállalni a szállítást a megadott részre. Amennyiben mindkét címére szüksége van, vagy a közelmúltban rendelt erre a címre, kérjük ne törölje, hanem hozzon létre új szállítási címet!</small></p>
+
+                    </div>
+
+                    <div class="billing">
+                        <h3>Számlázási adatok</h3>
+                        <div>
+                            <label><input type="checkbox" name="pay_as_company" id="company-check" value="1" onchange="companyCheck()"> Cégként vásárolok.</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="check" id="check" value="1"> Számlázási adataim megegyeznek a szállítási címemmel.</label>
+                        </div>
+                        <div id="company-cart" style="display: none;">
+                            <div>
+                                <label>Cégnév</label>
+                                <input type="text" name="bill-company" value="" id="bill-company" maxlength="255">
+                            </div>
+                            <div>
+                                <label>Adószám</label>
+                                <input type="text" name="tax-number" value="" id="tax-number" maxlength="255">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Név</label>
+                                <input type="text" name="bill-name" value="" id="bill-name" maxlength="255">
+                            </div>
+                            <div>
+                                <label>Ország</label>
+                                <input type="text" name="bill-country" value="" id="bill-country" maxlength="255">
+                            </div>
+                            <div>
+                                <label>Irányítószám</label>
+                                <input type="text" name="bill-zip" value="" id="bill-zip" maxlength="255">
+                            </div>
+                            <div>
+                                <label>Város</label>
+                                <input type="text" name="bill-city" value="" id="bill-city" maxlength="255">
+                            </div>
+                            <div>
+                                <label>Cím</label>
+                                <input type="text" name="bill-address" value="" id="bill-address" maxlength="255">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="pay">
+                <div>
+
+                    <div>
+                        <label>Fizetési mód</label>
+                        <select name="payment_method" id="payment_method">
+                            <option value="" selected="">Válasszon egy fizetési módot!</option>
+                            <option value="1">Készpénz</option>
+                            <option value="otp_szep_3">OTP SZÉP kártya Online fizetés</option>
+                            <option value="mkb_szep_3">SZÉP kártya MKB / MBH</option>
+                            <option value="khb_szep_3">SZÉP kártya K&H</option>
+                            <option value="4">Bankkártya</option>
+                        </select>
+                        <p><small>Szeretnénk felhívni a figyelmed arra, hogy a 2021. január 1-én életbe lépett erős ügyfél-hitelesítés értelmében nem minden esetben tudod csak a bankkártyaadatok megadásával végrehajtani a tranzakciókat, hanem plusz egy lépésben kell igazolnod, hogy valóban Te kezdeményezted a vásárlást. Amennyiben eddig ezt nem tetted meg, vagy a tranzakciód sikertelen eredményt kapott, mindenképp tájékozódj a bankodnál, milyen formában tudod jóváhagyni a fizetésed (például kód megadása, biometrikus azonosítás), hiszen ennek hiánya is okozhatja, hogy most nem sikerült a tranzakciód.</small></p>
+                        <p><small>Tudomásul veszem, hogy a(z) Biopiac Market Szolgáltató Szociális Szövetkezet ( 1116. Budapest, Nándorfejérvári út 40. ) adatkezelő által a(z) bocsiviki.hu felhasználói adatbázisában tárolt alábbi személyes adataim átadásra kerülnek az OTP Mobil Kft. (1093 Budapest, Közraktár u. 30-32.), mint adatfeldolgozó részére. Az adatkezelő által továbbított adatok köre az alábbi: Név, Szállítási adatok, Számlázási adatok, Email cím, telefonszám. Az adatfeldolgozo ́által végzett adatfeldolgozási tevékenység jellege és célja a SimplePay Adatkezelési tájékoztatóban, az alábbi linken tekinthető meg: <a href="https://simplepay.hu/vasarlo-aff" target="_blank">http://simplepay.hu/vasarlo-aff</a> <a href="http://simplepartner.hu/PaymentService/Fizetesi_tajekoztato.pdf" target="_blank"><img src="img/payment-logos.png" style="max-width: 250px;"></a></small></p>
+                        <div class="cards">
+                            <img src="img/szep-mkb.jpg">
+                            <img src="img/szep-kh.png">
+                            <img src="img/szep-otp.jpg">
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <label>Megjegyzés</label>
+                            <textarea name="note" rows="5" placeholder="Előre is köszönjük megrendelésedet, az ételek 7:00 és 14:00 között kerülnek kiszállításra. Amennyiben konkrét időpontot szeretnél egyeztetni, kérlek, kérd el területi képviselőd telefonszámát a Konyha ügyfélszolgálattól." id="form-note"></textarea>
+                        </div>
+                        <h5>Ügyfélszolgálat</h5>
+                        <p>+36 1 2053 354 (Munkanapokon 7-15:00 óra között hívható.)</p>
+                        <p>konyha@bocsiviki.hu</p>
+
+                        <div>
+                            <label><input id="aszf1" name="aszf" value="1" type="checkbox"> Megértettem, hogy a megrendelés leadásával fizetési kötelezettségem keletkezik.</label>
+                        </div>
+                        <div>
+                            <label><input id="aszf2" name="aszf" value="1" type="checkbox"> Tudomásul veszem, hogy a rendelésem kiszállítását a Biopiac Market Szociális Szövetkezet végzi, elolvastam és elfogadom a
+                                <a href="https://bocsiviki.hu/doc/aszf-konyha.pdf" target="_blank">Biopiac ÁSZF-ét</a></label>
+                        </div>
+                        <div>
+                            <label><input id="aszf3" name="adatvedelem" value="1" type="checkbox" required=""> Tudomásul veszem a
+                                <a href="https://bocsiviki.hu/doc/adatvedelem-konyha.pdf" target="_blank">Biopiac adatkezelési tájékoztatóját</a>.</label>
+                        </div>
+                        <button type="submit" id="btnSubmit">Megrendelem</button>
+
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer>
+    <div>
+
+        <div class="logos">
+            <div class="logo">
+                <img src="img/logo.svg">
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/bocsiviki.hu"><img src="img/facebook.svg"></a>
+                <a href="https://www.instagram.com/bocsiviki/"><img src="img/instagram.svg"></a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div>
+                <h6>HASZNOS</h6>
+                <ul>
+                    <li><a href="/bocsiviki/vegzettsegeim.html">Végzettségeim</a></li>
+                    <li><a href="/bocsiviki/egyuttmukodo-orvosaink.html">Együttműködő orvosaink</a></li>
+                    <li><a href="/bocsiviki/gyik.html">GYIK</a></li>
+                    <li><a href="/bocsiviki/kisokos.html">Kisokos</a></li>
+                    <li><a href="/bocsiviki/taplalekkiegeszitok.html">Termékek</a></li>
+                    <li><a href="/bocsiviki/szereplesek.html">Szereplések</a></li>
+                    <li><a href="/bocsiviki/rolam.html">Rólam</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>KAPCSOLAT</h6>
+                <ul>
+                    <li>info@bocsiviki.hu</li>
+                    <li>moni@bocsiviki.hu</li>
+                </ul>
+            </div>
+            <div>
+                <h6>KONYHA</h6>
+                <ul>
+                    <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                    <li>konyha@bocsiviki.hu</li>
+                    <li>Ügyfélszolgálat: +3612053354</li>
+                </ul>
+            </div>
+            <div>
+                <h6>DOKUMENTUMOK</h6>
+                <ul>
+                    <li><a href="https://bocsiviki.hu/doc/aszf.pdf" target="_blank">Bocsiviki.hu ÁSZF</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/aszf-konyha.pdf" target="_blank">Biopiac ÁSZF</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/adatvedelem.pdf" target="_blank">Bocsiviki.hu adatkezelési tájékoztató</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/adatvedelem-konyha.pdf" target="_blank">Biopiac adatkezelési tájékoztató</a></li>
+                    <li><a href="/bocsiviki/impresszum.html">Impresszum</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">Copyright 2015-2025 © BocsiViki.hu Kft. Minden jog fenntartva.<br>A honlapon található legtöbb írás saját szellemi tulajdon, az anyagok engedély nélküli megosztása törvénybe ütköző cselekedet.</div>
+    </div>
+</footer>
+
+
+</body>
+
+<script src="script.js"></script>
+</html>

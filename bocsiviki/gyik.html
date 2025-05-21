@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GYIK - Bocsi Viki</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<section class="page-header page">
+
+    <nav class="desktop">
+        <div>
+            <a href="/bocsiviki"><img src="img/logo.svg" alt="bocsi viki logo" class="logo"></a>
+            <ul class="main-menu">
+                <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                <li><a href="#">Könyvem</a>
+                    <ul class="konyv sub-menu">
+                        <li><a href="https://jaffa.hu/bocsi-viki-szenvedelyesen-egeszseges">Könyv</a></li>
+                        <li><a href="https://www.ekonyv.hu/ekonyvek/eletmod-egeszseg/egeszseges-eletmod/bocsi_viki-szenvedelyesen_egeszseges">E-book</a></li>
+                    </ul>
+                </li>
+                <li><a href="/blog">blog</a></li>
+                <li><a href="#">kedvezmények</a>
+                    <ul class="kedvezmenyek sub-menu">
+                        <li><a href="/bocsiviki/taplalekkiegesztitok.html">Ajánlott táplálékkiegészítők</a></li>
+                        <li><a href="/bocsiviki/partnerek.html">Kuponkódok</a></li>
+                    </ul>
+                </li>
+                <li><a href="/bocsiviki/kapcsolat.html">kapcsolat</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="fiok">
+                <li><a href=""><img src="img/signin.svg">Regisztráció</a></li>
+                <li><a href=""><img src="img/login.svg">Bejelentkezés</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button class="mobil-bar"><img src="img/navbar.svg"></button>
+    <nav class="mobil">
+        <div>
+            <a href="/bocsiviki"><img src="img/logo.svg" alt="bocsi viki logo" class="logo"></a>
+            <ul>
+                <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                <li><a href="javascript:void(0)" onclick="mobilSubOpen('konyv')">Könyvem</a>
+                    <ul class="konyv sub-menu">
+                        <li><a href="https://jaffa.hu/bocsi-viki-szenvedelyesen-egeszseges">Könyv</a></li>
+                        <li><a href="https://www.ekonyv.hu/ekonyvek/eletmod-egeszseg/egeszseges-eletmod/bocsi_viki-szenvedelyesen_egeszseges">E-book</a></li>
+                    </ul>
+                </li>
+                <li><a href="/blog">blog</a></li>
+                <li><a href="javascript:void(0)" onclick="mobilSubOpen('kedvezmenyek')">kedvezmények</a>
+                    <ul class="kedvezmenyek sub-menu">
+                        <li><a href="/bocsiviki/taplalekkiegesztitok.html">Ajánlott táplálékkiegészítők</a></li>
+                        <li><a href="/bocsiviki/partnerek.html">Kuponkódok</a></li>
+                    </ul>
+                </li>
+                <li><a href="/bocsiviki/kapcsolat.html">kapcsolat</a></li>
+                <li><a href=""><img src="img/signin.svg">Regisztráció</a></li>
+                <li><a href=""><img src="img/login.svg">Bejelentkezés</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Hasznos kérdések</h1>
+        <p>Az oldallal kapcsolatos gyakori kérdések</p>
+    </div>
+</section>
+
+<section class="gyik">
+    <div>
+        <div>
+            <button onclick="gyik('technikai', this)" class="active">Technikai hasznos</button>
+            <button onclick="gyik('konyha', this)">Konyha</button>
+            <button onclick="gyik('ajanlas', this)">Ajánlás</button>
+            <button onclick="gyik('ebook', this)">E-book</button>
+            <button onclick="gyik('teszt', this)">Teszt</button>
+            <button onclick="gyik('profil', this)">Profil</button>
+            <button onclick="gyik('kerdoiv', this)">Kérdőív</button>
+            <button onclick="gyik('hasznos', this)">Hasznos</button>
+        </div>
+        <div class="info-block">
+            <div id="technikai" class="active">
+                <h4>Technikai-hasznos kérdések:</h4>
+                <p>Hogyan töltsd fel a profilodat?</p>
+                <p>Segítségért kattintst ide: <a href="http://bocsiviki.hu/hogyan-toltsd-fel-a-profilodat">http://bocsiviki.hu/hogyan-toltsd-fel-a-profilodat</a></p>
+                <p>Szia! Próbálok regisztrálni az oldalon, de sajnos nem sikerül sehogy sem. A regisztráció után átvezet a bejelentkezéshez, de ott folyamatosan azt írja vissza, hogy helytelen bejelentkezési adatok. Tudsz segíteni?</p>
+                <p>Igen, az Explorer szokta a gondokat okozni. Kérlek válts böngészőt. Ha a fotóknál akadsz el, akkor a képeket elképzelhető, hogy kicsinyítened kell ahhoz, hogy fel tud tölteni.</p>
+            </div>
+            <div id="konyha">
+                <h4>Konyha kérdések</h4>
+                <h5>Hogy mi is ez pontosan?</h5>
+                <p>Országos házhozszállítás - gluténmentes alapanyagokból, tejmentesen, cukormentesen, szója- és kukoricamentesen, adalékmentesen főzünk, a pontos településlistát megtalálod az oldalon.</p>
+                <h5>Miért van a fehérjetípus ételeinek az összetevői között feltüntetve ilyenek például, hogy rizs, hajdina?</h5>
+                <p>A standard szerinti arányok így jönnek ki. Csak az 1-es sorban találhatod meg őket. A Tudnivalók fül alatt megtalálod, hogy melyik sort pontosan kiknek ajánljuk.</p>
+                <h5>Regisztráltam magam, szeretnék ebédet rendelni. Sajnos elég sok alapanyag van, amit nem ehetek, ezért a kérdésem az, hogy van-e lehetőség egyeztetésre. Tiltott minden, amiben fruktóz van (méz, cukrok, füstölt ételek, hagyma, fűszerpaprika, bizonyos zöldségek, mindenfajta gyümölcs)</h5>
+                <p>Semmilyen adalékot nem használunk, adalékos fűszereket sem. SEMMIT. Csak az ételek mellett feltüntetett I betű-ben található alapanyagokat, ezeket érdemes megnézni mindig, benne van az étel összes összetevője. Gyümölcsöt maximum gyümölcslevesbe, az a nevén is látszik.</p>
+                <h5>Tiltott a tejfehérje (azaz minden tejtermék) és a tojásfehérje?</h5>
+                <p>SEMMILYEN tejterméket nem használunk, semmilyen formában. Ha ilyet látsz, hogy tejszínes, az kókusztejszínt takar, nézd meg az összetevőket. Egész tojást használunk, nézd a receptek összetevőit az I betű alatt.</p>
+                <h5>Tiltottak a gabonák és a zab is?</h5>
+                <p>Nincs gluténtartalmú alapanyagunk, de a konyha jelenleg nem hermetikusan gluténmentes, főznek benne mást is. Mi zabot, kukoricát egyáltalán nem használunk, ahogy szóját sem.</p>
+                <h5>Mindenhova kiszállítjátok?</h5>
+                <p>Nem, a Kiszállító partnerünk jelenleg kb. 350 magyar települést lát el. A kiszállítási területek közül esetlegesen hiányzó településeket egyelőre NEM tudják listára tenni, konkrét logisztikai okok miatt. Idővel ez változhat, érdeklődni az Ügyfélszolgálat telefonszámán lehet: 061 2053 354</p>
+                <h5>Ami a problémám, hogy ez az étkezés folyamatos odafigyelést, előkészületet, tervezést igényel, és ez nagyon fárasztó. Ebben valószínű nem tudsz segíteni, ezzel meg kell küzdeni mindennap. A véleményedre lennék kíváncsi, hogy ez mással is így van-e?</h5>
+                <p>Természetesen sokan jártok ebben a cipőben. Pont az ilyen esetekre hoztuk létre a Konyhát és a Bisztrót, ahol minden héten finomabbnál finomabb, gluténmentes alapanyagokból, tejmentesen, cukormentesen, szója- és kukoricamentesen, adalékmentesen főzünk. A pontos településlistát megtalálod az oldalon.</p>
+            </div>
+            <div id="ajanlas">
+                <h4>Ajánlás kérdések</h4>
+                <h5>Hogy mi is ez pontosan?</h5>
+                <p>A legjobb tudásunk szerint készített, általunk írt, egyedi, Te személyedre szóló, kb. 40 oldalas anyag. A sikerek 90%-át ezzel érik el Ügyfeleink. Rólad szól, receptek nincsenek benne. A Profilodat kell hozzá feltölteni, FONTOS, hogy <u>NEM az ingyenes Tesztből készítjük</u>. Többféle csomagból tudsz választani.</p>
+
+                <h5>Örökre szól az Ajánlásom?</h5>
+                <p>Ez attól függ, hogy mi változik közben. Közbeszól-e valamilyen betegség vagy terhesség vagy egyéb, hatást kiváltó faktor. Ha igen, akkor új Ajánlást kell kérni, nekünk pedig készíteni. Ehhez hozzájön, hogy 1 év alatt rengeteget tanulunk, fejlődünk új információkkal, tudással gyarapodunk, amikkel folyamatosan bővítjük az Ajánlásokat.</p>
+
+                <h5>Meddig van utánkövetés?</h5>
+                <p>Az Ajánlással bekerül az Ügyfél egy zárt Facebook csoportba, ahol a Szabályzat betartásával utánkövetjük, amíg létezik a csoport.</p>
+                <p>Emaileket limitált mennyiségben kezelünk, napi szintű ügyfélszolgálatunk nincs. Ha felvetődik, hogy az Ajánlás hibájából nem működik az étrend, akkor azt 6 hónapon belül átállítjuk díjmentesen.</p>
+                <p>1 éven túl nem tudunk kezelni problémákat, ilyen esetben új Ajánlást készítünk.</p>
+
+                <h5>Kismamának is kérhetik az Ajánlást?</h5>
+                <p>Természetesen kérhetik. Terhesség alatt is lehet jól enni, de nagy valószínűséggel az alapvető Ajánlás arányain kell változtatni valamilyen irányban.</p>
+                <p>Nem fogunk támogatni semmilyen szélsőségekben, de biztonságossá tudjuk tenni, hogy ne szaladjon el túlságosan a ló.</p>
+
+                <h5>Szeretnék Ajánlást rendelni. Hogy tudom megtenni?</h5>
+                <p>A honlapon, a főoldalon, az Ajánlás menüpont alatt tudod kiválasztani számodra a legmegfelelőbb csomagot.</p>
+
+                <h5>Az Ajánláshoz kell egy személyes találkozó is?</h5>
+                <p>Személyes találkozóra nem kerül sor. Ez azért van így, hogy a Világ bármely pontjáról tudjatok jelentkezni.</p>
+
+                <h5>Lehet Ajánlásom E-book nélkül?</h5>
+                <p>Nem kell E-book az Ajánláshoz.</p>
+
+                <h5>Hogyan működik a Személyre szóló tanácsadás?</h5>
+                <p>Fontos, hogy az Ajánlásokat nem az ingyenes Tesztből csináljuk, hanem a profilodba feltöltött adatokból és a részletes Kérdőívre adott válaszaidból. Személyes találkozóra nem kerül sor, mindent online csinálunk.</p>
+            </div>
+
+            <div id="ebook">
+                <h4>E-book kérdések</h4>
+                <h5>Hogy mi is ez pontosan?</h5>
+                <p>Én írtam a típusra szóló E-bookokat is. Az ingyenes Tesztre adott válaszaidból kijött eredményed alapján kapod meg, automatikusan - 100 oldalnyi könyv, receptekkel, egészen más, mint az Ajánlás. Önállóan is használható. <u>Ha van Ajánlásod, nem kell Tesztet töltened!</u></p>
+            </div>
+
+
+            <div id="teszt">
+                <h4>Teszt kérdések</h4>
+                <h5>Hogy mi is ez pontosan?</h5>
+                <p>Ingyenes Teszt, rövid eredménnyel, utána tudsz rendelni E-bookot vagy a Konyhánkról ebédet - ez utóbbit egyébként a teszt nélkül is megteheted.</p>
+
+                <h5>Vannak olyan kérdések, amikre olyan válasz nem jelölhető, ami teljesen igaz lenne rám. Vannak telitalálat kérdések, amikre egyértelmű választ tudok adni. Akkor, hogyan bízhatok a teszt kiértékelésében?</h5>
+                <p>A teszt nem ad 100%-os eredményt, de csak azért, mert a válaszok általában szubjektívek, de megadja az első támpontot, amin el tudsz indulni. Ha ennél biztosabbra szeretnél menni, akkor kérd a legjobb tudásunk szerint készített, általunk írt egyedi, a Te személyedre szóló Ajánlásunkat. Ezt nem a Tesztből, hanem az alaposan kitöltött Profil adataidból készítjük.</p>
+            </div>
+
+            <div id="profil">
+                <h4>Profil kérdések</h4>
+                <h5>Hogy mi is ez pontosan?</h5>
+                <p>A személyre szabott Ajánlásodhoz regisztráció után fel kell töltened a Profilodat, az ide írt adatokból tudjuk elkészíteni az anyagodat. Ezért fontos a pontos kitöltés.</p>
+            </div>
+
+            <div id="kerdoiv">
+                <h4>Kérdőív kérdések</h4>
+                <h5>Hogy mi is ez pontosan?</h5>
+                <p>A profilfeltöltés része.</p>
+            </div>
+
+            <div id="hasznos">
+                <h4>Hasznos kérdések</h4>
+                <h5>Nem terveztek oktatást, képzést táplálkozással kapcsolatban?</h5>
+                <p>De igen, de ehhez még idő kell, azonnal értesülsz majd róla <a href="https://www.facebook.com/bocsiviki.hu/">Bocsi Viki Facebookján</a>. Nincs mást teendőd hozzá, mint követni az oldalt és a weboldalt olvasni.</p>
+
+                <h5>Van összefüggés az étkezés és a viselkedés, magatartás zavar között?</h5>
+                <p>Természetesen hatással van a viselkedésre, a bevitt táplálékunk.</p>
+
+                <h5>Milyen szolgáltatások vannak?</h5>
+                <p><strong>Teszt:</strong> Az ingyenes, gyorsteszt alapján megtudhatod milyen anyagcseretípusba tartozol. Ennek nincs köze az Ajánlás megrendeléshez, azt egy sokkal pontosabb metódus szerint készítjük, a Profilod feltöltésével.</p>
+                <p><strong>Konyha:</strong> Tudsz rendelni országosan másnapra ebédet, ha akarod típusod szerint. Teszt nélkül is tudsz rendelni. Minden gluténmentes alapanyagokból, tej-, cukor-, adalék-, szója- és kukoricamentesen készül.</p>
+                <p><strong>E-Book:</strong> Közel 100 oldalas anyag a saját típusodnak szóló adatokkal, tanácsokkal és receptekkel.</p>
+                <p><strong>Ajánlás:</strong> Rád szabott, speciális Ajánlás, amit a Tanácsadód készít el. Ez online szolgáltatás, bárhonnan a világból meg tudod rendelni magyarul és angolul.</p>
+                <p><strong>Bisztró:</strong> Budapesten, Dob utca 2-ben lévő éttermünk, ahol garantáltan glutén-, tej-, cukor-, szója-, kukorica- és adalékmentesen főzünk, mindent frissen.</p>
+
+                <h5>Hogyan juthatok be a titkos Ügyfélklubba?</h5>
+                <p>Miután elkészítettük neked a személyes Ajánlást, emailben meghívást kapsz a zárt Ügyfélklubbunkba. Ehhez mindenképpen a Facebookon regisztrált e-mail címedre van szükség.</p>
+
+                <h5>Milyen vitaminokat ajánlasz a gyermekvárás alatt?</h5>
+                <p>Általánosságban K2D3 cseppek, omega3 kapszulák, valamint GAL és WTN termékeket. Típusonként eltérő lehet, ezért érdemes konzultálnunk.</p>
+
+                <h5>Milyen fizetési módok használhatók?</h5>
+                <p>Bankkártya, átutalás, SZÉP kártya, Transferwise és Paypal közül tudsz választani. Kérdés esetén az <a href="mailto:info@bocsiviki.hu">info@bocsiviki.hu</a> címen elérhetsz minket.</p>
+
+                <h5>Hogy kapsz időpontot a megrendelésnél?</h5>
+                <p>A megrendelést, fizetést és profilfeltöltést követően automatikusan megkapod az időpontodat. Ez 2-3 hetes időintervallum, de általában hamarabb érkezik.</p>
+
+                <h5>Csak OTP SZÉP kártya használható?</h5>
+                <p>Szolgáltatásainkat csak OTP SZÉP kártyával lehet igénybe venni, bankkártya és átutalás mellett.</p>
+            </div>
+
+
+            <div class="hero">
+                <img src="img/sargaruhas.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer>
+    <div>
+
+        <div class="logos">
+            <div class="logo">
+                <img src="img/logo.svg">
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/bocsiviki.hu"><img src="img/facebook.svg"></a>
+                <a href="https://www.instagram.com/bocsiviki/"><img src="img/instagram.svg"></a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div>
+                <h6>HASZNOS</h6>
+                <ul>
+                    <li><a href="/bocsiviki/vegzettsegeim.html">Végzettségeim</a></li>
+                    <li><a href="/bocsiviki/egyuttmukodo-orvosaink.html">Együttműködő orvosaink</a></li>
+                    <li><a href="/bocsiviki/gyik.html">GYIK</a></li>
+                    <li><a href="/bocsiviki/kisokos.html">Kisokos</a></li>
+                    <li><a href="/bocsiviki/taplalekkiegeszitok.html">Termékek</a></li>
+                    <li><a href="/bocsiviki/szereplesek.html">Szereplések</a></li>
+                    <li><a href="/bocsiviki/rolam.html">Rólam</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>KAPCSOLAT</h6>
+                <ul>
+                    <li>info@bocsiviki.hu</li>
+                    <li>moni@bocsiviki.hu</li>
+                </ul>
+            </div>
+            <div>
+                <h6>KONYHA</h6>
+                <ul>
+                    <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                    <li>konyha@bocsiviki.hu</li>
+                    <li>Ügyfélszolgálat: +3612053354</li>
+                </ul>
+            </div>
+            <div>
+                <h6>DOKUMENTUMOK</h6>
+                <ul>
+                    <li><a href="https://bocsiviki.hu/doc/aszf.pdf" target="_blank">Bocsiviki.hu ÁSZF</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/aszf-konyha.pdf" target="_blank">Biopiac ÁSZF</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/adatvedelem.pdf" target="_blank">Bocsiviki.hu adatkezelési tájékoztató</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/adatvedelem-konyha.pdf" target="_blank">Biopiac adatkezelési tájékoztató</a></li>
+                    <li><a href="/bocsiviki/impresszum.html">Impresszum</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">Copyright 2015-2025 © BocsiViki.hu Kft. Minden jog fenntartva.<br>A honlapon található legtöbb írás saját szellemi tulajdon, az anyagok engedély nélküli megosztása törvénybe ütköző cselekedet.</div>
+    </div>
+</footer>
+
+
+</body>
+
+<script src="script.js"></script>
+</html>

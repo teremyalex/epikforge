@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bocsi Viki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<section class="header">
+
+    <nav class="desktop">
+        <div>
+            <a href="/bocsiviki"><img src="img/logo.svg" alt="bocsi viki logo" class="logo"></a>
+            <ul class="main-menu">
+                <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                <li><a href="#">Könyvem</a>
+                    <ul class="konyv sub-menu">
+                        <li><a href="https://jaffa.hu/bocsi-viki-szenvedelyesen-egeszseges">Könyv</a></li>
+                        <li><a href="https://www.ekonyv.hu/ekonyvek/eletmod-egeszseg/egeszseges-eletmod/bocsi_viki-szenvedelyesen_egeszseges">E-book</a></li>
+                    </ul>
+                </li>
+                <li><a href="/blog">blog</a></li>
+                <li><a href="#">kedvezmények</a>
+                    <ul class="kedvezmenyek sub-menu">
+                        <li><a href="/bocsiviki/taplalekkiegesztitok.html">Ajánlott táplálékkiegészítők</a></li>
+                        <li><a href="/bocsiviki/partnerek.html">Kuponkódok</a></li>
+                    </ul>
+                </li>
+                <li><a href="/bocsiviki/kapcsolat.html">kapcsolat</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="fiok">
+                <li><a href=""><img src="img/signin.svg">Regisztráció</a></li>
+                <li><a href=""><img src="img/login.svg">Bejelentkezés</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button class="mobil-bar"><img src="img/navbar.svg"></button>
+    <nav class="mobil">
+        <div>
+            <a href="/bocsiviki"><img src="img/logo.svg" alt="bocsi viki logo" class="logo"></a>
+            <ul>
+                <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                <li><a href="javascript:void(0)" onclick="mobilSubOpen('konyv')">Könyvem</a>
+                    <ul class="konyv sub-menu">
+                        <li><a href="https://jaffa.hu/bocsi-viki-szenvedelyesen-egeszseges">Könyv</a></li>
+                        <li><a href="https://www.ekonyv.hu/ekonyvek/eletmod-egeszseg/egeszseges-eletmod/bocsi_viki-szenvedelyesen_egeszseges">E-book</a></li>
+                    </ul>
+                </li>
+                <li><a href="/blog">blog</a></li>
+                <li><a href="javascript:void(0)" onclick="mobilSubOpen('kedvezmenyek')">kedvezmények</a>
+                    <ul class="kedvezmenyek sub-menu">
+                        <li><a href="/bocsiviki/taplalekkiegesztitok.html">Ajánlott táplálékkiegészítők</a></li>
+                        <li><a href="/bocsiviki/partnerek.html">Kuponkódok</a></li>
+                    </ul>
+                </li>
+                <li><a href="/bocsiviki/kapcsolat.html">kapcsolat</a></li>
+                <li><a href=""><img src="img/signin.svg">Regisztráció</a></li>
+                <li><a href=""><img src="img/login.svg">Bejelentkezés</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        <div>
+            <h1>Rendelj házhoz Bocsi Vikitől!</h1>
+            <p>Élvezd az egészséges, glutén-, tej- és cukormentes ételeket otthonod kényelmében! Rendelj most, és támogasd testedet minőségi, személyre szabott fogásokkal!</p>
+            <a class="cta" href="/konyha"><img src="img/menu.svg">Heti menü</a>
+            <a class="video-cta" href=""><span><img src="img/play.svg"></span> Nézd meg a videónkat</a>
+            <div class="velemeny-icons"><img class="icons" src="img/velemeny-ikonok.png"><img class="star" src="img/csillag.svg"><div>4.9 <span>(2k vásárló)</span></div></div>
+            <div class="stat">
+                <div>
+                    <h4>2000+</h4>
+                    <p>Vásárló</p>
+                </div>
+                <div>
+                    <h4>500+</h4>
+                    <p>Napi rendelés</p>
+                </div>
+                <div>
+                    <h4>25</h4>
+                    <p>Fajta étel naponta</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="velemenyek">
+    <div>
+        <div>
+            <img class="hero" src="img/velemeny1.jpg">
+            <div>
+                <img class="aposztrof" src="img/aposztrof.svg">
+                <img class="star5" src="img/csillag5.svg">
+                <p>Szia, most először rendeltem (múlt héttől kezdve), teljes pajzsmirigyeltávolító műtétem volt múlt hét hétfőn, hazajöttem a kórházból, azóta a Konyháról eszem. Meg akartam támogatni a testemet, a felépülésemet a minőségi ételekkel, úgy, hogy közben magamat nem terhelem főzéssel.</p>
+                <cite>Nagy Kitti</cite>
+            </div>
+        </div>
+        <div>
+            <img class="hero" src="img/velemeny2.jpg">
+            <div>
+                <img class="aposztrof" src="img/aposztrof.svg">
+                <img class="star5" src="img/csillag5.svg">
+                <p>Az elsődleges az, hogy mentes ételeket csináltok, de ez még önmagában kevés lenne. A másik döntési szempont nálam, hogy isteni finomak az ételek és úgy tudok változatosan és egyben egészségesen étkezni, hogy nem vagyok a konyhám rabja. Szóval a harmadik ok az, hogy időt spórolok veletek.</p>
+                <cite>Tóth Andrásné</cite>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <div>
+        <img class="hero" src="img/viki.png" alt="Bocsi Viki">
+        <div>
+            <img class="aposztrof" src="img/aposztrof2.svg">
+            <h3>A legjobb helyen vagy!</h3>
+            <p>Akarod tudni, hogy miért működik másnak egy diéta, ami neked nem? Hogy miért nem működik nálad az az étrend, ami másnál igen? A tested nem játék, az anyagcseréd nem játék. Az étrended nem lehet olyan, mint a lapjárás, ahol vagy van szerencséd vagy nincs. A saját, személyes horoszkópod is több annál, mint amit a pletykaújság utolsó oldalán, heti szinten olvashatsz. Az anyagcseréd típusa is személyes ügy, mint a csillagjegyed. A tested működését miért vennéd könnyedén, ha a horoszkópodra is figyelmet fordítasz? Miért is hinnél véletlenszerű divatdiétáknak? Te már itt vagy. Találd meg a kiutat a labirintusból!</p>
+            <a class="cta" style="background: #F08B52;" href="/konyha"><img src="img/menu.svg">Heti menü</a>
+        </div>
+    </div>
+</section>
+
+<section class="media">
+    <div>
+        <h3>Itt találkozhattál velünk a médiában</h3>
+        <div class="slider">
+            <img src="img/novekedes.png">
+            <img src="img/egeszsegkalauz.png">
+            <img src="img/index.png">
+            <img src="img/womagic.png">
+            <img src="img/we_magazine.png">
+            <img src="img/veol.png">
+            <img src="img/senior-plus.png">
+            <img src="img/eszak.png">
+            <img src="img/uzlet-es-utazas.png">
+            <img src="img/jovotv.png">
+            <img src="img/novekedes.png">
+            <img src="img/egeszsegkalauz.png">
+            <img src="img/index.png">
+            <img src="img/womagic.png">
+            <img src="img/we_magazine.png">
+            <img src="img/veol.png">
+            <img src="img/senior-plus.png">
+            <img src="img/eszak.png">
+            <img src="img/uzlet-es-utazas.png">
+            <img src="img/jovotv.png">
+        </div>
+    </div>
+</section>
+
+<section class="blog">
+    <h3>A legfrissebb hírek</h3>
+    <div>
+        <div class="first-post">
+            <div class="post-cat">#RECEPT</div>
+            <img src="img/blog1.jpg">
+            <h4>Az egészség az új vagyon. Az értéke felbecsülhetetlen.</h4>
+            <p>Bocsi Viki vagyok, táplálkozási szakértő. A nevemet viselő brand alatt 2014 óta működtetjük az országos étel házhozszállításunkat, amit egyedi elvek alapján működtetünk.</p>
+            <div class="post-cta">
+                <a href=""><span><img src="img/more.svg"></span> Olvass tovább</a>
+                <span>2025/01/30</span>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div>
+                <a href="/">
+                    <img src="img/blog1.jpg">
+                    <div>
+                        <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
+                        <div class="sidebar-cat">#DIÉTA</div>
+                        <p>2025/01/30</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/">
+                    <img src="img/blog1.jpg">
+                    <div>
+                        <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
+                        <div class="sidebar-cat">#DIÉTA</div>
+                        <p>2025/01/30</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/">
+                    <img src="img/blog1.jpg">
+                    <div>
+                        <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
+                        <div class="sidebar-cat">#DIÉTA</div>
+                        <p>2025/01/30</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/">
+                    <img src="img/blog1.jpg">
+                    <div>
+                        <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
+                        <div class="sidebar-cat">#DIÉTA</div>
+                        <p>2025/01/30</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/">
+                    <img src="img/blog1.jpg">
+                    <div>
+                        <h5>Mi a helyzet a túl alacsony szénhidrátbevitellel?</h5>
+                        <div class="sidebar-cat">#DIÉTA</div>
+                        <p>2025/01/30</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="subscribe">
+    <div>
+        <div>
+            <h3>Feliratkozom az érdekességekre!</h3>
+            <p>Ha tetszenek az írásaim és szeretnél értesülni a legfrissebb cikkeim megjelenéséről és hasznos információkról.</p>
+        </div>
+        <div>
+            <a href=""><img src="img/envelope.svg">Feliratkozom</a>
+        </div>
+    </div>
+</section>
+
+<section class="partner">
+    <div>
+        <h3>Partnereink</h3>
+        <div>
+            <img src="img/kortalanul.png">
+            <img src="img/epikforge.png">
+            <img src="img/nutribalance.png">
+            <img src="img/fannizero.png">
+            <img src="img/rachelcare.png">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+
+        <div class="logos">
+            <div class="logo">
+                <img src="img/logo.svg">
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/bocsiviki.hu"><img src="img/facebook.svg"></a>
+                <a href="https://www.instagram.com/bocsiviki/"><img src="img/instagram.svg"></a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div>
+                <h6>HASZNOS</h6>
+                <ul>
+                    <li><a href="/bocsiviki/vegzettsegeim.html">Végzettségeim</a></li>
+                    <li><a href="/bocsiviki/egyuttmukodo-orvosaink.html">Együttműködő orvosaink</a></li>
+                    <li><a href="/bocsiviki/gyik.html">GYIK</a></li>
+                    <li><a href="/bocsiviki/kisokos.html">Kisokos</a></li>
+                    <li><a href="/bocsiviki/taplalekkiegeszitok.html">Termékek</a></li>
+                    <li><a href="/bocsiviki/szereplesek.html">Szereplések</a></li>
+                    <li><a href="/bocsiviki/rolam.html">Rólam</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>KAPCSOLAT</h6>
+                <ul>
+                    <li>info@bocsiviki.hu</li>
+                    <li>moni@bocsiviki.hu</li>
+                </ul>
+            </div>
+            <div>
+                <h6>KONYHA</h6>
+                <ul>
+                    <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                    <li>konyha@bocsiviki.hu</li>
+                    <li>Ügyfélszolgálat: +3612053354</li>
+                </ul>
+            </div>
+            <div>
+                <h6>DOKUMENTUMOK</h6>
+                <ul>
+                    <li><a href="https://bocsiviki.hu/doc/aszf.pdf" target="_blank">Bocsiviki.hu ÁSZF</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/aszf-konyha.pdf" target="_blank">Biopiac ÁSZF</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/adatvedelem.pdf" target="_blank">Bocsiviki.hu adatkezelési tájékoztató</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/adatvedelem-konyha.pdf" target="_blank">Biopiac adatkezelési tájékoztató</a></li>
+                    <li><a href="/bocsiviki/impresszum.html">Impresszum</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">Copyright 2015-2025 © BocsiViki.hu Kft. Minden jog fenntartva.<br>A honlapon található legtöbb írás saját szellemi tulajdon, az anyagok engedély nélküli megosztása törvénybe ütköző cselekedet.</div>
+    </div>
+</footer>
+
+
+</body>
+
+<script src="script.js"></script>
+</html>

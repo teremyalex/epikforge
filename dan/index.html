@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="dk">
+<head>
+    <meta charSet="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dán</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<section class="header">
+    <div class="content">
+        <div>
+            <h1>Er du aldrig helt kommet dig efter et tab?</h1>
+            <p>Der findes tab, der sætter så dybe spor, at man aldrig helt kommer sig. Det kan være et dødsfald, et brud, et svigt – og pludselig føles livet anderledes. Tungere. Som om noget inde i én gik i stykker… og aldrig blev helt samlet igen.</p>
+            <a href="#ajanlat" class="cta">Løsning <img src="img/chevron-black.svg"/></a>
+        </div>
+    </div>
+    <div class="chevron-red">
+        <img src="img/chevron-red.svg"/>
+        <img src="img/chevron-red.svg"/>
+        <img src="img/chevron-red.svg"/>
+    </div>
+</section>
+
+<section class="hero2">
+    <div>
+        <div>Men hvorfor hænger sådanne oplevelser ved – selv efter mange år?</div>
+        <div></div>
+        <div>Hvorfor forsvinder livsenergien, glæden og følelsen af at være "sig selv”?</div>
+        <div></div>
+        <div>Og vigtigst af alt: Kan man gøre noget ved det?</div>
+    </div>
+</section>
+
+<section class="hero3">
+    <p>Kom til foredraget</p>
+    <h3>Tab og sorg – en ny forståelse og vejen videre</h3>
+    <div>
+        <div>
+            <h4>TIL dette gratis live-foredrag vil du opdage:</h4>
+            <ul>
+                <li>En forklaring på, hvordan dit sind virker, og hvorfor du ikke er kommet dig</li>
+                <li>En indsigt i, hvor din livskraft er forsvundet hen, og hvordan du får den tilbage</li>
+                <li>Konkrete værktøjer til hvordan du kommer dig over et tab og genfinder dig selv</li>
+            </ul>
+            <p>Foredraget er for dig, der har mistet din livs energi efter at have gennemgået et svært tab – og som er klar til at tage et skridt videre.</p>
+        </div>
+    </div>
+</section>
+
+<section class="hero4">
+    <div>
+        <h3>Tirsdag, 1. april 2025 kl. 19:00</h3>
+        <h4>Sted: NYTORV 11, KØBENHAVN K</h4>
+    </div>
+</section>
+
+<section class="hero5" id="ajanlat">
+    <div>
+        <div>
+            <h3>Reserver din plads i dag!</h3>
+            <p>Pladserne er begrænsede, så tilmeld dig i god tid!</p>
+        </div>
+
+        <div>
+            <div class="form">
+                <form action="https://epikforge.space/api/site/99b9132e-d39b-4a4f-81c4-8452b3591d54/contact/create"
+                      method="POST" accept-charset="utf-8">
+                    <input type="hidden" name="url" value="https://landing.epikforge.com/bpluszk"/>
+                    <input type="hidden" name="m" value="organic"/>
+                    <input type="hidden" name="success_return_url"
+                           value="https://lp.gratispersonlighedstest.dk/sub/soon.html"/>
+                    <input type="hidden" name="form_name" value="Dán"/>
+
+                    <div>
+                        <label>NAVN</label>
+                        <input id="name" type="text" name="name" required/>
+                    </div>
+                    <div>
+                        <label>EMAIL</label>
+                        <input id="email" type="email" name="email" required/>
+                    </div>
+                    <div>
+                        <label>TELEFONNUMMER</label>
+                        <input id="phone" type="text" name="phone" required/>
+                    </div>
+                    <p>Ved at indsende formularen accepterer jeg <a href="https://www.scientology-denmark.org/privacy-notice.html">privatlivspolitikken</a>.</p>
+                    <button type="submit" id="submitBTN">Jeg reserverer min plads!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a style="display: block; margin: 150px auto 10px; font-size: 14px; color: #555; text-decoration: none; text-align: center;" href="https://www.oca.szcientologia.org.hu/privacy-notice.html">Privatlivspolitik</a>
+
+</body>
+
+<script>
+    const params = new URLSearchParams(window.location.search)
+    const input = document.querySelector('input[name="m"]')
+    const params_m = params.get('m')
+    if(input && params_m) input.value = params_m
+</script>
+</html>

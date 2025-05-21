@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Konyha - Bocsi Viki</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<section class="page-header konyha">
+
+    <nav class="desktop">
+        <div>
+            <a href="/bocsiviki"><img src="img/logo.svg" alt="bocsi viki logo" class="logo"></a>
+            <ul class="main-menu">
+                <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                <li><a href="#">Könyvem</a>
+                    <ul class="konyv sub-menu">
+                        <li><a href="https://jaffa.hu/bocsi-viki-szenvedelyesen-egeszseges">Könyv</a></li>
+                        <li><a href="https://www.ekonyv.hu/ekonyvek/eletmod-egeszseg/egeszseges-eletmod/bocsi_viki-szenvedelyesen_egeszseges">E-book</a></li>
+                    </ul>
+                </li>
+                <li><a href="/blog">blog</a></li>
+                <li><a href="#">kedvezmények</a>
+                    <ul class="kedvezmenyek sub-menu">
+                        <li><a href="/bocsiviki/taplalekkiegesztitok.html">Ajánlott táplálékkiegészítők</a></li>
+                        <li><a href="/bocsiviki/partnerek.html">Kuponkódok</a></li>
+                    </ul>
+                </li>
+                <li><a href="/bocsiviki/kapcsolat.html">kapcsolat</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="fiok">
+                <li><a href=""><img src="img/signin.svg">Regisztráció</a></li>
+                <li><a href=""><img src="img/login.svg">Bejelentkezés</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button class="mobil-bar"><img src="img/navbar.svg"></button>
+    <nav class="mobil">
+        <div>
+            <a href="/bocsiviki"><img src="img/logo.svg" alt="bocsi viki logo" class="logo"></a>
+            <ul>
+                <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                <li><a href="javascript:void(0)" onclick="mobilSubOpen('konyv')">Könyvem</a>
+                    <ul class="konyv sub-menu">
+                        <li><a href="https://jaffa.hu/bocsi-viki-szenvedelyesen-egeszseges">Könyv</a></li>
+                        <li><a href="https://www.ekonyv.hu/ekonyvek/eletmod-egeszseg/egeszseges-eletmod/bocsi_viki-szenvedelyesen_egeszseges">E-book</a></li>
+                    </ul>
+                </li>
+                <li><a href="/blog">blog</a></li>
+                <li><a href="javascript:void(0)" onclick="mobilSubOpen('kedvezmenyek')">kedvezmények</a>
+                    <ul class="kedvezmenyek sub-menu">
+                        <li><a href="/bocsiviki/taplalekkiegesztitok.html">Ajánlott táplálékkiegészítők</a></li>
+                        <li><a href="/bocsiviki/partnerek.html">Kuponkódok</a></li>
+                    </ul>
+                </li>
+                <li><a href="/bocsiviki/kapcsolat.html">kapcsolat</a></li>
+                <li><a href=""><img src="img/signin.svg">Regisztráció</a></li>
+                <li><a href=""><img src="img/login.svg">Bejelentkezés</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Nem lesz gondod az ebéddel!</h1>
+        <a class="cta" href="/konyha"><img src="img/menu.svg">Heti menü</a>
+    </div>
+</section>
+
+<section class="velemenyek">
+    <div>
+        <div>
+            <img class="hero" src="img/velemeny3.jpg">
+            <div>
+                <img class="aposztrof" src="img/aposztrof.svg">
+                <img class="star5" src="img/csillag5.svg">
+                <p>Egészséges, mindenmentes,tápanyagban gazdag, finom ételek. Nem kell agyalnom mi legyen az ebéd vagy a vacsi és még a gyerekek is szeretik nálunk!</p>
+                <cite>Farkas Mária</cite>
+            </div>
+        </div>
+        <div>
+            <img class="hero" src="img/velemeny4.jpg">
+            <div>
+                <img class="aposztrof" src="img/aposztrof.svg">
+                <img class="star5" src="img/csillag5.svg">
+                <p>Nagyon sok időt spórolok vele, hogy nem minden nap én főzök. Meg szeretünk téged, és mindig gondolok rád, és jó érzés.</p>
+                <cite>Horváth Arnold</cite>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="order-info">
+    <div>
+        <div>
+            <button onclick="orderInfo('figyelem', this)" class="active">Figyelem</button>
+            <button onclick="orderInfo('adomany', this)">Adományozás</button>
+            <button onclick="orderInfo('rendeles', this)">Rendelési információk</button>
+        </div>
+        <div class="info-block">
+            <div id="figyelem" class="active">
+                <h4>Figyelem!</h4>
+                <p>Gluténmentes alapanyagokból, tejmentesen, cukormentesen, szója- és kukoricamentesen, adalékmentesen elkészítve. A Konyha más területein nem gluténmentesen főznek! Igazolt és súlyos gluténérzékenység esetén ezt figyelembe kell venni! Szakértők és dietetikus bevonásával. Az étlapváltoztatás jogát fenntartjuk.</p>
+            </div>
+            <div id="adomany">
+                <h4>Adományozás</h4>
+                <p><strong>Kedves Megrendelőnk!</strong></p>
+                <p>A <a href="https://gondoljmasokra.hu/" target="_blank">Gondolj másokra! Egyesülettel</a> együttműködve cégünk szervezetten segíti a rászorulókat meleg ételek szállításával. Ha te is küldenél egy-egy adag tápláló ételt pl. anyaotthonokba, nálunk megteheted az AD betűjelű, Adomány sorban. Előre köszönünk minden felajánlást!</p>
+                <img src="img/egytal.jpg">
+            </div>
+            <div id="rendeles">
+                <h4>Az ételrendelés menete:</h4>
+                <ol>
+                    <li>
+                        <strong>Regisztráció és bejelentkezés</strong>
+                        <p>Ha már van regisztrációd, akkor bejelentkezel. Ha nincs, akkor beregisztrálsz.</p>
+                    </li>
+                    <li>
+                        <strong>Ételek kiválasztása</strong>
+                        <p>Megrendeled az ételeket, azaz berakod a "kosaradba". A pénztár összesíti a rendelésed, itt még tudsz módosítani.</p>
+                    </li>
+                    <li>
+                        <strong>Szállítási és fizetési adatok megadása</strong>
+                        <p>A kosár tartalma alatti részen tudod beírni a szállítási címet, ahová rendelni akarod az ételeket, illetve a számlázási címedet. Itt tudod kiválasztani a fizetési módot is.</p>
+                        <p>Elérhető fizetési módok:</p>
+                        <ul>
+                            <li><p>Készpénzes fizetés</p></li>
+                            <li><p>Szép kártyás fizetés</p></li>
+                            <li><p>Bankkártyás fizetés</p></li>
+                        </ul>
+                        <p>Ha bizonytalan vagy, hogy hozzád is szállítunk-e, az étlap felett a <strong>"Hova szállítunk"</strong> menüpontnál rákereshetsz.</p>
+                    </li>
+                    <li>
+                        <strong>Kiszállítás</strong>
+                        <p>Az ételek kiszállítása <strong>7:00 és 14:00</strong> között történik.</p>
+                        <p>Amennyiben konkrét időpontot szeretnél egyeztetni, kérd el területi képviselőd telefonszámát a Konyha ügyfélszolgálattól.</p>
+                        <p><strong>Ügyfélszolgálat elérhetősége:</strong> +36 1 2053 354 <a href="mailto:konyha@bocsiviki.hu">konyha@bocsiviki.hu</a></p>
+                    </li>
+                    <li>
+                        <strong>Visszaigazolás</strong>
+                        <p>Megrendeled az ételeket, és kapsz egy visszaigazoló e-mailt.</p>
+                    </li>
+                    <li>
+                        <strong>Házhozszállítás</strong>
+                        <p>Nyugodtan várhatod a házhozszállítót. Az első találkozásnál megkapod a futárod elérhetőségét.</p>
+                    </li>
+                    <li>
+                        <strong>Visszajelzés és módosítás</strong>
+                        <p>Ha bármi van, írj a <a href="mailto:konyha@bocsiviki.hu">konyha@bocsiviki.hu</a> e-mail címre.</p>
+                        <p>Szívesen fogadunk képes üzeneteket is – ha ízlik az étel, és akkor is, ha nem. A pozitív visszajelzéseket szívesen megosztjuk Facebook oldalunkon.</p>
+                    </li>
+                    <li>
+                        <strong>Rendelés módosítása</strong>
+                        <p>A <strong>Profilom</strong> menüponton belül tudsz változtatni a megrendeléseden <strong>előző nap 13 óráig</strong>.</p>
+                        <p>Telefonon is van lehetőség módosítani:</p>
+                        <p><strong>Ügyfélszolgálat:</strong> +36 1 2053 354 (Munkanapokon 7:00-15:00 között hívható.)</p>
+                    </li>
+                </ol>
+                <p>Nagyon örülünk, hogy itt vagy, és esetleg már tőlünk is rendelsz!</p>
+                <p>A Konyha egy mérföldkő az életünkben, mert fő küldetésünk, hogy a lehető legtöbb embernek segítsünk a megfelelő étrend kialakításában. A házhozszállítással ezt a folyamatot igyekszünk még inkább támogatni.</p>
+
+            </div>
+            <div class="hero">
+                <img src="img/sargaruhas.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu">
+    <div>
+        <div class="week">
+            <button onclick="weekChange(this)" class="active">5. hét</button>
+            <button onclick="weekChange(this)">6. hét</button>
+            <button onclick="weekChange(this)">7. hét</button>
+        </div>
+
+
+        <!-- FEHÉRJE-->
+        <div class="menu-title feherje">
+            <div class="title">
+                <h3>Fehérjegazdag ételek <span>(400-450 gramm)</span></h3>
+                <p>Ebéd, Leves</p>
+            </div>
+        </div>
+        <div class="menu-sor">
+
+            <div class="menu-card">
+                <img class="menu-img" src="img/etel1.png">
+                <div class="menu-day">Hétfő <span>02.03</span></div>
+                <div class="menu-card-title">
+                    <h5>Krémes spenótos rizottó</h5>
+                    <p>Tojásmentes, rizsmentes, kortalanul</p>
+                </div>
+                <div class="menu-info">
+                    <img src="img/menu-info.svg" title="tápanyag">
+                    <img src="img/menu-osszetevok.svg" title="összetevők">
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-qty">
+                        <button class="minus-btn" type="button" onclick="menuQty(-1)"><img src="img/arrow.svg"></button>
+                        <input type="text" value="0" class="quantity-input" readonly>
+                        <button class="plus-btn" type="button" onclick="menuQty(1)"><img src="img/arrow.svg"></button>
+                    </div>
+                    <div class="menu-price">2 140 Ft</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img class="menu-img" src="img/etel1.png">
+                <div class="menu-day">Kedd <span>02.04</span></div>
+                <div class="menu-card-title">
+                    <h5>Krémes spenótos rizottó</h5>
+                    <p>Tojásmentes, rizsmentes, kortalanul</p>
+                </div>
+                <div class="menu-info">
+                    <img src="img/menu-info.svg" title="tápanyag">
+                    <img src="img/menu-osszetevok.svg" title="összetevők">
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-qty">
+                        <button class="minus-btn" type="button" onclick="menuQty(-1)"><img src="img/arrow.svg"></button>
+                        <input type="text" value="0" class="quantity-input" readonly>
+                        <button class="plus-btn" type="button" onclick="menuQty(1)"><img src="img/arrow.svg"></button>
+                    </div>
+                    <div class="menu-price">2 140 Ft</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img class="menu-img" src="img/etel1.png">
+                <div class="menu-day">Szerda <span>02.05</span></div>
+                <div class="menu-card-title">
+                    <h5>Krémes spenótos rizottó</h5>
+                    <p>Tojásmentes, rizsmentes, kortalanul</p>
+                </div>
+                <div class="menu-info">
+                    <img src="img/menu-info.svg" title="tápanyag">
+                    <img src="img/menu-osszetevok.svg" title="összetevők">
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-qty">
+                        <button class="minus-btn" type="button" onclick="menuQty(-1)"><img src="img/arrow.svg"></button>
+                        <input type="text" value="0" class="quantity-input" readonly>
+                        <button class="plus-btn" type="button" onclick="menuQty(1)"><img src="img/arrow.svg"></button>
+                    </div>
+                    <div class="menu-price">2 140 Ft</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img class="menu-img" src="img/etel1.png">
+                <div class="menu-day">Csütörtök <span>02.06</span></div>
+                <div class="menu-card-title">
+                    <h5>Krémes spenótos rizottó</h5>
+                    <p>Tojásmentes, rizsmentes, kortalanul</p>
+                </div>
+                <div class="menu-info">
+                    <img src="img/menu-info.svg" title="tápanyag">
+                    <img src="img/menu-osszetevok.svg" title="összetevők">
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-qty">
+                        <button class="minus-btn" type="button" onclick="menuQty(-1)"><img src="img/arrow.svg"></button>
+                        <input type="text" value="0" class="quantity-input" readonly>
+                        <button class="plus-btn" type="button" onclick="menuQty(1)"><img src="img/arrow.svg"></button>
+                    </div>
+                    <div class="menu-price">2 140 Ft</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img class="menu-img" src="img/etel1.png">
+                <div class="menu-day">Péntek <span>02.07</span></div>
+                <div class="menu-card-title">
+                    <h5>Krémes spenótos rizottó</h5>
+                    <p>Tojásmentes, rizsmentes, kortalanul</p>
+                </div>
+                <div class="menu-info">
+                    <img src="img/menu-info.svg" title="tápanyag">
+                    <img src="img/menu-osszetevok.svg" title="összetevők">
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-qty">
+                        <button class="minus-btn" type="button" onclick="menuQty(-1)"><img src="img/arrow.svg"></button>
+                        <input type="text" value="0" class="quantity-input" readonly>
+                        <button class="plus-btn" type="button" onclick="menuQty(1)"><img src="img/arrow.svg"></button>
+                    </div>
+                    <div class="menu-price">2 140 Ft</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="menu-sor">
+
+            <div class="menu-card">
+                <div class="menu-day">Hétfő <span>02.03</span></div>
+                <div class="menu-card-title">
+                    <h5>Krémes spenótos rizottó</h5>
+                    <p>Tojásmentes, rizsmentes, kortalanul</p>
+                </div>
+                <div class="menu-info">
+                    <img src="img/menu-info.svg" title="tápanyag">
+                    <img src="img/menu-osszetevok.svg" title="összetevők">
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-qty">
+                        <button class="minus-btn" type="button" onclick="menuQty(-1)"><img src="img/arrow.svg"></button>
+                        <input type="text" value="0" class="quantity-input" readonly>
+                        <button class="plus-btn" type="button" onclick="menuQty(1)"><img src="img/arrow.svg"></button>
+                    </div>
+                    <div class="menu-price">2 140 Ft</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-day">Kedd <span>02.04</span></div>
+                <div class="menu-card-title">
+                    <h5>Krémes spenótos rizottó</h5>
+                    <p>Tojásmentes, rizsmentes, kortalanul</p>
+                </div>
+                <div class="menu-info">
+                    <img src="img/menu-info.svg" title="tápanyag">
+                    <img src="img/menu-osszetevok.svg" title="összetevők">
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-qty">
+                        <button class="minus-btn" type="button" onclick="menuQty(-1)"><img src="img/arrow.svg"></button>
+                        <input type="text" value="0" class="quantity-input" readonly>
+                        <button class="plus-btn" type="button" onclick="menuQty(1)"><img src="img/arrow.svg"></button>
+                    </div>
+                    <div class="menu-price">2 140 Ft</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-day">Szerda <span>02.05</span></div>
+                <div class="menu-card-title">
+                    <h5>Krémes spenótos rizottó</h5>
+                    <p>Tojásmentes, rizsmentes, kortalanul</p>
+                </div>
+                <div class="menu-info">
+                    <img src="img/menu-info.svg" title="tápanyag">
+                    <img src="img/menu-osszetevok.svg" title="összetevők">
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-qty">
+                        <button class="minus-btn" type="button" onclick="menuQty(-1)"><img src="img/arrow.svg"></button>
+                        <input type="text" value="0" class="quantity-input" readonly>
+                        <button class="plus-btn" type="button" onclick="menuQty(1)"><img src="img/arrow.svg"></button>
+                    </div>
+                    <div class="menu-price">2 140 Ft</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-day">Csütörtök <span>02.06</span></div>
+                <div class="menu-card-title">
+                    <h5>Krémes spenótos rizottó</h5>
+                    <p>Tojásmentes, rizsmentes, kortalanul</p>
+                </div>
+                <div class="menu-info">
+                    <img src="img/menu-info.svg" title="tápanyag">
+                    <img src="img/menu-osszetevok.svg" title="összetevők">
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-qty">
+                        <button class="minus-btn" type="button" onclick="menuQty(-1)"><img src="img/arrow.svg"></button>
+                        <input type="text" value="0" class="quantity-input" readonly>
+                        <button class="plus-btn" type="button" onclick="menuQty(1)"><img src="img/arrow.svg"></button>
+                    </div>
+                    <div class="menu-price">2 140 Ft</div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-day">Péntek <span>02.07</span></div>
+                <div class="menu-card-title">
+                    <h5>Krémes spenótos rizottó</h5>
+                    <p>Tojásmentes, rizsmentes, kortalanul</p>
+                </div>
+                <div class="menu-info">
+                    <img src="img/menu-info.svg" title="tápanyag">
+                    <img src="img/menu-osszetevok.svg" title="összetevők">
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-qty">
+                        <button class="minus-btn" type="button" onclick="menuQty(-1)"><img src="img/arrow.svg"></button>
+                        <input type="text" value="0" class="quantity-input" readonly>
+                        <button class="plus-btn" type="button" onclick="menuQty(1)"><img src="img/arrow.svg"></button>
+                    </div>
+                    <div class="menu-price">2 140 Ft</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+<section class="fizetes">
+    <div>
+        <h3>Elfogadjuk</h3>
+        <img src="img/kartyak.png">
+    </div>
+</section>
+
+<section class="app">
+    <div>
+        <h3>Bocsiviki Konyha</h3>
+        <p>Töltsd le a Konyha applikációnkat és rendelj mobilról!</p>
+        <a href="https://apps.apple.com/hu/app/bocsiviki-konyha/id1600054014?l=hu" target="_blank"><img src="img/appstore.png"></a>
+        <a href="https://play.google.com/store/apps/details?id=hu.appsolution.bocsiviki&pli=1" target="_blank"><img src="img/playstore.png"></a>
+    </div>
+</section>
+
+
+
+<section class="subscribe">
+    <div>
+        <div>
+            <h3>Feliratkozom az érdekességekre!</h3>
+            <p>Ha tetszenek az írásaim és szeretnél értesülni a legfrissebb cikkeim megjelenéséről és hasznos információkról.</p>
+        </div>
+        <div>
+            <a href=""><img src="img/envelope.svg">Feliratkozom</a>
+        </div>
+    </div>
+</section>
+
+<section class="partner">
+    <div>
+        <h3>Partnereink</h3>
+        <div>
+            <img src="img/kortalanul.png">
+            <img src="img/epikforge.png">
+            <img src="img/nutribalance.png">
+            <img src="img/fannizero.png">
+            <img src="img/rachelcare.png">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+
+        <div class="logos">
+            <div class="logo">
+                <img src="img/logo.svg">
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/bocsiviki.hu"><img src="img/facebook.svg"></a>
+                <a href="https://www.instagram.com/bocsiviki/"><img src="img/instagram.svg"></a>
+            </div>
+        </div>
+
+        <div class="links">
+            <div>
+                <h6>HASZNOS</h6>
+                <ul>
+                    <li><a href="/bocsiviki/vegzettsegeim.html">Végzettségeim</a></li>
+                    <li><a href="/bocsiviki/egyuttmukodo-orvosaink.html">Együttműködő orvosaink</a></li>
+                    <li><a href="/bocsiviki/gyik.html">GYIK</a></li>
+                    <li><a href="/bocsiviki/kisokos.html">Kisokos</a></li>
+                    <li><a href="/bocsiviki/taplalekkiegeszitok.html">Termékek</a></li>
+                    <li><a href="/bocsiviki/szereplesek.html">Szereplések</a></li>
+                    <li><a href="/bocsiviki/rolam.html">Rólam</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>KAPCSOLAT</h6>
+                <ul>
+                    <li>info@bocsiviki.hu</li>
+                    <li>moni@bocsiviki.hu</li>
+                </ul>
+            </div>
+            <div>
+                <h6>KONYHA</h6>
+                <ul>
+                    <li><a href="/bocsiviki/konyha.html">Konyha</a></li>
+                    <li>konyha@bocsiviki.hu</li>
+                    <li>Ügyfélszolgálat: +3612053354</li>
+                </ul>
+            </div>
+            <div>
+                <h6>DOKUMENTUMOK</h6>
+                <ul>
+                    <li><a href="https://bocsiviki.hu/doc/aszf.pdf" target="_blank">Bocsiviki.hu ÁSZF</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/aszf-konyha.pdf" target="_blank">Biopiac ÁSZF</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/adatvedelem.pdf" target="_blank">Bocsiviki.hu adatkezelési tájékoztató</a></li>
+                    <li><a href="https://bocsiviki.hu/doc/adatvedelem-konyha.pdf" target="_blank">Biopiac adatkezelési tájékoztató</a></li>
+                    <li><a href="/bocsiviki/impresszum.html">Impresszum</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">Copyright 2015-2025 © BocsiViki.hu Kft. Minden jog fenntartva.<br>A honlapon található legtöbb írás saját szellemi tulajdon, az anyagok engedély nélküli megosztása törvénybe ütköző cselekedet.</div>
+    </div>
+</footer>
+
+
+</body>
+
+<script src="script.js"></script>
+</html>
